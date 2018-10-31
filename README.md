@@ -9,11 +9,11 @@ But enjoying new food can be made much simpler when approached in a more efficie
 
 <b>Description:</b> wip
 
-##Timeline
-###Week 1 - Needfinding
-###Week 2 - Storyboarding
-###Week 3 - Prototyping
-###Week 4 - Heuristic Evaluations
-###Week 5 - Development Plan & Wireframing
+## Timeline
+### Week 1 - Needfinding
+### Week 2 - Storyboarding
+### Week 3 - Prototyping
+### Week 4 - Heuristic Evaluations
+### Week 5 - Development Plan & Wireframing
 
 
