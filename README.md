@@ -58,6 +58,8 @@ One last thing, when writing your commit messages, please add your name or inita
 help speed up who updated what without clicking and checking on github and stuff. It just speeds stuff up and makes
 everything more convenience. 
 
+Also, PLEASE INDENT!! ok. 
+
 That was a lot of stuff to update you guys on. If there are any questions or unclear, just refer to index.html. 
 Or just ask me lol.
 
