@@ -1,0 +1,62 @@
+/* On Both */
+
+a{
+    font-family: 'Roboto', sans-serif;
+}
+nav table {
+    position: absolute;
+    width: 310px;
+    height: 80px;
+    border: none;
+}
+
+nav table td {
+    width: 77px;
+    text-align: center;
+}
+
+.icon {
+    padding-top: 5px;
+    width: 58px;
+    height: 48px;
+}
+
+
+.profile{
+    background-color: #635D5D;
+    padding-bottom: 8px;
+}
+
+.explore{
+    background-color: #9F7676;
+    padding-bottom: 8px;
+}
+
+.search{
+    background-color: #C7A6A6;
+    padding-bottom: 8px;
+}
+
+.more{
+    background-color: #F7E6E6;
+    padding-bottom: 8px;
+}
+
+
+/* On Laptop */
+@media screen and (min-width: 375px){
+    nav{
+        position: absolute;
+        top: 520px;
+        width: 310px;
+    }
+}
+
+/* On Mobile */
+@media screen and (max-width: 375px) {
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
