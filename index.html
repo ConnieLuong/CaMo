@@ -2,29 +2,42 @@
 <html>
     <head>
         <title>CaMo - Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
 
         <!--Stylesheets-->
-        <link rel="stylesheet" href="css/index.html">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
     </head>
 
     <body>
-        <!--Navbar-->
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">My Account</a></li>
-            <li><a href="">Search</a></li>
-            <li><a href="">More</a></li>
-        </ul>
+        <div class="viewport">
+            <!--Navbar-->
+            <nav>
+                <ul>
+                    <li id="my-account"><a href="my-account.html">My Account</a></li>
+                    <li id="explore"><a href="index.html">Explore</a></li>
+                    <li id="search"><a href="search.html">Search</a></li>
+                    <li id="more"><a href="more.html">More</a></li>
+                </ul>
+            </nav>
 
-        <!--Article Slider-->
-        <a href="articles/Coffee-in-Medicine.html">Coffee in Medicine</a>
-        <a href="articles/Coffee-or-Girlfriend.html">Coffee or Girlfriend?</a>
+            <h1>Explore</h1>
 
-        <!--Categories-->
-        <a href="categories/Group.html">Group</a>
-        <a href="categories/Quiet.html">Quiet</a>
-        <a href="categories/24H.html">24H</a>
-        <a href="categories/Aesthetic.html">Aesthetic</a>
+            <!--Article Slider-->
+            <a href="articles/Coffee-in-Medicine.html">Coffee in Medicine</a>
+            <a href="articles/Coffee-or-Girlfriend.html">Coffee or Girlfriend?</a>
+
+            <!--Categories-->
+            <a href="categories/Group.html">Group</a>
+            <a href="categories/Quiet.html">Quiet</a>
+            <a href="categories/24H.html">24H</a>
+            <a href="categories/Aesthetic.html">Aesthetic</a>
+        </div>
     </body>
+
+    <!-- Load Scripts-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/navbar.js"></script>
 </html>

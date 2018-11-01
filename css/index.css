@@ -1,0 +1,22 @@
+/* On Laptop */
+@media screen and (min-width: 375px){
+    .viewport {
+        position: relative;
+        width: 310px; 
+        height: 630px; 
+        border-radius: 15px;
+        background: #FFFFFF; 
+        border: 3px solid #000; 
+        margin: 10px auto 0;
+        
+        padding: 25px;
+    }
+}
+
+/* On Mobile */
+@media screen and (max-width: 375px) {
+    .viewport {
+        width:100%;
+        height:100%;
+    }
+}
