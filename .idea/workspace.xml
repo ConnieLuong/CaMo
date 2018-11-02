@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b3959b2-f4be-4ac7-8c59-21687f2a3e4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/mainpages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/noSocialLife.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cafe/NoSocialLife.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cafe/NoSocialLife.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/Coffee-in-Medicine.html" beforeDir="false" afterPath="$PROJECT_DIR$/articles/Coffee-in-Medicine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/articles/Coffee-or-Girlfriend.html" beforeDir="false" afterPath="$PROJECT_DIR$/articles/Coffee-or-Girlfriend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/24H-more.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/24H-more.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/24H.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/24H.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/Aesthetic-more.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/Aesthetic-more.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/Aesthetic.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/Aesthetic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/Group-more.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/Group-more.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/Group.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/Group.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/Quiet-more.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/Quiet-more.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/Quiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/Quiet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/NoSocialLife.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more.html" beforeDir="false" afterPath="$PROJECT_DIR$/more.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more_page/accountSettings.html" beforeDir="false" afterPath="$PROJECT_DIR$/more_page/accountSettings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/more_page/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/more_page/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchResultPage/searchResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchResultPage/searchResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/food1.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,31 +29,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="24" />
-          <entry key="html" value="45" />
+          <entry key="css" value="25" />
+          <entry key="html" value="46" />
           <entry key="js" value="7" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="24" />
-          <entry key="HTML" value="45" />
+          <entry key="CSS" value="25" />
+          <entry key="HTML" value="46" />
           <entry key="JavaScript" value="7" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="779" />
-          <entry key="html" value="1293" />
+          <entry key="css" value="810" />
+          <entry key="html" value="1390" />
           <entry key="js" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="779" />
-          <entry key="HTML" value="1293" />
+          <entry key="CSS" value="810" />
+          <entry key="HTML" value="1390" />
           <entry key="JavaScript" value="67" />
         </counts>
       </usages-collector>
@@ -84,16 +65,38 @@
         <entry file="file://$PROJECT_DIR$/more_page/help.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/menu.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/menu.css">
+        <entry file="file://$PROJECT_DIR$/Cafe/NoSocialLife.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="298">
+              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/noSocialLife.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -104,8 +107,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -143,10 +146,11 @@
         <option value="$PROJECT_DIR$/js/mainpages.js" />
         <option value="$PROJECT_DIR$/js/navbar.js" />
         <option value="$PROJECT_DIR$/profile.html" />
-        <option value="$PROJECT_DIR$/Cafe/NoSocialLife.html" />
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/more_page/help.html" />
         <option value="$PROJECT_DIR$/css/menu.css" />
+        <option value="$PROJECT_DIR$/css/noSocialLife.css" />
+        <option value="$PROJECT_DIR$/Cafe/NoSocialLife.html" />
       </list>
     </option>
   </component>
@@ -260,12 +264,12 @@
       <workItem from="1541099944765" duration="706000" />
       <workItem from="1541115401248" duration="3560000" />
       <workItem from="1541119439018" duration="544000" />
-      <workItem from="1541121357417" duration="5592000" />
+      <workItem from="1541121357417" duration="7735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18740000" />
+    <option name="totallyTimeSpent" value="20883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="201" y="23" width="1077" height="691" extended-state="0" />
@@ -365,13 +369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/NoSocialLife.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" lean-forward="true" selection-end-line="32" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -490,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cafe/NoSocialLife.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/more.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -514,7 +504,7 @@
     <entry file="file://$PROJECT_DIR$/more_page/help.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -522,6 +512,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/noSocialLife.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cafe/NoSocialLife.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
