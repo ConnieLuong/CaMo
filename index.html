@@ -7,6 +7,7 @@
 
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/index.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -17,6 +18,41 @@
     <body>
         <!--Menu Bar-->
         <nav id="menu"></nav>
+
+        <!-- Slideshow -->
+        <div id="wrapper">
+        <div id="slider-wrap">
+            <ul id="slider">
+                <li data-color="#1abc9c">
+                <div>
+                    <h3>Coffee in Medicine</h3>
+                    <span>Sub-title #1</span>
+                </div>                
+                <i class="fa fa-image"></i>
+                </li>
+                
+                <li data-color="#3498db">
+                <div>
+                    <h3>Coffee of Girlfriend?</h3>
+                    <span>Sub-title #2</span>
+                </div>
+                <i class="fa fa-gears"></i>
+                </li>                 
+            </ul>
+            
+            <!--controls-->
+            <div class="btns" id="next">&#62;</div>
+            <div class="btns" id="previous">&#60;</div>
+            <div id="counter"></div>
+            
+            <div id="pagination-wrap">
+            <ul>
+            </ul>
+            </div>
+            <!--controls-->  
+                     
+        </div>
+        </div>
 
         <!-- Categories -->
         <h2>Categories</h2>
