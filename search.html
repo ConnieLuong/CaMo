@@ -7,6 +7,14 @@
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/search.css">
+
+        <script>
+            function result(){
+                location.href = 'searchResultPage/searchResult.html';
+            }
+        </script>
+
     </head>
     <body>
         <div class="viewport">
@@ -32,6 +40,12 @@
             </nav>
 
             <h1>Search</h1>
+
+            <!-- Search Field-->
+            <div class="searchField">
+                <input type="text" placeholder="No Social Life..">
+                <button onclick="result()">Search</button>
+            </div>
 
             <!--Hashtags-->
             <a href="categories/Group.html">#Group</a>

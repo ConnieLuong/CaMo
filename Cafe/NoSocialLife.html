@@ -7,6 +7,12 @@
         <!--Stylesheets-->
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/navbar.css">
+
+        <script>
+            function goBack(){
+                window.history.back()
+            }
+        </script>
     </head>
     <body>
         <div class="viewport">
@@ -14,7 +20,7 @@
             <nav id="navbar"></nav>
 
             <!--Back button-->
-            <a href="../index.html"><button>Back</button></a>
+            <button onclick="goBack()">Back</button>
 
             <h1>No Social Life</h1>
 

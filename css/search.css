@@ -1,0 +1,14 @@
+.searchField {
+    overflow: hidden;
+}
+
+.searchField input[type=text]{
+    float: left;
+    width: 70%;
+    font-size: 18px;
+}
+
+.searchField button{
+    width: 25%;
+    font-size: 18px;
+}
