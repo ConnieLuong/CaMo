@@ -10,10 +10,10 @@ function showSlides(){
     slideIndex++;
     if (slideIndex>slides.length){slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, 5000);
 }
 
-//Next/previous controls
+//Next & Previous controls
 function plusSlides(n){
     showSlides(slideIndex +=n );
 }

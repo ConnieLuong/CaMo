@@ -1,19 +1,19 @@
 /* On Laptop */
-@media screen and (min-width: 375px){
+@media screen and (min-width: 400px){
     .viewport {
         position: relative;
         width: 310px; 
         height: 630px; 
         border-radius: 15px;
         background: #FFFFFF; 
-        border: 3px solid #000; 
+        border: 3px solid blue; 
         margin: 10px auto 0;
         
         padding: 25px;
     }
 
     .slideshow-container{
-        width: 380px;
+        width: 100%;/*380px;*/
         height:170px;
         position: center;
         margin:auto;
@@ -89,7 +89,7 @@
 }
 
 /* On Mobile */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .viewport {
         width:100%;
         height:100%;
