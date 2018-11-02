@@ -6,15 +6,11 @@ h2{
     position: relative;
     padding: 30px;
 }
-.col-md-2 ul{
-    list-style-type: none;
-}
 
 
-
-/* Slideshow stuff
+/* Slideshow stuff*/
 .slideshow-container{
-    width: 100vw;/*380px;
+    width: 100vw;/*380px;*/
     height:170px;
     position: absolute;
     top:0;
@@ -28,7 +24,7 @@ h2{
     display:none;
 }
 
-/*prev button
+/*prev button*/
 .prev{
     left:0;
     border-radius: 3px 0 0 3px;
@@ -43,7 +39,7 @@ h2{
     color: pink;
 }
 
-/*next button
+/*next button*/
 .next{
     right:0;
     border-radius: 3px 0 0 3px;
@@ -59,7 +55,7 @@ h2{
     color: pink;
 }
 
-/*dots for slideshows
+/*dots for slideshows*/
 .dot{
     cursor: pointer;
     height: 10px;
