@@ -10,7 +10,7 @@ function loadNavBar(){
     $("#menu").html(
 
         '<ul class="menuopt">'+
-        '<a href="../index.html"><img src="image/LightLogoHor.png" id="logo" alt="profile icon" width="100"></a>'+
+        '<a href="index.html"><img src="image/LightLogoHor.png" id="logo" alt="profile icon" width="100"></a>'+
         '<li><a href="more.html">More</a></li>'+
         '<li><a href="search.html">Search</a></li>'+
         '<li><a href="profile.html">Profile</a></li>'+
