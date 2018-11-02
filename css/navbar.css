@@ -17,11 +17,14 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline; 
 }*/
-
+nav{
+    display:none;
+}
 a{
     font-family: 'Roboto', sans-serif;
 }
 nav table {
+    display: none;
     position: absolute;
     width: 310px;
     height: 80px;
@@ -62,7 +65,7 @@ nav table td {
 
 
 /* On Laptop */
-@media screen and (min-width: 375px){
+@media screen and (min-width: 500px){
     nav{
         position: absolute;
         top: 560px;
@@ -71,10 +74,19 @@ nav table td {
 }
 
 /* On Mobile */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
     nav{
         position: fixed;
-        bottom: 0;
-        width: 100%;
+        bottom: 95px;
+    }
+    nav table {
+        width: 310px;
+        height: 80px;
+        border: none;
+    }
+    
+    nav table td {
+        width: 77px;
+        text-align: center;
     }
 }
