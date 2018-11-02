@@ -13,7 +13,7 @@
     }
 
     .slideshow-container{
-        width: 380px;
+        width: 100%;/*380px;*/
         height:170px;
         position: center;
         margin:auto;
