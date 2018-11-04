@@ -3,6 +3,7 @@ $(document).ready(function() {
     loadNavBar();
     clickLogIn();
     clickLogOut();
+    showUsername();
 })
 /*
  * Function that is called when the document is ready.
@@ -51,6 +52,9 @@ function loadNavBar(){
 
 function clickLogIn(){
     $('#login-button').click(function(){
+        var inputUsername = document.getElementById('username');
+        localStorage.setItem("usernameLS", inputUsername.value);
+
         alert('You are now logged in.');
         localStorage.setItem('loginLS','true');
         checkLogIn();
@@ -78,6 +82,10 @@ function clickLogOut(){
         localStorage.setItem('loginLS','false');
         checkLogIn();
     });
+}
+
+function showUsername(){
+    $("#user").html(localStorage.getItem("usernameLS"))
 }
 
 /*  Nonbootstrap navbar
