@@ -1,7 +1,9 @@
+
 $(document).ready(function() {
     loadNavBar();
+    clickLogIn();
+    clickLogOut();
 })
-
 /*
  * Function that is called when the document is ready.
  * Loads navbar into the 4 main pages:
@@ -34,11 +36,48 @@ function loadNavBar(){
                     '<li><a class="nav-link" href="index.html">Explore</a></li>'+
                     '<li><a class="nav-link" href="search.html">Search</a></li>'+
                     '<li><a class="nav-link" href="more.html">More</a></li>'+
-                    '<li><a class="nav-link" href="profile.html">Profile</a></li>'+
+                    '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
         '</nav>'
     );
+
+    //set local storage login status to false if haven't set yet
+    if(localStorage.getItem('loginLS')==null){
+        localStorage.setItem('loginLS','false');
+    }
+    checkLogIn();
+}
+
+function clickLogIn(){
+    $('#login-button').click(function(){
+        alert('You are now logged in.');
+        localStorage.setItem('loginLS','true');
+        checkLogIn();
+    });
+}
+
+function checkLogIn(){
+    // If login == true, show profile
+    if(localStorage.getItem('loginLS')=='true'){
+        $("#profile").html(
+            '<a class="nav-link" href="profile.html">Profile</a>'
+        );
+    }
+    // Else if login==false, show Log In
+    else{
+        $('#profile').html(
+            '<a class="nav-link" href="login.html">Log In</a>'
+        );
+    }
+}
+
+function clickLogOut(){
+    $('#logout-button').click(function(){
+        alert('Are you sure you want to log out?');
+        localStorage.setItem('loginLS','false');
+        checkLogIn();
+    });
 }
 
 /*  Nonbootstrap navbar

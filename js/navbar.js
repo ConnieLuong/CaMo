@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	loadNavBar();
+    loadNavBar();
 })
 
 /*
@@ -34,11 +34,31 @@ function loadNavBar(){
                     '<li><a class="nav-link" href="../index.html">Explore</a></li>'+
                     '<li><a class="nav-link" href="../search.html">Search</a></li>'+
                     '<li><a class="nav-link" href="../more.html">More</a></li>'+
-                    '<li><a class="nav-link" href="../profile.html">Profile</a></li>'+
+                    '<li id="profile"><a class="nav-link" href="../login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
         '</nav>'
     );
+    //set local storage login status to false if haven't set yet
+    if(localStorage.getItem('loginLS')==null){
+        localStorage.setItem('loginLS','false');
+    }
+    checkLogIn();
+}
+
+function checkLogIn(){
+    // If login == true, show profile
+    if(localStorage.getItem('loginLS')=='true'){
+        $("#profile").html(
+            '<a class="nav-link" href="../profile.html">Profile</a>'
+        );
+    }
+    // Else if login==false, show Log In
+    else{
+        $('#profile').html(
+            '<a class="nav-link" href="../login.html">Log In</a>'
+        );
+    }
 }
 
 /* Old navbar js loader
