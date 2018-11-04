@@ -1,40 +1,23 @@
-.menuopt a{
-    font-family: 'Roboto', sans-serif;
-}
-
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-    /*list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;*/
     background-color: #7E4F4F!important;
 }
 .nav-link{
     text-align: center;
 }
-
-.menuopt li {
-    float: right;
+.navbar-nav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+a.nav-link{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.navbar-nav a:hover{
+    text-transform: uppercase;
 }
 
-.menuopt li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.menuopt li a:hover {
-    background-color: #C7A6A6;
-}
-
-#logo{
-    margin: auto auto;
-    padding: 10px;
-}
-
-body {
-    margin: 0;
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255, .8) !important;
 }
