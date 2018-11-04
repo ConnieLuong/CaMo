@@ -2,12 +2,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.menuopt {
-    list-style-type: none;
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    /*list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #7E4F4F;
+    overflow: hidden;*/
+    background-color: #7E4F4F!important;
+}
+.nav-link{
+    text-align: center;
 }
 
 .menuopt li {

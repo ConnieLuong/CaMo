@@ -1,6 +1,5 @@
-/* On Both */
 
-/*
+/* Old CSS
 nav ul{
     list-style: none;
     padding: 0;
@@ -16,7 +15,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-decoration: underline; 
-}*/
+}
 nav{
     display:none;
 }
@@ -64,7 +63,7 @@ nav table td {
 }
 
 
-/* On Laptop */
+/* On Laptop 
 @media screen and (min-width: 500px){
     nav{
         position: absolute;
@@ -73,7 +72,7 @@ nav table td {
     }
 }
 
-/* On Mobile */
+/* On Mobile *
 @media screen and (max-width: 500px) {
     nav{
         position: fixed;
@@ -89,4 +88,4 @@ nav table td {
         width: 77px;
         text-align: center;
     }
-}
+}*/
