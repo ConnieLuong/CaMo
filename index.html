@@ -3,15 +3,10 @@
     <head>
         <title>CaMo - Home</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-
+        
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/index.css">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </head>
 
@@ -19,60 +14,62 @@
         <!--Menu Bar-->
         <nav id="menu"></nav>
 
-        <!-- Slideshow -->
-        <div id="wrapper">
-        <div id="slider-wrap">
-            <ul id="slider">
-                <li data-color="#1abc9c">
-                <div>
-                    <h3>Coffee in Medicine</h3>
-                </div>                
-                <img src="image/2.jpg">
-                </li>
-                
-                <li data-color="#3498db">
-                <div>
-                    <h3>Coffee of Girlfriend?</h3>
+        <!-- Categories -->
+        <div class="container" style="margin-top: 60px;">
+            <h2>Categories</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-1">
+                    <a href="categories/Group.html"><img src="image/group.png" style="width:100%; padding: 20pt;"></a>
                 </div>
-                <img src="image/3.jpg">
-                </li>                 
-            </ul>
-            
-            <!--controls-->
-            <div class="btns" id="next">&#62;</div>
-            <div class="btns" id="previous">&#60;</div>
-            <div id="counter"></div>
-            
-            <div id="pagination-wrap">
-            <ul>
-            </ul>
+                <div class="col-lg-3 col-md-6 col-sm-1">
+                    <a href="categories/Aesthetic.html"><img src="image/aesthetic.png" style="width:100%; padding: 20pt;"></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-1">
+                    <a href="categories/Quiet.html"><img src="image/quiet.png" style="width:100%; padding: 20pt;"></a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-1">
+                    <a href="categories/24h.html"><img src="image/24h.png" style="width:100%; padding: 20pt;"></a>
+                </div>
             </div>
-            <!--controls-->  
-                     
-        </div>
+        
+        
+            <!-- Slideshow -->
+            <div id="wrapper">
+                <div id="slider-wrap">
+                    <ul id="slider">
+                        <li data-color="#1abc9c">
+                        <div>
+                            <h3>Coffee in Medicine</h3>
+                        </div>                
+                        <img src="image/2.jpg">
+                        </li>
+                        
+                        <li data-color="#3498db">
+                        <div>
+                            <h3>Coffee of Girlfriend?</h3>
+                        </div>
+                        <img src="image/3.jpg">
+                        </li>                 
+                    </ul>
+                    
+                    <!--controls-->
+                    <div class="btns" id="next">&#62;</div>
+                    <div class="btns" id="previous">&#60;</div>
+                    <div id="counter"></div>
+                    
+                    <div id="pagination-wrap">
+                    <ul>
+                    </ul>
+                    </div>
+                    <!--controls-->  
+                            
+                </div>
+            </div>
         </div>
 
-        <!-- Categories -->
-        <h2>Categories</h2>
-        <div class="row">
-            <div class="col-md-2 col-md-offset-2">
-                <a href="categories/Group.html"><img src="image/group.png"></a>
-            </div>
-            <div class="col-md-2">
-                <a href="categories/Aesthetic.html"><img src="image/aesthetic.png"></a>
-            </div>
-            <div class="col-md-2">
-                <a href="categories/Quiet.html"><img src="image/quiet.png"></a>
-            </div>
-            <div class="col-md-2">
-                <a href="categories/24h.html"><img src="image/24h.png"></a>
-            </div>
-        </div>
-    
         <!-- Load Scripts-->
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/navbar.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/mainpages.js"></script>
+        <script src="js/slider.js"></script> <!-- for picture slider -->
+        <script src="js/mainpages.js"></script> <!-- to load navbar -->
     </body>
 </html>
