@@ -95,6 +95,15 @@ function showUsername(){
     $("#user").html(localStorage.getItem("usernameLS"))
 }
 
+// hover effect for search icon
+function hover(element) {
+    element.setAttribute('src', 'image/searchHover.png');
+}
+
+function unhover(element) {
+    element.setAttribute('src', 'image/searchIcon.png');
+}
+
 /*  Nonbootstrap navbar
  '<ul class="menuopt">'+
         '<a href="index.html"><img src="image/LightLogoHor.png" id="logo" alt="profile icon" width="100"></a>'+
