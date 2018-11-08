@@ -96,12 +96,21 @@ function showUsername(){
 }
 
 // hover effect for search icon
-function hover(element) {
+function searchHover(element) {
     element.setAttribute('src', 'image/searchHover.png');
 }
 
-function unhover(element) {
+function searchUnhover(element) {
     element.setAttribute('src', 'image/searchIcon.png');
+}
+
+// hover effect for check icon
+function checkHover(element) {
+    element.setAttribute('src', 'image/checkHover.png');
+}
+
+function checkUnhover(element) {
+    element.setAttribute('src', 'image/checkButton.png');
 }
 
 /*  Nonbootstrap navbar
