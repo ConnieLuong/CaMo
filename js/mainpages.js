@@ -43,7 +43,11 @@ function loadNavBar(){
                     '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
-        '</nav>'
+        '</nav>'+
+
+        '<div id="footer">'+
+        '<a href="#"><img src="image/helpIcon.png"></a>'+
+        '</div>'
     );
 
     //set local storage login status to false if haven't set yet

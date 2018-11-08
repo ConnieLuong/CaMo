@@ -206,3 +206,9 @@ form.searchbox input.submit {
     height: 89px;
     width: 74px;
 }
+
+.opac:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
