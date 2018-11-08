@@ -5,34 +5,32 @@
 		
 		<!--Stylesheets-->
 		<link rel="stylesheet" href="css/menu.css">
-		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/signup.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Candal" />
+        <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
 	</head>
 
     <body>
         <!--Menu Bar-->
         <nav id="menu"></nav>
 
-        <!-- Content -->
-        <div class="container">
-            <div class="col-md-12 text-center">
-                <h1>Log In to CaMo!</h1>
-            </div>
+        <div class="jumbotron jumbotron-fluid" align="center" style="padding: 0; margin: 0">
+            <img src="image/loginTitle.png" STYLE="width: 100%">
+        </div>
 
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <form>
-                        <input id="username" type="text" placeholder="Username"><br><br>
-                        <input type="text" placeholder="Password"><br><br>
-                    </form>
-                </div>
-                <div class="col-md-12">
-                    <a href="index.html"><button id="login-button">Log In</button></a>
-                </div>
-                <div class="col-md-12">
-                    <p>Don't have an account? <a href="signup.html">Sign Up</a>.</p>
-                </div>
-            </div>			
-		</div>
+        <div id="signupBody" align="center">
+            <div id="form-card">
+                <p id="title">Log-in to Camo!</p>
+                <form>
+                    <label>Username: </label>
+                    <input id="username" type="text" placeholder="Username"><br><br>
+                    <label>Password: </label>
+                    <input type="password" placeholder="Password"><br><br>
+                </form>
+                <a href="index.html"><button id="login-button">Log in</button></a>
+                <p style="margin-top: 3%">Don't have an account? <a href="signup.html">Sign Up</a>.</p>
+            </div>
+        </div>
 
 		<!-- Load Scripts-->
         <script src="https://code.jquery.com/jquery.js"></script>
