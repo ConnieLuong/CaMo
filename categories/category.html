@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CaMo - Category</title>
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="../css/menu.css">
+
+    </head>
+
+    <body>
+        <!--Menue Bar-->
+        <nav id="menu"></nav>
+        
+        <!--Back button-->
+        <a href="../index.html"><button>Back</button></a>
+
+        <!--Category Content-->
+
+        <script id="category-template" type="text/x-handlebars-template">
+            <div class="category_page" id="{{catgory_name}}">
+                <!--<div class="container">-->
+                    <div class=jumbotron>
+                        <img src="{{header_img}}" style="width:100%">
+                    </div>
+                    <p>{{title}}</p>
+                    <div class="row">
+                        <div class="col-md-4"><img class="category_cafe" src="{{cafe1}}" style="width:100%"></div>
+                        <div class="col-md-4"><img class="category_cafe" src="{{cafe2}}" style="width:100%"></div>
+                        <div class="col-md-4"><img class="category_cafe" src="{{cafe3}}" style="width:100%"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"><img class="category_cafe" src="{{cafe4}}" style="width:100%"></div>
+                        <div class="col-md-4"><img class="category_cafe" src="{{cafe5}}" style="width:100%"></div>
+                        <div class="col-md-4"><img class="category_cafe" src="{{cafe6}}" style="width:100%"></div>
+                    </div>
+                <!--</div>-->
+            </div>
+            
+        </script>
+
+        <div id="templatedCategories">
+            <!--templated category content HTML will appear here-->
+        </div>
+
+    </body>
+
+    <!-- Load Scripts-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script src="../js/category.js"></script>
+</html>
