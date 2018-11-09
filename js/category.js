@@ -2,97 +2,361 @@
 var categoryData =[
 {
     'category_name':'quiet', 
-    'title':'Quiet',
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 
 {
     'category_name':'twentyfourh', 
-    'title':'24h',
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+    
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 
 {
     'category_name':'group', 
-    'title':'Group',
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+    
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 
 {
     'category_name':'aesthetic',
-    'title':'Aesthetic', 
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+    
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 
 {
     'category_name':'brunch',
-    'title':'Brunch', 
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+    
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 
 {
     'category_name':'themed',
-    'title':'Themed', 
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+    
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 
 {
     'category_name':'pet-friendly',
-    'title':'Pet Friendly', 
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+   
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 },
 {
     'category_name':'vegan',
-    'title':'Vegan', 
     'header_img':'../image/', 
-    'cafe1':'../image/',
-    'cafe2':'../image/', 
-    'cafe3':'../image/', 
-    'cafe4':'../image/', 
-    'cafe5':'../image/', 
-    'cafe6':'../image/'
+    
+    'cafe1-img':'',
+    'cafe1-name':'',
+    'cafe1-rating':'',
+    'cafe1-hashtags':'',
+
+    'cafe2-img':'',
+    'cafe2-name':'',
+    'cafe2-rating':'',
+    'cafe2-hashtags':'',
+
+    'cafe3-img':'',
+    'cafe3-name':'',
+    'cafe3-rating':'',
+    'cafe3-hashtags':'',
+
+    'cafe4-img':'',
+    'cafe4-name':'',
+    'cafe4-rating':'',
+    'cafe4-hashtags':'',
+
+    'cafe5-img':'',
+    'cafe5-name':'',
+    'cafe5-rating':'',
+    'cafe5-hashtags':'',
+
+    'cafe6-img':'',
+    'cafe6-name':'',
+    'cafe6-rating':'',
+    'cafe6-hashtags':'',
+
+    'cafe7-img':'',
+    'cafe7-name':'',
+    'cafe7-rating':'',
+    'cafe7-hashtags':'',
+
+    'cafe8-img':'',
+    'cafe8-name':'',
+    'cafe8-rating':'',
+    'cafe8-hashtags':''  
 }]
 
 //script to load correct cafes
