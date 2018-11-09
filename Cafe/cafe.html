@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CaMo - Cafe</title>
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="../css/menu.css">
+
+        <script>
+            function goBack(){
+                window.history.back()
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <!--Menu Bar-->
+        <nav id="menu"></nav>
+        
+        <!--Back button-->
+        <button onclick="goBack()">Back</button>
+
+        <!--Category Content-->
+
+        <script id="cafe-template" type="text/x-handlebars-template">
+            <div class="cafe_page" id="{{cafe_name}}">
+                <!--Header image-->
+                <div class=jumbotron>
+                    <img src="{{header_img}}" style="width:100%">
+                </div>
+                <!--1st Food row-->
+                <div class="card-group" style="margin-right: 5%; margin-left: 5%; margin-top: 3%" >
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food1-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">23 &#10084</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food2-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">21 &#10084</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food3-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">12 &#10084</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food4-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">33 &#10084</h5>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Food Row-->
+                <div class="card-group" style="margin-right: 5%; margin-left: 5%; margin-top: 3%" >
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food5-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">30 &#10084</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food6-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">16 &#10084</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food7-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">18 &#10084</h5>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{food8-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title">42 &#10084</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </script>
+
+        <div id="templatedCafes">
+            <!--templated category content HTML will appear here-->
+        </div>
+
+    </body>
+
+    <!-- Load Scripts-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script src="../js/cafe.js"></script>
+</html>
