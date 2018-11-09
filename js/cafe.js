@@ -228,7 +228,7 @@ var cafeData =[
     
     //script to load correct cafes
     //query format : ./cafe.html?cafe_page=cafe_name
-    //replae cafe_name with the corresponding name
+    //replace cafe_name with the corresponding name
     $(document).ready(function(){
         //compile template
         var source = $('#cafe-template').html();
