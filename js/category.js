@@ -2,7 +2,7 @@
 var categoryData =[
 {
     'category_name':'quiet', 
-    'header_img':'../image/quietMain.png', 
+    'header_img':'../image/quietHeader.png', 
 
     'cafe1-img':'Cafe1.png',
     'cafe1-name':'The Bean Palace',
@@ -55,7 +55,7 @@ var categoryData =[
 
 {
     'category_name':'twentyfourh', 
-    'header_img':'../image/24-hrMain.png', 
+    'header_img':'../image/24-hrHeader.png', 
     
     'cafe1-img':'Cafe13.png',
     'cafe1-name':'Amooze',
@@ -108,7 +108,7 @@ var categoryData =[
 
 {
     'category_name':'group', 
-    'header_img':'../image/groupMain.png', 
+    'header_img':'../image/groupHeader.png', 
     
     'cafe1-img':'Cafe1.png',
     'cafe1-name':'The Bean Palace',
@@ -161,7 +161,7 @@ var categoryData =[
 
 {
     'category_name':'aesthetic',
-    'header_img':'../image/aestheticMain.png', 
+    'header_img':'../image/aestheticHeader.png', 
     
     'cafe1-img':'Cafe16.png',
     'cafe1-name':'GRE',
@@ -214,7 +214,7 @@ var categoryData =[
 
 {
     'category_name':'brunch',
-    'header_img':'../image/brunchMain.png', 
+    'header_img':'../image/brunchHeader.png', 
     
     'cafe1-img':'Cafe10.png',
     'cafe1-name':'Bees',
@@ -267,7 +267,7 @@ var categoryData =[
 
 {
     'category_name':'themed',
-    'header_img':'../image/themeMain.png', 
+    'header_img':'../image/themedHeader.png', 
     
     'cafe1-img':'Cafe2.png',
     'cafe1-name':'Lava Java',
@@ -320,7 +320,7 @@ var categoryData =[
 
 {
     'category_name':'pet-friendly',
-    'header_img':'../image/petMain.png', 
+    'header_img':'../image/petHeader.png', 
    
     'cafe1-img':'Cafe1.png',
     'cafe1-name':'The Bean Palace',
@@ -372,7 +372,7 @@ var categoryData =[
 },
 {
     'category_name':'vegan',
-    'header_img':'../image/veganMain.png', 
+    'header_img':'../image/veganHeader.png', 
     
     'cafe1-img':'Cafe12.png',
     'cafe1-name':'Cute Cups',
