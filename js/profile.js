@@ -10,7 +10,7 @@ function logOut(){
     }
 }
 
-function addCollection(){
+function addCollection(new_collection_id){
     //var input = document.getElementsByClassName("collection-name").value;
     if(document.forms['form'].collection.value == ""){
         window.alert('Please enter a collection name!');
@@ -23,6 +23,13 @@ function addCollection(){
             modal.style.display = "none";
         }
     }
+
+    /*
+    if(new_collection_id=="#new1"){
+        $(new_collection_id).html( document.getElementById('inputCollection1').value);
+    }else if(new_collection_id=="new2"){
+        
+    }*/
 }
 
 function add(){

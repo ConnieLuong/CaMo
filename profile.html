@@ -88,12 +88,13 @@
 												<div>
 													<form name="form" style="margin-left: 10px;">
 														<h6>Collection Name:  </h6>
-														<input name="collection" type="text">
+														<input name="collection" type="text" id="inputCollection1">
 													</form>
 												</div>
 												<div class="modal-footer">
 													<button id="cancel">Cancel</button>
-													<button id="add" onclick="addCollection(#new1)">Add</button>
+													<script>var myVar = "#new1"</script>
+													<button id="add" onclick="addCollection(myVar)">Add</button>
 												</div>
 											 </div>
 										</div>
