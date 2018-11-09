@@ -19,18 +19,18 @@
         <nav id="menu"></nav>
         
         <!--Back button-->
-        <button onclick="goBack()">Back</button>
+        <button onclick="goBack()" style="margin-left: 10%">Back</button>
 
         <!--Category Content-->
 
         <script id="cafe-template" type="text/x-handlebars-template">
             <div class="cafe_page" id="{{cafe_name}}">
                 <!--Header image-->
-                <div class=jumbotron>
+                <div class=jumbotron style="margin-left:10%; margin-right:10%; padding: 0;">
                     <img src="{{header_img}}" style="width:100%">
                 </div>
                 <!--1st Food row-->
-                <div class="card-group" style="margin-right: 5%; margin-left: 5%; margin-top: 3%" >
+                <div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >
                     <div class="card">
                         <img class="card-img-top" src="../image/{{food1-img}}">
                         <div class="card-body">
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <!--Second Food Row-->
-                <div class="card-group" style="margin-right: 5%; margin-left: 5%; margin-top: 3%" >
+                <div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >
                     <div class="card">
                         <img class="card-img-top" src="../image/{{food5-img}}">
                         <div class="card-body">
