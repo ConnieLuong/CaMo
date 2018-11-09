@@ -3,7 +3,7 @@ var collectionData =[
     //collection1
     {
         'collection_name':'bomb', 
-        'header_img':'../image/bomb.jpg', 
+        'header_img':'../image/collectionBomb.png', 
     
         'cafe1-img':'Cafe1.png',
         'cafe1-name':'The Bean Palace',
@@ -56,7 +56,7 @@ var collectionData =[
     //collection2
     {
         'collection_name':'wish list', 
-        'header_img':'../image/wish-list.jpg', 
+        'header_img':'../image/collectionWish.png', 
         
         'cafe1-img':'Cafe13.png',
         'cafe1-name':'Amooze',
@@ -109,7 +109,7 @@ var collectionData =[
     //collection3
     {
         'collection_name':'cool af', 
-        'header_img':'../image/cool-af.jpg', 
+        'header_img':'../image/collectionCool.png',
         
         'cafe1-img':'Cafe16.png',
     'cafe1-name':'GRE',
@@ -162,12 +162,12 @@ var collectionData =[
     //collection4
     {
         'collection_name':'moms favs',
-        'header_img':'../image/momsfaves.png', 
+        'header_img':'../image/collectionMom.png', 
         
         'cafe1-img':'Cafe12.png',
         'cafe1-name':'Cute Cups',
         'cafe1-rating':'3/5',
-        'cafe1-hashtags':'#vegan',
+        'cafe1-hashtags':'#vegan', 
         'cafe1-link':'cafe_page=Cute%20Cups',
     
         'cafe2-img':'Cafe2.png',
