@@ -58,7 +58,7 @@ var cafeData =[
     },
     //cafe5
     {
-        'cafe_name':'No Dose Cafe', 
+        'cafe_name':'No Doze Cafe', 
         'header_img':'../image/cafe5header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'food/food7.png',
