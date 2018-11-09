@@ -1,8 +1,7 @@
 
-var modal = document.getElementById('myModal');
-var collectionName = document.getElementById('collection-name');
+var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
-var cancel = document.getElementsByClassName("cancel")[0];
+var cancel = document.getElementById("cancel");
 
 
 function logOut(){
@@ -12,16 +11,16 @@ function logOut(){
 }
 
 function addCollection(){
-    if(collectionName){
+    //var input = document.getElementsByClassName("collection-name").value;
+    if(document.forms['form'].collection.value == ""){
+        window.alert('Please enter a collection name!');
+    }
+    else{
         if(confirm("Are you sure you want to add a new collection?")){
             // window.location = "login.html"
             window.alert('Successfully add a new collection!');
             modal.style.display = "none";
         }
-    }
-    else{
-        window.alert('Please enter a collection name!');
-
     }
 }
 
