@@ -2,7 +2,7 @@
 var collectionData =[
     //collection1
     {
-        'category_name':'bomb', 
+        'collection_name':'bomb', 
         'header_img':'../image/bomb.jpg', 
     
         'cafe1-img':'Cafe1.png',
@@ -55,7 +55,7 @@ var collectionData =[
     },
     //collection2
     {
-        'category_name':'wish list', 
+        'collection_name':'wish list', 
         'header_img':'../image/wish-list.jpg', 
         
         'cafe1-img':'Cafe13.png',
@@ -108,7 +108,7 @@ var collectionData =[
     },
     //collection3
     {
-        'category_name':'cool af', 
+        'collection_name':'cool af', 
         'header_img':'../image/cool-af.jpg', 
         
         'cafe1-img':'Cafe14.png',
@@ -161,56 +161,56 @@ var collectionData =[
     },
     //collection4
     {
-        'category_name':'moms favs',
-    'header_img':'../image/momsfaves.png', 
-    
-    'cafe1-img':'Cafe16.png',
-    'cafe1-name':'Cute Cups',
-    'cafe1-rating':'3/5',
-    'cafe1-hashtags':'#vegan',
-    'cafe1-link':'cafe_page=Cute%20Cups',
+        'collection_name':'moms favs',
+        'header_img':'../image/momsfaves.png', 
+        
+        'cafe1-img':'Cafe16.png',
+        'cafe1-name':'Cute Cups',
+        'cafe1-rating':'3/5',
+        'cafe1-hashtags':'#vegan',
+        'cafe1-link':'cafe_page=Cute%20Cups',
 
-    'cafe2-img':'Cafe13.png',
-    'cafe2-name':'Lava Java',
-    'cafe2-rating':'4/5',
-    'cafe2-hashtags':'#vegan',
-    'cafe2-link':'cafe_page=Lava%20Java',
+        'cafe2-img':'Cafe13.png',
+        'cafe2-name':'Lava Java',
+        'cafe2-rating':'4/5',
+        'cafe2-hashtags':'#vegan',
+        'cafe2-link':'cafe_page=Lava%20Java',
 
-    'cafe3-img':'Cafe1.png',
-    'cafe3-name':'The Bean Palace',
-    'cafe3-rating':'3.5/5',
-    'cafe3-hashtags':'#vegan',
-    'cafe3-link':'cafe_page=The%20Bean%20Palace',
+        'cafe3-img':'Cafe1.png',
+        'cafe3-name':'The Bean Palace',
+        'cafe3-rating':'3.5/5',
+        'cafe3-hashtags':'#vegan',
+        'cafe3-link':'cafe_page=The%20Bean%20Palace',
 
-    'cafe4-img':'Cafe1.png',
-    'cafe4-name':'No Doze Cafe',
-    'cafe4-rating':'2/5',
-    'cafe4-hashtags':'#vegan',
-    'cafe4-link':'cafe_page=No%20Doze%20Cafe',
+        'cafe4-img':'Cafe1.png',
+        'cafe4-name':'No Doze Cafe',
+        'cafe4-rating':'2/5',
+        'cafe4-hashtags':'#vegan',
+        'cafe4-link':'cafe_page=No%20Doze%20Cafe',
 
-    'cafe5-img':'Cafe9.png',
-    'cafe5-name':'The Busy Bean',
-    'cafe5-rating':'1/5',
-    'cafe5-hashtags':'#vegan',
-    'cafe5-link':'cafe_page=The%20Busy%20Bean',
+        'cafe5-img':'Cafe9.png',
+        'cafe5-name':'The Busy Bean',
+        'cafe5-rating':'1/5',
+        'cafe5-hashtags':'#vegan',
+        'cafe5-link':'cafe_page=The%20Busy%20Bean',
 
-    'cafe6-img':'Cafe7.png',
-    'cafe6-name':'The Grind',
-    'cafe6-rating':'2/5',
-    'cafe6-hashtags':'#vegan',
-    'cafe6-link':'cafe_page=The%20Grind',
+        'cafe6-img':'Cafe7.png',
+        'cafe6-name':'The Grind',
+        'cafe6-rating':'2/5',
+        'cafe6-hashtags':'#vegan',
+        'cafe6-link':'cafe_page=The%20Grind',
 
-    'cafe7-img':'Cafe5.png',
-    'cafe7-name':'Aroma Mocha',
-    'cafe7-rating':'3/5',
-    'cafe7-hashtags':'#vegan',
-    'cafe7-link':'cafe_page=Aroma%20Mocha',
+        'cafe7-img':'Cafe5.png',
+        'cafe7-name':'Aroma Mocha',
+        'cafe7-rating':'3/5',
+        'cafe7-hashtags':'#vegan',
+        'cafe7-link':'cafe_page=Aroma%20Mocha',
 
-    'cafe8-img':'Cafe3.png',
-    'cafe8-name':'Black Sugars',
-    'cafe8-rating':'2/5',
-    'cafe8-hashtags':'#vegan',
-    'cafe8-link':'cafe_page=Black%20Sugars'  
+        'cafe8-img':'Cafe3.png',
+        'cafe8-name':'Black Sugars',
+        'cafe8-rating':'2/5',
+        'cafe8-hashtags':'#vegan',
+        'cafe8-link':'cafe_page=Black%20Sugars'  
     }
    ]
     
@@ -219,7 +219,7 @@ var collectionData =[
     //replae collection_name with the corresponding name
     $(document).ready(function(){
         //compile template
-        var source = $('#category-template').html();
+        var source = $('#collection-template').html();
         var template = Handlebars.compile(source);
     
         var parentDiv = $("#templatedCollections");
@@ -229,7 +229,7 @@ var collectionData =[
         var collection = queryParams.get('collection_page');
         console.log('query for', collection);
     
-        for(var i=0; i<categoryData.length; i++){
+        for(var i=0; i<collectionData.length; i++){
             console.log('in for loop');
             var curData = collectionData[i];
             if(curData.collection_name == collection){
