@@ -38,12 +38,16 @@ function loadNavBar(){
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
                     '<li><a class="nav-link" href="index.html">Explore</a></li>'+
-                    '<li><a class="nav-link" href="search.html">Search</a></li>'+
-                    '<li><a class="nav-link" href="more.html">More</a></li>'+
+                    //'<li><a class="nav-link" href="search.html">Search</a></li>'+
+                    //'<li><a class="nav-link" href="more.html">More</a></li>'+
                     '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
-        '</nav>'
+        '</nav>'+
+
+        '<div id="footer">'+
+        '<a href="#"><img src="image/helpIcon.png"></a>'+
+        '</div>'
     );
 
     //set local storage login status to false if haven't set yet
@@ -89,6 +93,24 @@ function clickLogOut(){
 
 function showUsername(){
     $("#user").html(localStorage.getItem("usernameLS"))
+}
+
+// hover effect for search icon
+function searchHover(element) {
+    element.setAttribute('src', 'image/searchHover.png');
+}
+
+function searchUnhover(element) {
+    element.setAttribute('src', 'image/searchIcon.png');
+}
+
+// hover effect for check icon
+function checkHover(element) {
+    element.setAttribute('src', 'image/checkHover.png');
+}
+
+function checkUnhover(element) {
+    element.setAttribute('src', 'image/checkButton.png');
 }
 
 /*  Nonbootstrap navbar

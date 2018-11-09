@@ -1,3 +1,5 @@
+
+
 h2{
     text-align: center;
 }
@@ -169,5 +171,44 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
 }
 
 
+.add-on .input-group-btn > .btn {
+    border-left-width:0;left:-2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border-color:#cccccc;
+}
 
+.jumbotron{
+    padding: 0;
+    margin: 0;
+    height: 265px;
+    background-image: url(../image/homeSearchBar.png)
+}
 
+form.searchbox {
+    background:url(../image/searchBack.png) 0 0 no-repeat; padding-left:15px;
+    height: 89px;
+    width: 477px;
+}
+form.searchbox input.text {
+    border:none;
+    height:36px;
+    width: 382px;
+    padding:0 5px;
+}
+form.searchbox input.submit {
+    background:url(../image/searchIcon.png);
+    height: 89px;
+    width: 74px;
+}
+
+.opac:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}

@@ -1,0 +1,34 @@
+#signupBody {
+    background-color: #C0ABAB;
+    padding-top: 8%;
+    padding-bottom: 20%;
+}
+
+
+#form-card {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #F7E6E6;
+}
+
+#title {
+    font-family: 'Caveat';
+    font-size: 50px;
+
+}
+
+label{
+    font-family: Candal;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 51px;
+    font-size: 20px;
+
+    color: #7E4F4F;
+}
+
+
+
+
