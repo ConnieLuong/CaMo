@@ -3,13 +3,13 @@ var categoryData =[
 {
     'category_name':'quiet', 
     'title':'Quiet',
-    'header_img':'../image/2.jpg', 
-    'cafe1':'../image/2.jpg',
-    'cafe2':'../image/2.jpg', 
-    'cafe3':'../image/2.jpg', 
-    'cafe4':'../image/2.jpg', 
-    'cafe5':'../image/2.jpg', 
-    'cafe6':'../image/2.jpg'
+    'header_img':'../image/', 
+    'cafe1':'../image/',
+    'cafe2':'../image/', 
+    'cafe3':'../image/', 
+    'cafe4':'../image/', 
+    'cafe5':'../image/', 
+    'cafe6':'../image/'
 },
 
 {
@@ -39,6 +39,53 @@ var categoryData =[
 {
     'category_name':'aesthetic',
     'title':'Aesthetic', 
+    'header_img':'../image/', 
+    'cafe1':'../image/',
+    'cafe2':'../image/', 
+    'cafe3':'../image/', 
+    'cafe4':'../image/', 
+    'cafe5':'../image/', 
+    'cafe6':'../image/'
+},
+
+{
+    'category_name':'brunch',
+    'title':'Brunch', 
+    'header_img':'../image/', 
+    'cafe1':'../image/',
+    'cafe2':'../image/', 
+    'cafe3':'../image/', 
+    'cafe4':'../image/', 
+    'cafe5':'../image/', 
+    'cafe6':'../image/'
+},
+
+{
+    'category_name':'themed',
+    'title':'Themed', 
+    'header_img':'../image/', 
+    'cafe1':'../image/',
+    'cafe2':'../image/', 
+    'cafe3':'../image/', 
+    'cafe4':'../image/', 
+    'cafe5':'../image/', 
+    'cafe6':'../image/'
+},
+
+{
+    'category_name':'pet-friendly',
+    'title':'Pet Friendly', 
+    'header_img':'../image/', 
+    'cafe1':'../image/',
+    'cafe2':'../image/', 
+    'cafe3':'../image/', 
+    'cafe4':'../image/', 
+    'cafe5':'../image/', 
+    'cafe6':'../image/'
+},
+{
+    'category_name':'vegan',
+    'title':'Vegan', 
     'header_img':'../image/', 
     'cafe1':'../image/',
     'cafe2':'../image/', 
