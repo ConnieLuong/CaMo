@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CaMo - Collection</title>
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="../css/menu.css">
+
+    </head>
+
+    <body>
+        <!--Menue Bar-->
+        <nav id="menu"></nav>
+        
+        <!--Back button-->
+        <a href="../index.html"><button>Back</button></a>
+
+        <!--Category Content-->
+
+        <script id="collection-template" type="text/x-handlebars-template">
+            <div class="collection_page" id="{{collection_name}}">
+                <!--Header image-->
+                <div class=jumbotron>
+                    <img src="{{header_img}}" style="width:100%">
+                </div>
+                <!--1st Cafe row-->
+                <div class="card-group" style="margin-right: 5%; margin-left: 5%; margin-top: 3%" >
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe1-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe1-link}}">
+                                <h5 class="card-title">{{cafe1-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe1-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe1-hashtags}}</small></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe2-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe2-link}}">
+                                <h5 class="card-title">{{cafe2-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe2-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe2-hashtags}}</small></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe3-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe3-link}}">
+                                <h5 class="card-title">{{cafe3-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe3-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe3-hashtags}}</small></p>
+                            </a>    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe4-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe4-link}}">
+                                <h5 class="card-title">{{cafe4-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe4-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe4-hashtags}}</small></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Cafe Row-->
+                <div class="card-group" style="margin-right: 5%; margin-left: 5%; margin-top: 3%" >
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe5-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe5-link}}">
+                                <h5 class="card-title">{{cafe5-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe5-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe5-hashtags}}</small></p>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe6-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe6-link}}">
+                                <h5 class="card-title">{{cafe6-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe6-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe6-hashtags}}</small></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe7-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe7-link}}">
+                                <h5 class="card-title">{{cafe7-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe7-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe7-hashtags}}</small></p>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="image/{{cafe8-img}}">
+                        <div class="card-body">
+                            <a href="{{cafe8-link}}">
+                                <h5 class="card-title">{{cafe8-name}}</h5>
+                                <p class="card-text"><small class="text-muted">{{cafe8-rating}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{cafe8-hashtags}}</small></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </script>
+
+        <div id="templatedCollections">
+            <!--templated category content HTML will appear here-->
+        </div>
+
+    </body>
+
+    <!-- Load Scripts-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script src="../js/collection.js"></script>
+</html>
