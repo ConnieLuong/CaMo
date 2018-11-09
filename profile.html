@@ -15,17 +15,22 @@
 			<nav id="menu"></nav>
 	
 			<!--Profile Info-->
-			<div class="container" style="margin-top: 60px;">
+			<div class="container" style="margin-top: 60px;" > 
 				<!--User-->
 				<div id="profile-header" class="row">
-					<div class="col-md-4">
-						<img src="image/front.jpg" style="width:100%;">
+					<div class="col-md-3">
+						<h1 style="color:white">" Hello</h1>
+						<h3 style="color:white"><span id="user"></span>  "</h3>
 					</div>
 					<div class="col-md-6">
-						<h1 id="greet-user">Hi, <span id="user">User Name Goes Here</span>!</h1>
+						<img src="image/userProfileImage.png" class="center">
+						<button class="edit-profile"> Edit Profile</button>
+						<button class="log-out" onclick="logOut()"> Log Out</button>
 					</div>
-					<div class="col-md-2">
-						<a href="index.html"><button id="logout-button" type="button">Log out</button></a>
+					<div class="col-md-3">
+						<h3 style="color:white">"I want to explore</h3>
+						<h3 style="color:white">Cafes in</h3>
+						<h1 style="color:white">San Diego "</h1>
 					</div>
 				</div>
 
@@ -68,6 +73,48 @@
 							
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-3">
+								<figure>
+									<img src="image/newCollection1.png" onclick="add()" style="width:100%;">
+									<!--layover-->
+										<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
+											<div class="modal-content">
+												<div class="modal-header">
+														<h3>Add a new collection</h3>
+													<span class="close">&times;</span>
+												</div>
+												<div>
+													<form style="margin-left: 10px;">
+														<h6>Collection Name:  
+														<input id="collection-name" type="text" placeholder="Collection Name"><br><br>
+														</h6>
+													</form>
+												</div>
+												<div class="modal-footer">
+													<button class="cancel">Cancel</button>
+													<button class="add">Add</button>
+												</div>
+											 </div>
+										</div>
+								</figure>
+						</div>
+						<div class="col-md-3">
+								<figure>
+									<img src="image/newCollection2.png" onclick="add()" style="width:100%;">
+								</figure>						
+						</div>
+						<div class="col-md-3">
+								<figure>
+									<img src="image/newCollection3.png" onclick="add()" style="width:100%;">
+								</figure>
+						</div>
+						<div class="col-md-3">
+								<figure>
+									<img src="image/newCollection4.png" onclick="add()" style="width:100%;">
+								</figure>							
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>
@@ -75,6 +122,8 @@
 		 <!-- Load Scripts-->
 		 <script src="https://code.jquery.com/jquery.js"></script>
 		 <script src="js/mainpages.js"></script>
+		 <script src="js/logout.js"></script>
+		 <script src = "js/newcollection.js"></script>
 	</body>
 
 </html>

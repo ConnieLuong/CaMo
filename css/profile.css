@@ -1,6 +1,7 @@
 #profile-header{
     border-bottom: 3px solid black;
     padding-bottom: 5vw;
+    background-color:#322424;
 }
 
 #greet-user{
@@ -8,6 +9,9 @@
     font-size: 50pt;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+h1,h3{
+    text-align: center;
 }
 
 h2{
@@ -45,4 +49,34 @@ figcaption{
     color: black;
     text-transform: uppercase;
     text-decoration: none;
+}
+.center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:10px;
+        width: 30%;
+        border-radius: 50%;
+}
+.edit-profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+    width: 30%;
+    background-color: #DFD1D1;
+    color: #9F7676;
+    font-weight: bold;
+    border:none;
+}
+.log-out{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+    width: 30%;
+    background-color: #9F7676;
+    color:white;
+    font-weight: bold;
+    border:none;
 }
