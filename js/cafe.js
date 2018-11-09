@@ -86,7 +86,7 @@ var cafeData =[
     },
     //cafe7
     {
-        'cafe_name':'The Split Cafe', 
+        'cafe_name':'The Split Bean', 
         'header_img':'../image/cafe7header.png', 
         'food1-img':'food/food2.png',
         'food2-img':'drink/drink10.png',
