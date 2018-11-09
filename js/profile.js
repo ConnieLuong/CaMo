@@ -14,6 +14,7 @@ function addCollection(){
     //var input = document.getElementsByClassName("collection-name").value;
     if(document.forms['form'].collection.value == ""){
         window.alert('Please enter a collection name!');
+        modal.style.display = "none";
     }
     else{
         if(confirm("Are you sure you want to add a new collection?")){

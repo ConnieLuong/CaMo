@@ -24,8 +24,8 @@
 					</div>
 					<div class="col-md-6">
 						<img src="image/userProfileImage.png" class="center">
-						<button class="edit-profile"> Edit Profile</button>
-						<button class="log-out" onclick="logOut()"> Log Out</button>
+						<a href="more_page/accountSettings.html"><button class="edit-profile"> Edit Profile</button></a>
+						<button class="log-out" onclick="logOut()"> Log Out</button></a>
 					</div>
 					<div class="col-md-3">
 						<h3 style="color:white">"I want to explore</h3>
@@ -101,16 +101,73 @@
 						<div class="col-md-3">
 								<figure>
 									<img src="image/newCollection2.png" onclick="add()" style="width:100%;">
+									<!--layover-->
+									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
+										<div class="modal-content">
+											<div class="modal-header">
+													<h3>Add a new collection</h3>
+												<span class="close">&times;</span>
+											</div>
+											<div>
+												<form name="form" style="margin-left: 10px;">
+													<h6>Collection Name:  </h6>
+													<input name="collection" type="text">
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button id="cancel">Cancel</button>
+												<button id="add" onclick="addCollection()">Add</button>
+											</div>
+										 </div>
+									</div>
 								</figure>						
 						</div>
 						<div class="col-md-3">
 								<figure>
 									<img src="image/newCollection3.png" onclick="add()" style="width:100%;">
+									<!--layover-->
+									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
+										<div class="modal-content">
+											<div class="modal-header">
+													<h3>Add a new collection</h3>
+												<span class="close">&times;</span>
+											</div>
+											<div>
+												<form name="form" style="margin-left: 10px;">
+													<h6>Collection Name:  </h6>
+													<input name="collection" type="text">
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button id="cancel">Cancel</button>
+												<button id="add" onclick="addCollection()">Add</button>
+											</div>
+										 </div>
+									</div>
 								</figure>
 						</div>
 						<div class="col-md-3">
 								<figure>
 									<img src="image/newCollection4.png" onclick="add()" style="width:100%;">
+									<!--layover-->
+									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
+										<div class="modal-content">
+											<div class="modal-header">
+													<h3>Add a new collection</h3>
+												<span class="close">&times;</span>
+											</div>
+											<div>
+												<form name="form" style="margin-left: 10px;">
+													<h6>Collection Name:  </h6>
+													<input name="collection" type="text">
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button id="cancel">Cancel</button>
+												<button id="add" onclick="addCollection()">Add</button>
+											</div>
+										 </div>
+									</div>
 								</figure>							
 						</div>
 					</div>
