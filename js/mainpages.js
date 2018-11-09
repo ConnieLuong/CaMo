@@ -84,8 +84,10 @@ function checkLogIn(){
 }
 
 function clickLogOut(){
-    $('#logout-button').click(function(){
-        alert('Are you sure you want to log out?');
+    $('#logout').click(function(){
+        if(confirm("Are you sure you want to log out?")){
+            window.location = "login.html"
+        }
         localStorage.setItem('loginLS','false');
         checkLogIn();
     });
