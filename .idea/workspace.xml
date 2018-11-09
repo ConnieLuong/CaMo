@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b3959b2-f4be-4ac7-8c59-21687f2a3e4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/newcollection.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/newCollection1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/newCollection2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/newCollection3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/newCollection4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/userProfileImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categories/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/.Rhistory" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/more_page/accountSettings.html" beforeDir="false" afterPath="$PROJECT_DIR$/more_page/accountSettings.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,14 +46,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1636" />
-          <entry key="html" value="2774" />
+          <entry key="html" value="2778" />
           <entry key="js" value="383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1636" />
-          <entry key="HTML" value="2774" />
+          <entry key="HTML" value="2778" />
           <entry key="JavaScript" value="383" />
         </counts>
       </usages-collector>
@@ -107,10 +95,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1163" />
+            <state relative-caret-position="553">
+              <caret line="149" column="10" lean-forward="true" selection-start-line="120" selection-start-column="4" selection-end-line="149" selection-end-column="10" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -136,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/more_page/accountSettings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="52" />
+            <state relative-caret-position="653">
+              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -228,7 +218,6 @@
         <option value="$PROJECT_DIR$/categories/Quiet-more.html" />
         <option value="$PROJECT_DIR$/articles/Coffee-in-Medicine.html" />
         <option value="$PROJECT_DIR$/articles/Coffee-or-Girlfriend.html" />
-        <option value="$PROJECT_DIR$/more_page/accountSettings.html" />
         <option value="$PROJECT_DIR$/css/more.css" />
         <option value="$PROJECT_DIR$/profile.html" />
         <option value="$PROJECT_DIR$/search.html" />
@@ -249,6 +238,7 @@
         <option value="$PROJECT_DIR$/searchResultPage/searchResult.html" />
         <option value="$PROJECT_DIR$/help.html" />
         <option value="$PROJECT_DIR$/categories/category.html" />
+        <option value="$PROJECT_DIR$/more_page/accountSettings.html" />
       </list>
     </option>
   </component>
@@ -354,12 +344,12 @@
       <workItem from="1541556330807" duration="275000" />
       <workItem from="1541556900911" duration="23855000" />
       <workItem from="1541705170235" duration="1795000" />
-      <workItem from="1541724847156" duration="711000" />
+      <workItem from="1541724847156" duration="818000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48312000" />
+    <option name="totallyTimeSpent" value="48419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -615,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/more_page/accountSettings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -675,7 +658,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1163" />
+        <state relative-caret-position="553">
+          <caret line="149" column="10" lean-forward="true" selection-start-line="120" selection-start-column="4" selection-end-line="149" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/more_page/accountSettings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        </state>
       </provider>
     </entry>
   </component>
