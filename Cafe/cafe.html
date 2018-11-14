@@ -17,20 +17,17 @@
     <body>
         <!--Menu Bar-->
         <nav id="menu"></nav>
-        
-        <!--Back button-->
-        <button onclick="goBack()" style="margin-left: 10%">Back</button>
 
         <!--Category Content-->
 
         <script id="cafe-template" type="text/x-handlebars-template">
             <div class="cafe_page" id="{{cafe_name}}">
                 <!--Header image-->
-                <div class=jumbotron style="margin:0; padding: 0;">
+                <div class=jumbotron style="margin:0; margin-top:3%; padding: 0;">
                     <img src="{{header_img}}" style="width:100%">
                 </div>
                 <!--1st Food row-->
-                <div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >
+                <div class="card-group" style="margin-right: 10%; margin-left: 10%;  margin-top: 3%" >
                     <div class="card">
                         <img class="card-img-top" src="../image/{{food1-img}}">
                         <div class="card-body">
