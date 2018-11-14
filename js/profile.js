@@ -11,7 +11,6 @@ function logOut(){
 }
 
 function addCollection(){
-    //var input = document.getElementsByClassName("collection-name").value;
     if(document.forms['form'].collection.value == ""){
         window.alert('Please enter a collection name!');
         modal.style.display = "none";
@@ -25,11 +24,8 @@ function addCollection(){
     }
 
     var newCollectionData = {
-        newCollectionName: $('#inputCollectionName').value
-       
+        newCollectionName: document.getElementById('inputCollectionName').value       
     }
-
-    console.log('new collection name:', newCollectionData.newCollectionName)
 
     //compile template cafeCard
     var source_cafeCard = $('#cafeCard').html();
@@ -42,28 +38,44 @@ function addCollection(){
     //where to append new code to
     var parentDiv = $("#addedCollection");
 
+    //Initialize num to 1
+    if(localStorage.getItem('num')==null){
+        localStorage.setItem('num','1');
+    }
+
+    console.log('hhehhehe');
+
+    console.log('num =', localStorage.getItem('num'));
+
 
     for(var i=0; i<newCollectionData.length; i++){
-        // check current number of collections on row
-        // if curr%4 == 0, make new row
-        // else append to curr row
+        //retrieve current value of num
+        curr_num = parseInt(localStorage.getItem('num'), 10);
 
-        //maybe use localStorage to store html
         var curData = newCollectionData[i];
         var curHTML = undefined;
-        if( 7==4 ){
-            curHtml = template_cafeCard(curData);
-        }else{
-            curHTML = template_cafeCardNR(curData);
+
+         // if curr_num%4 == 0, make new row
+        if( curr_num%4 == 0 ){
+            curHtml = template_cafeCardNR(curData);
+            parentDiv.append(curHtml);
+        }
+        // else append to current row
+        else{
+            curHTML = template_cafeCard(curData);
+            parentDiv.append(curHtml);
         }
         
-        parentDiv.append(curHtml);
+
+        //update curr_num
+        curr_num++;
+        localStorage.setItem('num', curr_num);
     }
 }
 
 function add(){
     modal.style.display = "block";
-    //when user clicks anywhere outside of hte modal, also close it.
+    //when user clicks anywhere outside of the modal, also close it.
     if(event.target == modal){
         modal.style.display = "none";
     }

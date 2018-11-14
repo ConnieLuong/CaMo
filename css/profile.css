@@ -4,6 +4,9 @@
     background-color:#322424;
 }
 
+#addCollectionButton:hover{
+    cursor: pointer;
+}
 #greet-user{
     font-family: 'Open Sans', sans-serif;
     font-size: 50pt;
