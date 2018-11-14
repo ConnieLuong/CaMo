@@ -71,40 +71,69 @@
 									<figcaption> Mom's Favs </figcaption>
 								</figure>
 							</a>
-							
 						</div>
 					</div>
+					
 					<div class="row">
+						<!-- Append new collection here -->
+						<div id="addedCollection"></div>
+
+						<!-- Cafe Card Template -->
+						<script id="cafeCard" type="text/x-handlebars-template">
+							<div class="col-md-3">
+								<a href="collections/collection.html?collection_page=moms%20faves">
+									<figure>
+										<img src="image/momsfaves.jpg" style="width:100%;">
+										<figcaption>{{newCollectionName}}</figcaption>
+									</figure>
+								</a>
+							</div>
+						</script>
+
+						<script id="cafeCardNewRow" type="text/x-handlebars-template">
+							</div>
+							<div class="row">
+								<div class="col-md-3">
+									<a href="collections/collection.html?collection_page=moms%20faves">
+										<figure>
+											<img src="image/momsfaves.jpg" style="width:100%;">
+											<figcaption>{{newCollectionName}}</figcaption>
+										</figure>
+									</a>
+								</div>
+						</script>
+
+
+						<!-- Add new collection button-->
 						<div class="col-md-3">
-								<figure>
-									<img src="image/newCollection1.png" onclick="add()" style="width:100%;">
-									<figcaption id="new1"></figcaption>
-									<!--layover-->
-										<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
-											<div class="modal-content">
-												<div class="modal-header">
-														<h3>Add a new collection</h3>
-													<span class="close">&times;</span>
-												</div>
-												<div>
-													<form name="form" style="margin-left: 10px;">
-														<h6>Collection Name:  </h6>
-														<input name="collection" type="text" id="inputCollection1">
-													</form>
-												</div>
-												<div class="modal-footer">
-													<button id="cancel">Cancel</button>
-													<script>var myVar = "#new1"</script>
-													<button id="add" onclick="addCollection(myVar)">Add</button>
-												</div>
-											 </div>
+							<figure>
+								<img src="image/newCollection1.png" onclick="add()" style="width:100%;">
+								<!--layover-->
+								<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
+									<div class="modal-content">
+										<div class="modal-header">
+												<h3>Add a new collection</h3>
+											<span class="close">&times;</span>
 										</div>
-								</figure>
+										<div>
+											<form name="form" style="margin-left: 10px;">
+												<h6>Collection Name:  </h6>
+												<input name="collection" type="text" id="inputCollectionName">
+											</form>
+										</div>
+										<div class="modal-footer">
+											<button id="cancel">Cancel</button>
+											<button id="add" onclick="addCollection()">Add</button>
+										</div>
+									</div>
+								</div>
+							</figure>
 						</div>
+						<!--
 						<div class="col-md-3">
 								<figure>
 									<img src="image/newCollection2.png" onclick="add()" style="width:100%;">
-									<!--layover-->
+									<!--layover--
 									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
 										<div class="modal-content">
 											<div class="modal-header">
@@ -128,7 +157,7 @@
 						<div class="col-md-3">
 								<figure>
 									<img src="image/newCollection3.png" onclick="add()" style="width:100%;">
-									<!--layover-->
+									<!--layover--
 									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
 										<div class="modal-content">
 											<div class="modal-header">
@@ -152,7 +181,7 @@
 						<div class="col-md-3">
 								<figure>
 									<img src="image/newCollection4.png" onclick="add()" style="width:100%;">
-									<!--layover-->
+									<!--layover--
 									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
 										<div class="modal-content">
 											<div class="modal-header">
@@ -172,7 +201,7 @@
 										 </div>
 									</div>
 								</figure>							
-						</div>
+						</div>-->
 					</div>
 				</div>
 			</div>	
@@ -181,6 +210,7 @@
 		 <!-- Load Scripts-->
 		 <script src="https://code.jquery.com/jquery.js"></script>
 		 <script src="js/mainpages.js"></script>
+		 <script src="js/handlebars-v4.0.11.js"></script> <!-- for templating -->
 		 <script src="js/profile.js"></script>
 	</body>
 

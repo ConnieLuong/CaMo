@@ -10,7 +10,7 @@ function logOut(){
     }
 }
 
-function addCollection(new_collection_id){
+function addCollection(){
     //var input = document.getElementsByClassName("collection-name").value;
     if(document.forms['form'].collection.value == ""){
         window.alert('Please enter a collection name!');
@@ -24,12 +24,41 @@ function addCollection(new_collection_id){
         }
     }
 
-    /*
-    if(new_collection_id=="#new1"){
-        $(new_collection_id).html( document.getElementById('inputCollection1').value);
-    }else if(new_collection_id=="new2"){
+    var newCollectionData = {
+        newCollectionName: $('#inputCollectionName').value
+       
+    }
+
+    console.log('new collection name:', newCollectionData.newCollectionName)
+
+    //compile template cafeCard
+    var source_cafeCard = $('#cafeCard').html();
+    var template_cafeCard = Handlebars.compile(source_cafeCard);
+
+    //compile template cafeCardNewRow
+    var source_cafeCardNR = $('#cafeCardNewRow').html();
+    var template_cafeCardNR = Handlebars.compile(source_cafeCardNR);
+
+    //where to append new code to
+    var parentDiv = $("#addedCollection");
+
+
+    for(var i=0; i<newCollectionData.length; i++){
+        // check current number of collections on row
+        // if curr%4 == 0, make new row
+        // else append to curr row
+
+        //maybe use localStorage to store html
+        var curData = newCollectionData[i];
+        var curHTML = undefined;
+        if( 7==4 ){
+            curHtml = template_cafeCard(curData);
+        }else{
+            curHTML = template_cafeCardNR(curData);
+        }
         
-    }*/
+        parentDiv.append(curHtml);
+    }
 }
 
 function add(){
@@ -45,6 +74,7 @@ span.onclick = function(){
     modal.style.display = "none";
 }
 
+//when user cancels
 cancel.onclick = function(){
     modal.style.display = "none";
 }
