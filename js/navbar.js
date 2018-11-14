@@ -26,11 +26,14 @@ function loadNavBar(){
         '<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">'
     );
     $("#menu").html(
-        '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">'+
-            '<a class="navbar-brand" href="../index.html"><img src="../image/LightLogoHor.png" id="logo" alt="profile icon" width="100"></a>'+
-            '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-label="Toggle navigation">'+
-                '<span class="navbar-toggler-icon"></span>'+
-            '</button>'+
+        '<div>'+
+                '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">'+
+                '<a class="navbar-brand" onclick="goBack()" ><img src="../image/backButton.png" id="back-button" width="25"></a>'+
+                    '<a class="navbar-brand" href="../index.html"><img src="../image/LightLogoHor.png" id="logo" alt="profile icon" width="100"></a>'+
+                    '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-label="Toggle navigation">'+
+                        '<span class="navbar-toggler-icon"></span>'+
+                    '</button>'+
+        '</div>'+
                 
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
@@ -66,6 +69,10 @@ function checkLogIn(){
             '<a class="nav-link" href="../login.html">Log In</a>'
         );
     }
+}
+
+function goBack(){
+    window.history.back();
 }
 
 /* Old navbar js loader
