@@ -258,8 +258,66 @@ function openNav(){
 function closeNav(){
     document.getElementById("myNav").style.width = "0%";
 }
-
+/**
+ * Saves the current cafe to addHTML#collection_name in localStorage
+ * @param {*} collection 
+ */
 function addToCollection (collection){
+    //selected_option is #collection_name
+    var selected_option = '#'+$('.dropdown').val();
+    console.log(selected_option);
 
+    //Initialize num#selected_option in localStorage to 0
+    console.log('num'+selected_option+' before =', localStorage.getItem('num'+selected_option));
+    if(localStorage.getItem('num'+selected_option)==null){
+        console.log('Initializing num'+selected_option+'...')
+        localStorage.setItem('num'+selected_option,'0');
+    }
+
+    //append to #addedCafe element in corresponding #collection element
+    var parentDiv = $(selected_option+" #addedCafe");
+    //retrieve current value of num
+    var curr_num = parseInt(localStorage.getItem('num'+selected_option), 10);
+    //retrieve cafe name
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe = queryParams.get('cafe_page');
+    var curData = {
+        cafe_name: cafe,
+        cafe_rating: '../image/star3.png',
+        cafe_hashtags: '../image/tag-quiet.png',       
+    };
+    var curHTML = undefined;
+    var source = undefined;
+    var template = undefined;
+
+    // Decide which template (in collection.html) to use based on the number of collection currently in row
+    if( curr_num%4 == 0 ){
+        //compile template cafeCardNewRow
+        source = $('#cafeCardNewRow').html();
+        template = Handlebars.compile(source);
+        curHTML = template(curData);
+    }
+    else{
+        //compile template cafeCard
+        source = $('#cafeCard').html();
+        template = Handlebars.compile(source);
+        curHTML = template(curData);
+    }
+
+    // Update addHTML#collection_name in localStorage (initialize or append)
+    if(localStorage.getItem('addHTML'+selected_option) == null){
+        localStorage.setItem('addHTML'+selected_option, curHTML)
+    }else{
+        new_addHTML_inLS = localStorage.getItem('addHTML'+selected_option) + curHTML;
+        localStorage.setItem('addHTML'+selected_option, new_addHTML_inLS);
+    }
+
+    // pull from localStorage when load category page
+        
+    //update curr_num
+    curr_num++;
+    localStorage.setItem('num'+selected_option, curr_num);
+
+    console.log('num'+selected_option+' after =', localStorage.getItem('num'+selected_option));    
 }
     
