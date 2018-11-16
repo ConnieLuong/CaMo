@@ -46,7 +46,7 @@ function loadNavBar(){
         '</nav>'+
 
         '<div id="footer">'+
-        '<a href="help.html"><img src="image/helpIcon.png"></a>'+
+        '<a href="help/help.html"><img src="image/helpIcon.png"></a>'+
         '</div>'
     );
 
