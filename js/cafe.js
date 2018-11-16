@@ -1,3 +1,11 @@
+function add(){
+    modal.style.display = "block";
+    //when user clicks anywhere outside of the modal, also close it.
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
+
 //fake database
 var cafeData =[
     //cafe1
