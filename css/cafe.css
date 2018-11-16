@@ -88,3 +88,21 @@ input[type=submit]:hover{
     border: 3px solid white;
     transition: ease 0.4s;
 }
+
+.header{
+    background-image: url("../image/spoon.png");
+    background-size: contain;
+}
+
+.header-img{
+    max-width: 800px;
+    width: 100%
+}
+
+/*.store-img{*/
+    /*max-width:300px;*/
+    /*width: 90%;*/
+    /*height: auto;*/
+    /*margin-top: 20%;*/
+    /*margin-right: 40%;*/
+/*}*/
