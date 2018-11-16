@@ -323,15 +323,17 @@ function closeNav(){
  * @param {*} collection 
  */
 function addToCollection (collection){
-
-    
     //selected_option is #collection_name
     var selected_option = '#'+$('.dropdown').val();
     console.log(selected_option);
 
+    //alert that successfully added to collection, and then close
+    window.alert('Successfully added this cafe to'+selected_option+'!');
+    closeNav();
+
     //localStorage.removeItem('num'+selected_option);
     //localStorage.removeItem('addHTML'+selected_option);
-
+///*
     //Initialize num#selected_option in localStorage to 0
     console.log('num'+selected_option+' before =', localStorage.getItem('num'+selected_option));
     if(localStorage.getItem('num'+selected_option)==null){
@@ -406,6 +408,6 @@ function addToCollection (collection){
     localStorage.setItem('num'+selected_option, curr_num);
 
     console.log('num'+selected_option+' after =', localStorage.getItem('num'+selected_option)); 
-    
+ //*/   
 }
     
