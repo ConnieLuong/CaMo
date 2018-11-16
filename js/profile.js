@@ -3,14 +3,24 @@ var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 var cancel = document.getElementById("cancel");
 
+$(document).ready(function() {
+    //If addHTML not null, load current collections onto page
+    if(localStorage.getItem('addHTML')!=null){
+        $("#addedCollection").append(localStorage.getItem('addHTML'));
+    }
+})
+
 
 function logOut(){
     if(confirm("Are you sure you want to log out?")){
-        window.location = "login.html"
+        window.location = "login.html";
+        localStorage.removeItem('addHTML');
+        localStorage.removeItem('num');
     }
 }
 
 function addCollection(){
+    //Form action
     if(document.forms['form'].collection.value == ""){
         window.alert('Please enter a collection name!');
         modal.style.display = "none";
@@ -19,58 +29,68 @@ function addCollection(){
         if(confirm("Are you sure you want to add a new collection?")){
             // window.location = "login.html"
             window.alert('Successfully add a new collection!');
+            document.getElementById('inputCollectionName').value = '';
             modal.style.display = "none";
         }
     }
+    //localStorage.removeItem('num');
+    //localStorage.removeItem('addHTML');
 
-    var newCollectionData = {
-        newCollectionName: document.getElementById('inputCollectionName').value       
-    }
-
-    //compile template cafeCard
-    var source_cafeCard = $('#cafeCard').html();
-    var template_cafeCard = Handlebars.compile(source_cafeCard);
-
-    //compile template cafeCardNewRow
-    var source_cafeCardNR = $('#cafeCardNewRow').html();
-    var template_cafeCardNR = Handlebars.compile(source_cafeCardNR);
-
-    //where to append new code to
-    var parentDiv = $("#addedCollection");
-
-    //Initialize num to 1
+    //Initialize num in localStorage to 1
+    console.log('num before =', localStorage.getItem('num'));
     if(localStorage.getItem('num')==null){
+        console.log('Initializing num...')
         localStorage.setItem('num','1');
     }
 
-    console.log('hhehhehe');
+    // VARIABLE INITIALIZATIONS
+    var parentDiv = $("#addedCollection");
+    //retrieve current value of num
+    var curr_num = parseInt(localStorage.getItem('num'), 10);
+    var curData = {
+        newCollectionName: document.getElementById('inputCollectionName').value       
+    };
+    var curHTML = undefined;
+    var source = undefined;
+    var template = undefined;
 
-    console.log('num =', localStorage.getItem('num'));
+    // Decide which template to use based on the number of collection currently in row
+    if( curr_num%4 == 0 ){
+        //compile template cafeCardNewRow
+        source = $('#cafeCardNewRow').html();
+        template = Handlebars.compile(source);
+        curHTML = template(curData);
+    }
+    else{
+        //compile template cafeCard
+        source = $('#cafeCard').html();
+        template = Handlebars.compile(source);
+        curHTML = template(curData);
+    }
+
+    console.log('curHTMl = ', curHTML);
+
+    // Update addHTML in localStorage (initialize or append)
+    if(localStorage.getItem('addHTML') == null){
+        localStorage.setItem('addHTML', curHTML)
+    }else{
+        new_addHTML_inLS = localStorage.getItem('addHTML') + curHTML;
+        localStorage.setItem('addHTML', new_addHTML_inLS);
+    }
+
+    // Since previous collections already loaded and appended, 
+    // Only need to append the newest collection to parentDiv
+    parentDiv.append( curHTML );
 
 
-    for(var i=0; i<newCollectionData.length; i++){
-        //retrieve current value of num
-        curr_num = parseInt(localStorage.getItem('num'), 10);
-
-        var curData = newCollectionData[i];
-        var curHTML = undefined;
-
-         // if curr_num%4 == 0, make new row
-        if( curr_num%4 == 0 ){
-            curHtml = template_cafeCardNR(curData);
-            parentDiv.append(curHtml);
-        }
-        // else append to current row
-        else{
-            curHTML = template_cafeCard(curData);
-            parentDiv.append(curHtml);
-        }
+    console.log('addHTML = ', localStorage.getItem('addHTML'));
         
 
-        //update curr_num
-        curr_num++;
-        localStorage.setItem('num', curr_num);
-    }
+    //update curr_num
+    curr_num++;
+    localStorage.setItem('num', curr_num);
+
+    console.log('num after =', localStorage.getItem('num'));
 }
 
 function add(){

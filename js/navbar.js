@@ -27,7 +27,7 @@ function loadNavBar(){
     );
     $("#menu").html(
         '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">'+
-            '<a class="navbar-brand" onclick="goBack()" ><img src="../image/backButton.png" id="back-button" width="25"></a>'+
+            '<a class="navbar-brand" id="back-button" onclick="goBack()" ><img src="../image/backButton.png" width="25"></a>'+
             '<a class="navbar-brand" href="../index.html"><img src="../image/LightLogoHor.png" id="logo" alt="profile icon" width="100"></a>'+
             '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pages" aria-expanded="false" aria-label="Toggle navigation">'+
                 '<span class="navbar-toggler-icon"></span>'+
@@ -36,15 +36,13 @@ function loadNavBar(){
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
                     '<li><a class="nav-link" href="../index.html">Explore</a></li>'+
-                    //'<li><a class="nav-link" href="../search.html">Search</a></li>'+
-                    //'<li><a class="nav-link" href="../more.html">More</a></li>'+
                     '<li id="profile"><a class="nav-link" href="../login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
         '</nav>'+
 
         '<div id="footer">'+
-        '<a href="../help.html"><img src="../image/helpIcon.png"></a>'+
+        '<a href="../help/help.html"><img src="image/helpIcon.png"></a>'+
         '</div>'
     );
     //set local storage login status to false if haven't set yet
