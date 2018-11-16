@@ -237,5 +237,12 @@ var collectionData =[
                 parentDiv.append(curHtml);
             }
         }
+
+        //check local storage to see if any new cafes were added by user
+        if(localStorage.getItem('addHTML#'+collection)!=null){
+            $('#'+collection+' #addedCafe').append(
+                localStorage.getItem('addHTML#'+collection)
+            );
+        }
     })
     
