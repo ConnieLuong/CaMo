@@ -1,5 +1,7 @@
-h2{
+h1{
     color: white !important;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 2rem;
 }
 .overlay {
     height: 100%;
@@ -49,4 +51,40 @@ h2{
     top: 15px;
     right: 35px;
   }
+}
+.dropdown {
+    overflow: hidden;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;    
+    border: none;
+    border-bottom: 3px solid white;
+    border-radius: 0;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    text-transform: lowercase;
+    margin: 0;
+    cursor: pointer;
+}
+
+select.dropdown{
+    width: 30vw;
+    text-align: center;
+}
+
+input[type=submit]{
+    background: none;
+    border: 3px solid rgba(255, 255, 255, 0.603);
+    padding: 8px 50px;
+    color: rgba(255, 255, 255, 0.603);
+    text-transform: lowercase;
+    font-family: 'Open Sans', sans-serif; 
+    cursor: pointer;   
+}
+
+input[type=submit]:hover{
+    color:white;
+    border: 3px solid white;
+    transition: ease 0.4s;
 }

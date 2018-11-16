@@ -7,7 +7,7 @@
         <!--Stylesheets-->
         <link rel="stylesheet" href="../css/menu.css">
         <link rel="stylesheet" href="../css/noSocialLife.css">
-        <link rel="stylesheet" href="../css/cafe.css">
+        <link rel="stylesheet" href="../css/cafe.css">  <!-- ADD THIS -->
 
         <script>
             function goBack(){
@@ -20,14 +20,14 @@
     <body>
         <!--Menu Bar-->
         <nav id="menu"></nav>
-
+<!--
         <div class="row">
             <div class="column left">
                 <h1> </h1>
             </div>
 
             <div class="column middle">
-                <!--Back button-->
+                <!--Back button--
                 <button onclick="goBack()">Back</button>
                 <img src="../image/fake.png" id="cafeFront" style="width: 100%">
                 <img src="../image/photofake.png" id="cafeFront" style="width: 100%">
@@ -37,18 +37,21 @@
                 <h1> </h1>
             </div>
         </div>
-
+-->
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <h2>About</h2>
-                <div class="drop-down">
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
-                
+                <h1>choose collection to add cafe to:</h1>
+                <select class="dropdown">
+                    <option value="collection">Collection</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <br><br>
+                <input type="submit" onclick="addToCollection()">                
             </div>
         </div>
 
