@@ -86,6 +86,8 @@ function clickLogOut(){
         if(confirm("Are you sure you want to log out?")){
             window.location = "login.html"
         }
+        localStorage.removeItem('num');
+        localStorage.removeItem('addHTML');
         localStorage.setItem('loginLS','false');
         checkLogIn();
     });
