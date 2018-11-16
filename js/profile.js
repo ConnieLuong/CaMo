@@ -10,7 +10,6 @@ $(document).ready(function() {
     }
 })
 
-
 function logOut(){
     if(confirm("Are you sure you want to log out?")){
         window.location = "login.html";
@@ -18,6 +17,15 @@ function logOut(){
         localStorage.removeItem('num');
     }
 }
+
+//if user presses return/enter, will immediately call addCollection method
+var inputElem = document.getElementById('inputCollectionName');
+inputElem.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+        addCollection();
+    }  
+});
 
 function addCollection(){
     //Form action
@@ -27,14 +35,13 @@ function addCollection(){
     }
     else{
         if(confirm("Are you sure you want to add a new collection?")){
-            // window.location = "login.html"
             window.alert('Successfully add a new collection!');
             modal.style.display = "none";
         }
     }
     //localStorage.removeItem('num');
     //localStorage.removeItem('addHTML');
-//*
+///*
     //Initialize num in localStorage to 1
     console.log('num before =', localStorage.getItem('num'));
     if(localStorage.getItem('num')==null){
@@ -58,20 +65,11 @@ function addCollection(){
     var source = undefined;
     var template = undefined;
 
-    // Decide which template to use based on the number of collection currently in row
-    if( curr_num!=0 && curr_num%4 == 0 ){
-        //compile template cafeCardNewRow
-        source = $('#cafeCardNewRow').html();
-        template = Handlebars.compile(source);
-        curHTML = template(curData);
-    }
-    else{
-        //compile template cafeCard
-        source = $('#cafeCard').html();
-        template = Handlebars.compile(source);
-        curHTML = template(curData);
-        parentDiv.append( '</div>' );
-    }
+    
+    //compile template cafeCard
+    source = $('#cafeCard').html();
+    template = Handlebars.compile(source);
+    curHTML = template(curData);
 
     console.log('curHTMl = ', curHTML);
 
