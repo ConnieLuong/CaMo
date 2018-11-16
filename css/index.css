@@ -187,26 +187,31 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     padding: 0;
     margin: 0;
     height: 265px;
-    background-image: url(../image/homeSearchBar.png)
+    background-image: url(../image/homeSearchBar.png);
 }
 
 form.searchbox {
     background:url(../image/searchBack.png) 0 0 no-repeat; padding-left:15px;
-    height: 89px;
-    width: 477px;
+    max-height: 89px;
+    max-width: 477px;
+	width:100%;
 }
 form.searchbox input.text {
     border:none;
-    height:36px;
-    width: 382px;
+    max-height:36px;
+    max-width: 382px;
+	width:80%;
     padding:0 5px;
-}
-form.searchbox input.submit {
-    background:url(../image/searchIcon.png);
-    height: 89px;
-    width: 74px;
+	float: left;
+	margin-top: 5%;
 }
 
+form.searchbox input.submit {
+    background:url(../image/searchIcon.png);
+    max-height: 89px;
+    max-width: 74px;
+	width:100%;
+}
 .opac:hover
 {
     opacity: 0.5;

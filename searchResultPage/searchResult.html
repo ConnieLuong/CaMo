@@ -6,6 +6,9 @@
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
 
 </head>
 
@@ -13,43 +16,73 @@
 <body>
     <!--menu bar-->
     <nav id="menu"></nav>
-
-    <div class="jumbotron jumbotron-fluid" align="center" style="padding: 0; margin: 0">
-        <img src="../image/searchResultHeader.png" STYLE="width: 100%">
+    <div style="background-image: url(../image/pinkie.png); height: 165px; width: 100%; padding-top:3%" align="center">
+        <form class="searchbox" >
+        <input type="text" class="text" placeholder="Search for cafe"/>
+        <a href="../searchResultPage/searchResult.html"><img src="../image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" /></a>
+        </form>
+    </div>
+    <div class="jumbotron2" align="center" style="padding:0; margin:0;">
+         <img src="../image/searchResultHeader.png" style="width:100%">
     </div>
 
     <div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%">
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=The%20Bean%20Palace">
                 <img class="card-img-top" src="../image/Cafe1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">The Bean Palace</h5>
+                    <img src="../image/star4.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-24hr.png" class="tag-24">
+                        <img src="../image/tag-aesthetic.png" class="tag-a">
+                        <img src="../image/tag-group.png" class="tag-g">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">The Bean Palace</h5>
-            </div>
         </div>
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=No%20Social%20Life">
             <img class="card-img-top" src="../image/Cafe4.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">No Social Life</h5>
+                    <img src="../image/star4.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-24hr.png" class="tag-24">
+                        <img src="../image/tag-quiet.png" class="tag-q">
+                        <img src="../image/tag-pet.png" class="tag-p">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">No Social Life</h5>
-            </div>
         </div>
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=No%20Doze%20Cafe">
             <img class="card-img-top" src="../image/Cafe5.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">No Doze Cafe</h5>
+                    <img src="../image/star4.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-group.png" class="tag-g">
+                        <img src="../image/tag-brunch.png" class="tag-b">
+                        <img src="../image/tag-pet.png" class="tag-p">
+                        <img src="../image/tag-quiet.png" class="tag-q">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">No Doze Cafe</h5>
-            </div>
         </div>
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=Black%20Sugars">
             <img class="card-img-top" src="../image/Cafe9.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">Black Sugars</h5>
+                    <img src="../image/star3.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-pet.png" class="tag-p">
+                        <img src="../image/tag-brunch.png" class="tag-b">
+                        <img src="../image/tag-24hr.png" class="tag-24">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">Black Sugars</h5>
-            </div>
         </div>
     </div>
 
@@ -57,34 +90,60 @@
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=The%20Grind">
             <img class="card-img-top" src="../image/Cafe3.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">The Grind</h5>
+                    <img src="../image/star3.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-quiet.png" class="tag-q">
+                        <img src="../image/tag-brunch.png" class="tag-b">
+                        <img src="../image/tag-24hr.png" class="tag-24">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">The Grind</h5>
-            </div>
         </div>
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=CHao">
             <img class="card-img-top" src="../image/Cafe14.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">CHao</h5>
+                    <img src="../image/star3.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-pet.png" class="tag-p">
+                        <img src="../image/tag-brunch.png" class="tag-b">
+                        <img src="../image/tag-vegan.png" class="tag-v">
+                        <img src="../image/tag-aesthetic.png" class="tag-a">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">CHao</h5>
-            </div>
         </div>
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=Merp">
             <img class="card-img-top" src="../image/Cafe15.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">Merp</h5>
+                    <img src="../image/star3.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-quiet.png" class="tag-q">
+                        <img src="../image/tag-group.png" class="tag-g">
+                        <img src="../image/tag-vegan.png" class="tag-v">
+                        <img src="../image/tag-aesthetic.png" class="tag-a">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">Merp</h5>
-            </div>
         </div>
         <div class="card">
             <a href="../Cafe/cafe.html?cafe_page=Lava%20Java">
             <img class="card-img-top" src="../image/Cafe2.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">Lava Java</h5>
+                    <img src="../image/star3.png" style="max-width: 150px; width:80%;">
+                    <div style="margin-top:1%">
+                        <img src="../image/tag-pet.png" class="tag-p">
+                        <img src="../image/tag-brunch.png" class="tag-b">
+                        <img src="../image/tag-24hr.png" class="tag-24">
+                    </div>
+                </div>
             </a>
-            <div class="card-body">
-                <h5 class="card-title">Lava Java</h5>
-            </div>
         </div>
     </div>
 
@@ -95,6 +154,7 @@
     <!-- Load JS-->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/navbar.js"></script>
+    
 
 </body>
 </html>
