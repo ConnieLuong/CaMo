@@ -187,7 +187,14 @@ h2{ color: #7f8c8d; font-family: Neucha, Arial, sans serif; font-size:18px; marg
     padding: 0;
     margin: 0;
     height: 265px;
-    background-image: url(../image/homeSearchBar.png)
+    background-image: url(../image/homeSearchBar.png);
+}
+
+.jumbotron2{
+    padding: 0;
+    margin: 0;
+    height: 300px;
+    background-image: url(../image/searchResultHeader.png);
 }
 
 form.searchbox {
@@ -206,7 +213,6 @@ form.searchbox input.submit {
     height: 89px;
     width: 74px;
 }
-
 .opac:hover
 {
     opacity: 0.5;

@@ -6,6 +6,7 @@
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/index.css">
 
 </head>
 
@@ -14,8 +15,12 @@
     <!--menu bar-->
     <nav id="menu"></nav>
 
-    <div class="jumbotron jumbotron-fluid" align="center" style="padding: 0; margin: 0">
-        <img src="../image/searchResultHeader.png" STYLE="width: 100%">
+    <div class="jumbotron2" align="center" style="padding:0; margin:0; background-image: url(../image/searchResultHeader.png); background-size: contain; background-repeat: no-repeat;" >
+        <!-- <img src="../image/searchResultHeader.png" style="width:100%"> -->
+            <form class="searchbox">
+                <input type="text" class="text" placeholder="Search for cafe"/>
+                <a href="../searchResultPage/searchResult.html"><img src="../image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" /></a>
+            </form>
     </div>
 
     <div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%">
@@ -95,6 +100,7 @@
     <!-- Load JS-->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/navbar.js"></script>
+    
 
 </body>
 </html>
