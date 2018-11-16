@@ -29,33 +29,37 @@ function addCollection(){
         if(confirm("Are you sure you want to add a new collection?")){
             // window.location = "login.html"
             window.alert('Successfully add a new collection!');
-            document.getElementById('inputCollectionName').value = '';
             modal.style.display = "none";
         }
     }
     //localStorage.removeItem('num');
     //localStorage.removeItem('addHTML');
-
+//*
     //Initialize num in localStorage to 1
     console.log('num before =', localStorage.getItem('num'));
     if(localStorage.getItem('num')==null){
-        console.log('Initializing num...')
-        localStorage.setItem('num','1');
+        console.log('Initializing num...');
+        localStorage.setItem('num','0');
+        console.log('num now =', localStorage.getItem('num'));
     }
 
     // VARIABLE INITIALIZATIONS
     var parentDiv = $("#addedCollection");
     //retrieve current value of num
     var curr_num = parseInt(localStorage.getItem('num'), 10);
+    console.log('num =', localStorage.getItem('num'));
+    console.log('input collection name = ', document.getElementById('inputCollectionName').value);
+
     var curData = {
-        newCollectionName: document.getElementById('inputCollectionName').value       
+        'newCollectionName': document.getElementById('inputCollectionName').value     
     };
+    console.log('curData = ',curData);
     var curHTML = undefined;
     var source = undefined;
     var template = undefined;
 
     // Decide which template to use based on the number of collection currently in row
-    if( curr_num%4 == 0 ){
+    if( curr_num!=0 && curr_num%4 == 0 ){
         //compile template cafeCardNewRow
         source = $('#cafeCardNewRow').html();
         template = Handlebars.compile(source);
@@ -66,6 +70,7 @@ function addCollection(){
         source = $('#cafeCard').html();
         template = Handlebars.compile(source);
         curHTML = template(curData);
+        parentDiv.append( '</div>' );
     }
 
     console.log('curHTMl = ', curHTML);
@@ -91,6 +96,8 @@ function addCollection(){
     localStorage.setItem('num', curr_num);
 
     console.log('num after =', localStorage.getItem('num'));
+    document.getElementById('inputCollectionName').value = '';
+    //*/
 }
 
 function add(){
