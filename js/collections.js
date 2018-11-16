@@ -55,7 +55,7 @@ var collectionData =[
     },
     //collection2
     {
-        'collection_name':'wish list', 
+        'collection_name':'wishlist', 
         'header_img':'../image/collectionWish.png', 
         
         'cafe1-img':'Cafe13.png',
@@ -108,7 +108,7 @@ var collectionData =[
     },
     //collection3
     {
-        'collection_name':'cool%20af', 
+        'collection_name':'coolaf', 
         'header_img':'../image/collectionCool.png',
         
         'cafe1-img':'Cafe16.png',
@@ -161,7 +161,7 @@ var collectionData =[
     },
     //collection4
     {
-        'collection_name':'moms%20favs',
+        'collection_name':'momsfavs',
         'header_img':'../image/collectionMom.png', 
         
         'cafe1-img':'Cafe12.png',
@@ -238,6 +238,8 @@ var collectionData =[
             }
         }
 
+        console.log(localStorage.getItem('addHTML#'+collection));
+        console.log('addHTML#'+collection);
         //check local storage to see if any new cafes were added by user
         if(localStorage.getItem('addHTML#'+collection)!=null){
             $('#'+collection+' #addedCafe').append(
