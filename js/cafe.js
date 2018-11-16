@@ -7,6 +7,58 @@ function add(){
 }
 
 //fake database
+var cafe_img_Data=[
+    { 
+        'cafe-img':'Cafe1.png',
+        'cafe-name':'The Bean Palace'
+    },{
+        'cafe-img':'Cafe2.png',
+        'cafe-name':'Lava Java'
+    },{
+        'cafe-img':'Cafe3.png',
+        'cafe-name':'The Grind'
+    },{
+        'cafe-img':'Cafe4.png',
+        'cafe-name':'No Social Life'
+    },{
+        'cafe-img':'Cafe5.png',
+        'cafe-name':'No Doze Cafe'
+    },{
+        'cafe-img':'Cafe6.png',
+        'cafe-name':'Aroma Mocha'
+    },{
+        'cafe-img':'Cafe7.png',
+        'cafe-name':'The Split Bean'
+    },{
+        'cafe-img':'Cafe8.png',
+        'cafe-name':'Happy Orange'
+    },{
+        'cafe-img':'Cafe9.png',
+        'cafe-name':'Black Sugars'
+    },{
+        'cafe-img':'Cafe10.png',
+        'cafe-name':'Bees'
+    },{
+        'cafe-img':'Cafe11.png',
+        'cafe-name':'QnA',
+    },{
+        'cafe-img':'Cafe12.png',
+        'cafe-name':'Cute Cups'
+    },{
+        'cafe-img':'Cafe13.png',
+        'cafe-name':'Amooze'
+    },{
+        'cafe-img':'Cafe14.png',
+        'cafe-name':'CHao'
+    },{
+        'cafe-img':'Cafe15.png',
+        'cafe-name':'Merp'
+    },{   
+        'cafe-img':'Cafe16.png',
+        'cafe-name':'GRE'
+    }
+]
+
 var cafeData =[
     //cafe1
     {
@@ -271,59 +323,73 @@ function closeNav(){
  * @param {*} collection 
  */
 function addToCollection (collection){
+
+    
     //selected_option is #collection_name
     var selected_option = '#'+$('.dropdown').val();
     console.log(selected_option);
+
+    //localStorage.removeItem('num'+selected_option);
+    //localStorage.removeItem('addHTML'+selected_option);
 
     //Initialize num#selected_option in localStorage to 0
     console.log('num'+selected_option+' before =', localStorage.getItem('num'+selected_option));
     if(localStorage.getItem('num'+selected_option)==null){
         console.log('Initializing num'+selected_option+'...')
         localStorage.setItem('num'+selected_option,'0');
+        console.log('num'+selected_option+' now is...', localStorage.getItem('num'+selected_option));
     }
 
-    //append to #addedCafe element in corresponding #collection element
-    var parentDiv = $(selected_option+" #addedCafe");
     //retrieve current value of num
     var curr_num = parseInt(localStorage.getItem('num'+selected_option), 10);
     //retrieve cafe name
     var queryParams = new URLSearchParams(window.location.search);
     var cafe = queryParams.get('cafe_page');
-    //retrieve cafe image and link
-    var cafe_image;
+    //retrieve cafe link
     var cafe_link;
     for(var i=0; i<cafeData.length; i++){
         var curCafe = cafeData[i];
         if(curCafe.cafe_name == cafe){
-            cafe_image = curCafe.header_img;
             cafe_link = 'cafe_page='+cafe;
+        }
+    }
+    //retrieve cafe image
+    var cafe_image;
+    for(var i=0; i<cafe_img_Data.length; i++){
+        var cur = cafe_img_Data[i];
+        if(cur["cafe-name"]==cafe){
+            cafe_image = cur["cafe-img"];
         }
     }
 
     var curData = {
-        'cafe-image':cafe_image,
+        'cafe-img':cafe_image,
         'cafe-link':cafe_link,
-        'cafe-name': cafe,
-        'cafe-rating': '../image/star3.png',
-        'cafe-hashtags': '../image/tag-quiet.png',       
+        'cafe-name': cafe     
     };
+    console.log('curData = ',curData);
     var curHTML = undefined;
     var source = undefined;
     var template = undefined;
 
-    // Decide which template (in collection.html) to use based on the number of collection currently in row
+    // Decide which template (in cafe.html) to use based on the number of collection currently in row 
+    // fill template to later add to collection.html (in collection.html)
     if( curr_num%4 == 0 ){
         //compile template cafeCardNewRow
         source = $('#cafeCardNewRow').html();
+        
         template = Handlebars.compile(source);
         curHTML = template(curData);
     }
     else{
         //compile template cafeCard
         source = $('#cafeCard').html();
+        
         template = Handlebars.compile(source);
         curHTML = template(curData);
     }
+    console.log('curHTML = ', curHTML);
+
 
     // Update addHTML#collection_name in localStorage (initialize or append)
     if(localStorage.getItem('addHTML'+selected_option) == null){
@@ -339,6 +405,7 @@ function addToCollection (collection){
     curr_num++;
     localStorage.setItem('num'+selected_option, curr_num);
 
-    console.log('num'+selected_option+' after =', localStorage.getItem('num'+selected_option));    
+    console.log('num'+selected_option+' after =', localStorage.getItem('num'+selected_option)); 
+    
 }
     

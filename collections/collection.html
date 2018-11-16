@@ -5,6 +5,7 @@
 
         <!--Stylesheets-->
         <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/cafe.css">
 
     </head>
 
@@ -109,12 +110,12 @@
                 </div>
 
                 <!-- User Saved Cafes -->
-                <div id="addedCafe"></div>
+                <div id="addedCafe" class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" ></div>
             </div>
             
         </script>
 
-        <!-- Cafe Card Template -->
+        <!-- Cafe Card Template -
 		<script id="cafeCard" type="text/x-handlebars-template">
 			<div class="card">
                 <img class="card-img-top" src="../image/{{cafe-img}}">
@@ -130,18 +131,18 @@
 
 		<script id="cafeCardNewRow" type="text/x-handlebars-template">
 			</div>
-			<div class="row">
+			<div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >
                 <div class="card">
-                        <img class="card-img-top" src="../image/{{cafe-img}}">
-                        <div class="card-body">
-                            <a href="../Cafe/cafe.html?{{cafe-link}}">
-                                <h5 class="card-title">{{cafe-name}}</h5>
-                                <p class="card-text"><small class="text-muted">{{cafe-rating}}</small></p>
-                                <p class="card-text"><small class="text-muted">{{cafe-hashtags}}</small></p>
-                            </a>
-                        </div>
+                    <img class="card-img-top" src="../image/{{cafe-img}}">
+                    <div class="card-body">
+                        <a href="../Cafe/cafe.html?{{cafe-link}}">
+                            <h5 class="card-title">{{cafe-name}}</h5>
+                            <p class="card-text"><small class="text-muted">{{cafe-rating}}</small></p>
+                            <p class="card-text"><small class="text-muted">{{cafe-hashtags}}</small></p>
+                        </a>
                     </div>
-		</script>
+                </div>
+		</script>-->
 
         <div id="templatedCollections">
             <!--templated category content HTML will appear here-->
