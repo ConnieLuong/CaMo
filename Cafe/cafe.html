@@ -24,11 +24,27 @@
         <script id="cafe-template" type="text/x-handlebars-template">
             <div class="cafe_page" id="{{cafe_name}}">
                 <!--Header image-->
-                <div class="jumbotron header" style="margin:0; margin-top:3%; padding: 0;" align="center">
+                <div class="jumbotron header" style="margin:0; margin-top:3%; padding: 0; text-align:center">
                     <img class="header-img" src="{{header_img}}">
                     <div style="margin-top:1%">
                         <button type="button" class="btn btn-outline-secondary">Feedback</button>
-                        <button type="button" class="btn btn-outline-secondary">Add to Collection</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="openNav()">Add to Collection</button>
+                        <!--Add to collection overlay-->
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <h1>choose collection to add cafe to:</h1>
+                                <select class="dropdown">
+                                    <option value="collection">Collection</option>
+                                    <option value="bomb">Bomb</option>
+                                    <option value="wishlist">Wishlist</option>
+                                    <option value="cool af">Cool AF</option>
+                                    <option value="moms favs">Mom's Favs</option>
+                                </select>
+                                <br><br>
+                                <input type="submit" onclick="addToCollection()">                
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--1st Food row-->

@@ -289,10 +289,23 @@ function addToCollection (collection){
     //retrieve cafe name
     var queryParams = new URLSearchParams(window.location.search);
     var cafe = queryParams.get('cafe_page');
+    //retrieve cafe image and link
+    var cafe_image;
+    var cafe_link;
+    for(var i=0; i<cafeData.length; i++){
+        var curCafe = cafeData[i];
+        if(curCafe.cafe_name == cafe){
+            cafe_image = curCafe.header_img;
+            cafe_link = 'cafe_page='+cafe;
+        }
+    }
+
     var curData = {
-        cafe_name: cafe,
-        cafe_rating: '../image/star3.png',
-        cafe_hashtags: '../image/tag-quiet.png',       
+        'cafe-image':cafe_image,
+        'cafe-link':cafe_link,
+        'cafe-name': cafe,
+        'cafe-rating': '../image/star3.png',
+        'cafe-hashtags': '../image/tag-quiet.png',       
     };
     var curHTML = undefined;
     var source = undefined;
