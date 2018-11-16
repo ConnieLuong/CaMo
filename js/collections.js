@@ -108,7 +108,7 @@ var collectionData =[
     },
     //collection3
     {
-        'collection_name':'cool af', 
+        'collection_name':'cool%20af', 
         'header_img':'../image/collectionCool.png',
         
         'cafe1-img':'Cafe16.png',
@@ -161,7 +161,7 @@ var collectionData =[
     },
     //collection4
     {
-        'collection_name':'moms favs',
+        'collection_name':'moms%20favs',
         'header_img':'../image/collectionMom.png', 
         
         'cafe1-img':'Cafe12.png',
