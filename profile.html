@@ -10,203 +10,125 @@
 	</head>
 
     <body>
-		<div>
-			<!--Menu Bar-->
-			<nav id="menu"></nav>
-	
-			<!--Profile Info-->
-			<!--User-->
-			<div id="profile-header" class="row" style="width:100%; margin: 0; padding-top: 40px;">
-				<div class="col-md-3" style="padding-top: 40px;">
-					<h1 style="color:white">" Hello</h1>
-					<h3 style="color:white"><span id="user"></span>  "</h3>
-				</div>
-				<div class="col-md-6">
-					<img src="image/userProfileImage.png" class="center">
-					<!--<a href="more_page/accountSettings.html"><button class="edit-profile"> Edit Profile</button></a>-->
-					<button id="logout" class="log-out" onclick="clickLogOut()"> Log Out</button></a>
-				</div>
-				<div class="col-md-3" style="padding-top:40px;">
-					<h3 style="color:white">"I want to explore</h3>
-					<h3 style="color:white">Cafes in</h3>
-					<h1 style="color:white">San Diego "</h1>
-				</div>
+		<!--Menu Bar-->
+		<nav id="menu"></nav>
+
+		<!--Profile Header / User-->
+		<div id="profile-header" class="row" style="width:100%; margin: 0; padding-top: 40px;">
+			<div class="col-md-3" style="padding-top: 40px;">
+				<h1 style="color:white">" Hello</h1>
+				<h3 style="color:white"><span id="user"></span>  "</h3>
 			</div>
-			<div class="container" > 
-				
+			<div class="col-md-6">
+				<img src="image/userProfileImage.png" class="center">
+				<!--<a href="more_page/accountSettings.html"><button class="edit-profile"> Edit Profile</button></a>-->
+				<button id="logout" class="log-out" onclick="clickLogOut()"> Log Out</button></a>
+			</div>
+			<div class="col-md-3" style="padding-top:40px;">
+				<h3 style="color:white">"I want to explore</h3>
+				<h3 style="color:white">Cafes in</h3>
+				<h1 style="color:white">San Diego "</h1>
+			</div>
+		</div>
 
-				<!--Saved Collections-->
-				<div class="collection-wrapper">
-					<h2> Your Collections </h2>
-					<div class="row">
-						<div class="col-md-3">
-							<a href="collections/collection.html?collection_page=bomb">
-								<figure>
-									<img src="image/bomb.jpg" style="width:100%;">
-									<figcaption> Bomb </figcaption>
-								</figure>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="collections/collection.html?collection_page=wish%20list">
-								<figure>
-									<img src="image/wish-list.jpg" style="width:100%;">
-									<figcaption> Wish List </figcaption>
-								</figure>
-							</a>
-						
-						</div>
-						<div class="col-md-3">
-							<a href="collections/collection.html?collection_page=cool%20af">
-								<figure>
-									<img src="image/cool-af.jpg" style="width:100%;">
-									<figcaption> Cool AF </figcaption>
-								</figure>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a href="collections/collection.html?collection_page=moms%20faves">
-								<figure>
-									<img src="image/momsfaves.jpg" style="width:100%;">
-									<figcaption> Mom's Favs </figcaption>
-								</figure>
-							</a>
-						</div>
-					</div>
-					
-					<div class="row">
-						<!-- Append new collection here -->
-						<div id="addedCollection"></div>
-
-						<!-- Cafe Card Template -->
-						<script id="cafeCard" type="text/x-handlebars-template">
-							<div class="col-md-3">
-								<a href="collections/collection.html?collection_page=moms%20faves">
-									<figure>
-										<img src="image/momsfaves.jpg" style="width:100%;">
-										<figcaption>{{newCollectionName}}</figcaption>
-									</figure>
-								</a>
-							</div>
-						</script>
-
-						<script id="cafeCardNewRow" type="text/x-handlebars-template">
-							</div>
-							<div class="row">
-								<div class="col-md-3">
-									<a href="collections/collection.html?collection_page=moms%20faves">
-										<figure>
-											<img src="image/momsfaves.jpg" style="width:100%;">
-											<figcaption>{{newCollectionName}}</figcaption>
-										</figure>
-									</a>
-								</div>
-						</script>
-
-
-						<!-- Add new collection button-->
-						<div class="col-md-3" id="addCollectionButton">
+		<!--Your Collections-->
+		<div class="container" > 
+			<div class="collection-wrapper">
+				<!--Preset Collections-->
+				<h2> Your Collections </h2>
+				<div class="row">
+					<div class="col-md-3">
+						<a href="collections/collection.html?collection_page=bomb">
 							<figure>
-								<img src="image/newCollection1.png" onclick="add()" style="width:100%;">
-								<!--layover-->
-								<div id="myModal" class="modal" style="width: 50vw; margin:auto; margin-top: 20vh;">
-									<div class="modal-content">
-										<div class="modal-header" style="text-align: center">
-												<h3>Add a new collection</h3>
-											<span class="close">&times;</span>
-										</div>
-										<div>
-											<form name="form" style="width: 40vw ;margin: 0 auto;">
-												<h6 style="text-align: center; margin-top: 1rem; display: inline;">Collection Name:  </h6>
-												<input name="collection" type="text" id="inputCollectionName" style="text-align: center; border: 2px solid black; border-radius: 3px; margin: 2rem;">
-											</form>
-										</div>
-										<div class="modal-footer">
-											<button id="cancel">Cancel</button>
-											<button id="add" onclick="addCollection()">Add</button>
-										</div>
-									</div>
-								</div>
+								<img src="image/bomb.jpg" style="width:100%;">
+								<figcaption> Bomb </figcaption>
 							</figure>
-						</div>
-						<!--
-						<div class="col-md-3">
-								<figure>
-									<img src="image/newCollection2.png" onclick="add()" style="width:100%;">
-									<!--layover--
-									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
-										<div class="modal-content">
-											<div class="modal-header">
-													<h3>Add a new collection</h3>
-												<span class="close">&times;</span>
-											</div>
-											<div>
-												<form name="form" style="margin-left: 10px;">
-													<h6>Collection Name:  </h6>
-													<input name="collection" type="text">
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button id="cancel">Cancel</button>
-												<button id="add" onclick="addCollection()">Add</button>
-											</div>
-										 </div>
-									</div>
-								</figure>						
-						</div>
-						<div class="col-md-3">
-								<figure>
-									<img src="image/newCollection3.png" onclick="add()" style="width:100%;">
-									<!--layover--
-									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
-										<div class="modal-content">
-											<div class="modal-header">
-													<h3>Add a new collection</h3>
-												<span class="close">&times;</span>
-											</div>
-											<div>
-												<form name="form" style="margin-left: 10px;">
-													<h6>Collection Name:  </h6>
-													<input name="collection" type="text">
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button id="cancel">Cancel</button>
-												<button id="add" onclick="addCollection()">Add</button>
-											</div>
-										 </div>
-									</div>
-								</figure>
-						</div>
-						<div class="col-md-3">
-								<figure>
-									<img src="image/newCollection4.png" onclick="add()" style="width:100%;">
-									<!--layover--
-									<div id="myModal" class="modal" style="width: 50%; margin-top:250px; margin-left:300px;">
-										<div class="modal-content">
-											<div class="modal-header">
-													<h3>Add a new collection</h3>
-												<span class="close">&times;</span>
-											</div>
-											<div>
-												<form name="form" style="margin-left: 10px;">
-													<h6>Collection Name:  </h6>
-													<input name="collection" type="text">
-												</form>
-											</div>
-											<div class="modal-footer">
-												<button id="cancel">Cancel</button>
-												<button id="add" onclick="addCollection()">Add</button>
-											</div>
-										 </div>
-									</div>
-								</figure>							
-						</div>-->
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="collections/collection.html?collection_page=wish%20list">
+							<figure>
+								<img src="image/wish-list.jpg" style="width:100%;">
+								<figcaption> Wish List </figcaption>
+							</figure>
+						</a>
+					
+					</div>
+					<div class="col-md-3">
+						<a href="collections/collection.html?collection_page=cool%20af">
+							<figure>
+								<img src="image/cool-af.jpg" style="width:100%;">
+								<figcaption> Cool AF </figcaption>
+							</figure>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="collections/collection.html?collection_page=moms%20faves">
+							<figure>
+								<img src="image/momsfaves.jpg" style="width:100%;">
+								<figcaption> Mom's Favs </figcaption>
+							</figure>
+						</a>
 					</div>
 				</div>
-			</div>	
-		</div>
+				
+				<!--Add Collection Here-->
+				<div class="row" id="addedCollection"></div>
+			</div>
+			<!-- Add new collection button-->
+			<div class="col-md-3" id="addCollectionButton">
+				<figure>
+					<!--<img src="image/newCollection1.png" onclick="add()" style="width:100%;">-->
+					<button onclick="add()" style="border: 3px solid black; padding: 10px; margin: auto;">Add New Collection</button>
+					<!--layover-->
+					<div id="myModal" class="modal" style="width: 50vw; margin:auto; margin-top: 20vh;">
+						<div class="modal-content">
+							<div class="modal-header" style="text-align: center">
+									<h3>Add a new collection</h3>
+								<span class="close">&times;</span>
+							</div>
+							<div>
+								<form name="form" style="width: 40vw; margin: 0 auto;">
+									<!--<h6 style="text-align: center; display: inline;">Collection Name:  </h6>-->
+									<input name="collection" type="text" id="inputCollectionName" placeholder="Type new collection name" 
+									style="width: 100%; text-align: center; border: 2px solid black; border-radius: 3px; margin: 2rem; margin-left: -0.4rem;">
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button id="cancel">Cancel</button>
+								<button id="add" onclick="addCollection()">Add</button>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</div>
+		</div>	
 		
+		<!-- Cafe Card Template -->
+		<script id="cafeCard" type="text/x-handlebars-template">
+			<div class="col-md-3">
+				<a href="collections/collection.html?collection_page=moms%20faves">
+					<figure>
+						<img src="image/momsfaves.jpg" style="width:100%;">
+						<figcaption>{{newCollectionName}}</figcaption>
+					</figure>
+				</a>
+			</div>
+		</script>
+
+		<script id="cafeCardNewRow" type="text/x-handlebars-template">
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="collections/collection.html?collection_page=moms%20faves">
+						<figure>
+							<img src="image/momsfaves.jpg" style="width:100%;">
+							<figcaption>{{newCollectionName}}</figcaption>
+						</figure>
+					</a>
+				</div>
+		</script>
+
 		 <!-- Load Scripts-->
 		 <script src="https://code.jquery.com/jquery.js"></script>
 		 <script src="js/mainpages.js"></script>

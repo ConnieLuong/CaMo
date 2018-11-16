@@ -38,8 +38,6 @@ function loadNavBar(){
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
                     '<li><a class="nav-link" href="index.html">Explore</a></li>'+
-                    //'<li><a class="nav-link" href="search.html">Search</a></li>'+
-                    //'<li><a class="nav-link" href="more.html">More</a></li>'+
                     '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
