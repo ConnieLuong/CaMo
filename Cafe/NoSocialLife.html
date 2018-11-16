@@ -7,6 +7,7 @@
         <!--Stylesheets-->
         <link rel="stylesheet" href="../css/menu.css">
         <link rel="stylesheet" href="../css/noSocialLife.css">
+        <link rel="stylesheet" href="../css/cafe.css">
 
         <script>
             function goBack(){
@@ -37,9 +38,24 @@
             </div>
         </div>
 
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <h2>About</h2>
+                <div class="drop-down">
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+                
+            </div>
+        </div>
+
     </body>
 
     <!-- Load Scripts-->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/cafe.js"></script>
 </html>

@@ -226,28 +226,40 @@ var cafeData =[
     }   
 ]
     
-    //script to load correct cafes
-    //query format : ./cafe.html?cafe_page=cafe_name
-    //replace cafe_name with the corresponding name
-    $(document).ready(function(){
-        //compile template
-        var source = $('#cafe-template').html();
-        var template = Handlebars.compile(source);
-    
-        var parentDiv = $("#templatedCafes");
-    
-        //allow for fake-database queries
-        var queryParams = new URLSearchParams(window.location.search);
-        var cafe = queryParams.get('cafe_page');
-        console.log('query for', cafe);
-    
-        for(var i=0; i<cafeData.length; i++){
-            console.log('in for loop');
-            var curData = cafeData[i];
-            if(curData.cafe_name == cafe){
-                var curHtml = template(curData);
-                parentDiv.append(curHtml);
-            }
+//script to load correct cafes
+//query format : ./cafe.html?cafe_page=cafe_name
+//replace cafe_name with the corresponding name
+$(document).ready(function(){
+    //compile template
+    var source = $('#cafe-template').html();
+    var template = Handlebars.compile(source);
+
+    var parentDiv = $("#templatedCafes");
+
+    //allow for fake-database queries
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe = queryParams.get('cafe_page');
+    console.log('query for', cafe);
+
+    for(var i=0; i<cafeData.length; i++){
+        console.log('in for loop');
+        var curData = cafeData[i];
+        if(curData.cafe_name == cafe){
+            var curHtml = template(curData);
+            parentDiv.append(curHtml);
         }
-    })
+    }
+})
+
+function openNav(){
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav(){
+    document.getElementById("myNav").style.width = "0%";
+}
+
+function addToCollection (collection){
+
+}
     
