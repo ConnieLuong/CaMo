@@ -1,0 +1,10 @@
+
+.header{
+    background-image: url("../image/spoon.png");
+    background-size: contain;
+}
+
+.header-img{
+    max-width: 800px;
+    width: 100%
+}
