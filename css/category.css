@@ -29,3 +29,7 @@
 .tag-g{
     max-width: 78px;
 }
+
+a:hover{
+    text-decoration: none;
+}
