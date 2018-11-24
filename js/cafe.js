@@ -10,31 +10,31 @@ function add(){
 var cafe_img_Data=[
     { 
         'cafe-img':'Cafe1.png',
-        'cafe-name':'The Bean Palace'
+        'cafe-name':'The-Bean-Palace'
     },{
         'cafe-img':'Cafe2.png',
-        'cafe-name':'Lava Java'
+        'cafe-name':'Lava-Java'
     },{
         'cafe-img':'Cafe3.png',
-        'cafe-name':'The Grind'
+        'cafe-name':'The-Grind'
     },{
         'cafe-img':'Cafe4.png',
-        'cafe-name':'No Social Life'
+        'cafe-name':'No-Social-Life'
     },{
         'cafe-img':'Cafe5.png',
-        'cafe-name':'No Doze Cafe'
+        'cafe-name':'No-Doze-Cafe'
     },{
         'cafe-img':'Cafe6.png',
-        'cafe-name':'Aroma Mocha'
+        'cafe-name':'Aroma-Mocha'
     },{
         'cafe-img':'Cafe7.png',
-        'cafe-name':'The Split Bean'
+        'cafe-name':'The-Split-Bean'
     },{
         'cafe-img':'Cafe8.png',
-        'cafe-name':'Happy Orange'
+        'cafe-name':'Happy-Orange'
     },{
         'cafe-img':'Cafe9.png',
-        'cafe-name':'Black Sugars'
+        'cafe-name':'Black-Sugars'
     },{
         'cafe-img':'Cafe10.png',
         'cafe-name':'Bees'
@@ -43,7 +43,7 @@ var cafe_img_Data=[
         'cafe-name':'QnA',
     },{
         'cafe-img':'Cafe12.png',
-        'cafe-name':'Cute Cups'
+        'cafe-name':'Cute-Cups'
     },{
         'cafe-img':'Cafe13.png',
         'cafe-name':'Amooze'
@@ -62,7 +62,7 @@ var cafe_img_Data=[
 var cafeData =[
     //cafe1
     {
-        'cafe_name':'The Bean Palace', 
+        'cafe_id':'The-Bean-Palace', 
         'header_img':'../image/cafe1header.png', 
         'food1-img':'food/food1.png',
         'food2-img':'food/food4.png',
@@ -76,7 +76,7 @@ var cafeData =[
     },
     //cafe2
     {
-        'cafe_name':'Lava Java', 
+        'cafe_id':'Lava-Java', 
         'header_img':'../image/cafe2header.png', 
         'food1-img':'food/food2.png',
         'food2-img':'drink/drink2.png',
@@ -90,7 +90,7 @@ var cafeData =[
     },
     //cafe3
     {
-        'cafe_name':'The Grind', 
+        'cafe_id':'The-Grind', 
         'header_img':'../image/cafe3header.png', 
         'food1-img':'food/food4.png',
         'food2-img':'drink/drink10.png',
@@ -104,7 +104,7 @@ var cafeData =[
     }, 
     //cafe4
     {
-        'cafe_name':'No Social Life', 
+        'cafe_id':'No-Social-Life', 
         'header_img':'../image/cafe4header.png', 
         'food1-img':'food/food17.png',
         'food2-img':'drink/drink8.png',
@@ -118,7 +118,7 @@ var cafeData =[
     },
     //cafe5
     {
-        'cafe_name':'No Doze Cafe', 
+        'cafe_id':'No-Doze-Cafe', 
         'header_img':'../image/cafe5header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'food/food7.png',
@@ -132,7 +132,7 @@ var cafeData =[
     },
     //cafe6
     {
-        'cafe_name':'Aroma Mocha', 
+        'cafe_id':'Aroma-Mocha', 
         'header_img':'../image/cafe6header.png', 
         'food1-img':'food/food12.png',
         'food2-img':'drink/drink3.png',
@@ -146,7 +146,7 @@ var cafeData =[
     },
     //cafe7
     {
-        'cafe_name':'The Split Bean', 
+        'cafe_id':'The-Split-Bean', 
         'header_img':'../image/cafe7header.png', 
         'food1-img':'food/food2.png',
         'food2-img':'drink/drink10.png',
@@ -160,7 +160,7 @@ var cafeData =[
     },
     //cafe8
     {
-        'cafe_name':'Happy Orange', 
+        'cafe_id':'Happy-Orange', 
         'header_img':'../image/cafe8header.png', 
         'food1-img':'drink/drink2.png',
         'food2-img':'food/food8.png',
@@ -174,7 +174,7 @@ var cafeData =[
     },
     //cafe9
     {
-        'cafe_name':'Black Sugars', 
+        'cafe_id':'Black-Sugars', 
         'header_img':'../image/cafe9header.png', 
         'food1-img':'drink/drink3.png',
         'food2-img':'food/food4.png',
@@ -188,7 +188,7 @@ var cafeData =[
     },
     //cafe10
     {
-        'cafe_name':'Bees', 
+        'cafe_id':'Bees', 
         'header_img':'../image/cafe10header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'drink/drink4.png',
@@ -202,7 +202,7 @@ var cafeData =[
     },
     //cafe11
     {
-        'cafe_name':'QnA', 
+        'cafe_id':'QnA', 
         'header_img':'../image/cafe11header.png', 
         'food1-img':'drink/drink7.png',
         'food2-img':'food/food1.png',
@@ -216,7 +216,7 @@ var cafeData =[
     },
     //cafe12
     {
-        'cafe_name':'Cute Cups', 
+        'cafe_id':'Cute-Cups', 
         'header_img':'../image/cafe12header.png', 
         'food1-img':'drink/drink10.png',
         'food2-img':'drink/drink9.png',
@@ -230,7 +230,7 @@ var cafeData =[
     },
     //cafe13
     {
-        'cafe_name':'Amooze', 
+        'cafe_id':'Amooze', 
         'header_img':'../image/cafe13header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'food/food2.png',
@@ -244,7 +244,7 @@ var cafeData =[
     },
     //cafe14
     {
-        'cafe_name':'CHao', 
+        'cafe_id':'CHao', 
         'header_img':'../image/cafe14header.png', 
         'food1-img':'food/food16.png',
         'food2-img':'drink/drink2.png',
@@ -258,7 +258,7 @@ var cafeData =[
     },
     //cafe15
     {
-        'cafe_name':'Merp', 
+        'cafe_id':'Merp', 
         'header_img':'../image/cafe15header.png', 
         'food1-img':'drink/drink8.png',
         'food2-img':'food/food2.png',
@@ -272,7 +272,7 @@ var cafeData =[
     },
     //cafe16
     {
-        'cafe_name':'GRE', 
+        'cafe_id':'GRE', 
         'header_img':'../image/cafe16header.png', 
         'food1-img':'drink/drink4.png',
         'food2-img':'drink/drink3.png',
