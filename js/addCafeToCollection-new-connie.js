@@ -286,14 +286,5 @@ function removeCafeFromCollection(cafe, collection){
             remove_id = cafe_card_Data[i]["cafe-card-id"]+collection;
         }
     }
-    $(remove_id).remove();
+    $('#'+remove_id).remove();
 }
-
-/**
- * Description: changes the selected collection's name to the given newName
- * 
- * Input:
- *      collection - id of the collection
- *      newName - newName that the user wants the collection to be changed into
- */
-function changeCollectionName(collection, newName){}

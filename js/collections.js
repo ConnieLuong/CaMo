@@ -246,4 +246,17 @@ $(document).ready(function(){
         );
     }
 })
+
+/**
+ * Description: changes the selected collection's name to the given newName
+ * 
+ * Input:
+ *      collection - id of the collection
+ *      newName - newName that the user wants the collection to be changed into
+ * LocalStorage change:
+ *      collection<number>name is updated to newName
+ */
+function changeCollectionName(collection, newName){
+    localStorage.setItem(collection+'name',newName);
+}
     
