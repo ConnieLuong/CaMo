@@ -1,6 +1,7 @@
 var cafe_card_Data=[
     //Cafe 1  - The Bean Palace
     { 
+        'cafe-card-id':'The-Bean-Palace-',
         'cafe-link':'cafe_page=The-Bean-Palace',
         'cafe-img':'Cafe1.png',
         'cafe-name':'The Bean Palace',
@@ -9,6 +10,7 @@ var cafe_card_Data=[
     },
     //Cafe 2 - Lava Java
     {
+        'cafe-card-id':'Lava-Java-',
         'cafe link':'cafe_page=Lava-Java',
         'cafe-img':'Cafe2.png',
         'cafe-name':'Lava Java',
@@ -17,6 +19,7 @@ var cafe_card_Data=[
     },
     //Cafe 3 - The Grind
     {
+        'cafe-card-id':'The-Grind-',
         'cafe-link':'cafe_page=The-Grind',
         'cafe-img':'Cafe3.png',
         'cafe-name':'The Grind',
@@ -25,6 +28,7 @@ var cafe_card_Data=[
     },
     //Cafe 4 - No Social Life
     {
+        'cafe-card-id':'No-Social-Life-',
         'cafe-link':'cafe_page=No-Social-Life',
         'cafe-img':'Cafe4.png',
         'cafe-name':'No Social Life',
@@ -33,6 +37,7 @@ var cafe_card_Data=[
     },
     //Cafe 5 - No Doze Cafe
     {
+        'cafe-card-id':'No-Doze-Cafe-',
         'cafe-link':'cafe_page=No-Doze-Cafe',
         'cafe-img':'Cafe5.png',
         'cafe-name':'No Doze Cafe',
@@ -41,6 +46,7 @@ var cafe_card_Data=[
     },
     //Cafe 6 - Aroma Mocha
     {
+        'cafe-card-id':'Aroma-Mocha',
         'cafe-link':'cafe_page=Aroma-Mocha',
         'cafe-img':'Cafe6.png',
         'cafe-name':'Aroma Mocha',
@@ -49,6 +55,7 @@ var cafe_card_Data=[
     },
     //Cafe 7 - The Split Bean
     {
+        'cafe-card-id':'The-Split-Bean',
         'cafe-link':'cafe_page=The-Split-Bean',
         'cafe-img':'Cafe7.png',
         'cafe-name':'The Split Bean',
@@ -57,6 +64,7 @@ var cafe_card_Data=[
     },
     //Cafe 8 - Happy Orange
     {
+        'cafe-card-id':'Happy-Orange-',
         'cafe-link':'cafe_page=Happy-Orange',
         'cafe-img':'Cafe8.png',
         'cafe-name':'Happy Orange',
@@ -65,6 +73,7 @@ var cafe_card_Data=[
     },
     //Cafe 9 - Black Sugars
     {
+        'cafe-card-id':'Black-Sugars-',
         'cafe-link':'cafe_page=Black-Sugars',
         'cafe-img':'Cafe9.png',
         'cafe-name':'Black Sugars',
@@ -73,6 +82,7 @@ var cafe_card_Data=[
     },
     //Cafe 10 - Bees
     {
+        'cafe-card-id':'Bees-',
         'cafe-link':'cafe_page=Bees',
         'cafe-img':'Cafe10.png',
         'cafe-name':'Bees',
@@ -81,6 +91,7 @@ var cafe_card_Data=[
     },
     //Cafe 11 - QnA
     {
+        'cafe-card-id':'QnA-',
         'cafe-link':'cafe_page=QnA',
         'cafe-img':'Cafe11.png',
         'cafe-name':'QnA',
@@ -89,6 +100,7 @@ var cafe_card_Data=[
     },
     //Cafe 12 - Cute Cups
     {
+        'cafe-card-id':'Cute-Cups-',
         'cafe-link':'cafe_page=Cute-Cupts',
         'cafe-img':'Cafe12.png',
         'cafe-name':'Cute Cups',
@@ -97,6 +109,7 @@ var cafe_card_Data=[
     },
     //Cafe 13 - Amooze
     {
+        'cafe-card-id':'Amooze-',
         'cafe-link':'cafe_page=Amooze',
         'cafe-img':'Cafe13.png',
         'cafe-name':'Amooze',
@@ -105,6 +118,7 @@ var cafe_card_Data=[
     },
     //Cafe 14 - CHao
     {
+        'cafe-card-id':'CHao-',
         'cafe-link':'cafe_page=CHao',
         'cafe-img':'Cafe14.png',
         'cafe-name':'CHao',
@@ -113,6 +127,7 @@ var cafe_card_Data=[
     },
     //Cafe 15 - Merp
     {
+        'cafe-card-id':'Merp-',
         'cafe-link':'cafe_page=Merp',
         'cafe-img':'Cafe15.png',
         'cafe-name':'Merp',
@@ -121,6 +136,7 @@ var cafe_card_Data=[
     },
     //Cafe 16 - GRE
     {   
+        'cafe-card-id':'GRE-',
         'cafe-link':'cafe_page=GRE',
         'cafe-img':'Cafe16.png',
         'cafe-name':'GRE',
@@ -129,39 +145,47 @@ var cafe_card_Data=[
     }
 ];
 
-
 /**
  * Description: Given a cafe and a collection, will add the given cafe as a bootstrap
  * card to the given collection
  * 
  * Input: 
  *     cafe - id of the cafe
- *     collection - id of the collection (collection1, collection2, collection3, or collection4)
+ *     collection - value of the collection dropdown. [value will correspond to the 
+ *                  id of the collection (collection1, collection2, collection3, or collection4)]
  * Output:
  *     alerts user that the cafe has been added to the selected collection
  * LocalStorage change:
  *      LocalStorage's key collection<number>HTML to append given cafe
  * Interface change:
- *     The 'Save Cafe' button is changed to 'Cafe Saved to a Collection'
+ *     The 'Save Cafe' button is changed to 'Unsave Cafe' and add new button 'Save to Another Collection'
  */
 function addCafeToCollection(cafe, collection){
     var collection_name = (collection+"name").innerHTML;
-    var cafe_name = cafe.split('-').join(' ');
+    var input_cafe_name = cafe.split('-').join(' ');
 
     //if not a collection, alert user
-    if(!isCollection(collection)){
+    if( $('.dropdown').val()=='none' ){
         window.alert('Please select a collection.');
     }
 
     //attempt addCollectionToCafe(). if cafe already in collection, alert user
     var temp = addCollectionToCafe(cafe, collection);
     if(!temp){
-        window.alert(cafe_name + ' is already in ' + collection_name + '.');
+        window.alert(input_cafe_name + ' is already in ' + collection_name + '.');
     }
     //else if temp==true, then update collection<number>HTML
     else{
         //get the corresponding cafe information from cafe_card_Data
         var curData = '';
+        for(var i=0; i<cafe_card_Data.length; i++){
+            if(input_cafe_name==cafe_card_Data[i]["cafe-name"]){
+                curData = cafe_card_Data[i];
+                //add collection after cafe-card-id to prevent confusion if same cafe added to multiple collections
+                curData["cafe-card-id"] = curData["cafe-card-id"]+collection;
+            }
+        }
+
         //compile cafeCard template
         var source = $('#cafeCard').html();
         var template = Handlebars.compile(source);
@@ -176,11 +200,11 @@ function addCafeToCollection(cafe, collection){
     }
 
     //update button
-    toggleSaveCafeButton(cafe);
+    updateSaveCafeButton(cafe);
 
     //alert user
-    window.alert('Successfully added ' + cafe_name + ' to the collection ' + collection_name);
-    closeNav();
+    window.alert('Successfully added ' + input_cafe_name + ' to the collection ' + collection_name);
+    closeAddToCollectionNav();
 }
 
 /**
@@ -237,7 +261,7 @@ function addCollectionToCafe(cafe,collection){
  *      or from 'Cafe Saved to a Collection' to 'Save Cafe'
  *      or no change
  */
-function toggleSaveCafeButton(cafe){}
+function updateSaveCafeButton(cafe){}
 
 /**
  * Description: Removes the given cafe from the given collection.
@@ -253,7 +277,17 @@ function toggleSaveCafeButton(cafe){}
  * Interface change:
  *      the removed cafe will no longer show up in under the collection is was removed from on the collection page
  */
-function removeCafeFromCollection(cafe, collection){}
+function removeCafeFromCollection(cafe, collection){
+    var input_cafe_name = cafe.split('-').join(' ');
+    var remove_id;
+
+    for(var i=0; i<cafe_card_Data.length; i++){
+        if(input_cafe_name==cafe_card_Data[i]["cafe-name"]){
+            remove_id = cafe_card_Data[i]["cafe-card-id"]+collection;
+        }
+    }
+    $(remove_id).remove();
+}
 
 /**
  * Description: changes the selected collection's name to the given newName

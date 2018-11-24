@@ -426,9 +426,8 @@ var categoryData =[
     }
 ];
 
-//script to load correct cafes
-//query format : ...../category.html?category_page=quiet
-//replae quiet with the corresponding name
+//script to load correct cafes onto category page
+//query format : /category.html?category_page=category_id
 $(document).ready(function(){
     //compile template
     var source = $('#category-template').html();

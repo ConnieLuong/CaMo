@@ -258,12 +258,12 @@ $(document).ready(function(){
 })
 
 //opens the add to collection nav
-function openNav(){
-    document.getElementById("myNav").style.width = "100%";
+function openAddToCollectionNav(){
+    document.getElementById("addToCollectionNav").style.width = "100%";
 }
 //closes the add to collection nav
-function closeNav(){
-    document.getElementById("myNav").style.width = "0%";
+function closeAddToCollectionNav(){
+    document.getElementById("addToCollectionNav").style.width = "0%";
 }
 /**
  * Saves the current cafe to addHTML#collection_name in localStorage
