@@ -217,17 +217,16 @@ var collectionData =[
 //script to load correct cafes
 //query format : ./collection.html?collecton_page=collection_name
 $(document).ready(function(){
+
+    /* MAY NOT NEED THIS ANYMORE START */
     //compile template
     var source = $('#collection-template').html();
     var template = Handlebars.compile(source);
-
     var parentDiv = $("#templatedCollections");
-
     //allow for fake-database queries
     var queryParams = new URLSearchParams(window.location.search);
     var collection = queryParams.get('collection_page');
     console.log('query for', collection);
-
     for(var i=0; i<collectionData.length; i++){
         console.log('in for loop');
         var curData = collectionData[i];
@@ -236,14 +235,20 @@ $(document).ready(function(){
             parentDiv.append(curHtml);
         }
     }
+    /* END  */
 
-    console.log(localStorage.getItem('addHTML#'+collection));
-    console.log('addHTML#'+collection);
-    //check local storage to see if any new cafes were added by user
-    if(localStorage.getItem('addHTML#'+collection)!=null){
-        $('#'+collection+' #addedCafe').append(
-            localStorage.getItem('addHTML#'+collection)
-        );
+    //load all cafes for each collection  
+    if(localStorage.getItem('collection1HTML')!=null){
+       $("#collection1content").innerHTML = localStorage.getItem('collection1HTML');
+    }
+    if(localStorage.getItem('collection2HTML')!=null){
+        $("#collection2content").innerHTML = localStorage.getItem('collection2HTML');
+    }
+    if(localStorage.getItem('collection3HTML')!=null){
+        $("#collection3content").innerHTML = localStorage.getItem('collection3HTML');
+    }
+    if(localStorage.getItem('collection4HTML')!=null){
+        $("#collection4content").innerHTML = localStorage.getItem('collection4HTML');
     }
 })
 
