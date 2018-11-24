@@ -2,13 +2,13 @@
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 var cancel = document.getElementById("cancel");
-
+/*
 $(document).ready(function() {
     //If addHTML not null, load current collections onto page
     if(localStorage.getItem('addHTML')!=null){
         $("#addedCollection").append(localStorage.getItem('addHTML'));
     }
-})
+})*/
 
 function logOut(){
     if(confirm("Are you sure you want to log out?")){
@@ -18,6 +18,8 @@ function logOut(){
     }
 }
 
+//decide to remove user ability to create new collection - can only have 4 collection
+/*
 //if user presses return/enter, will immediately call addCollection method
 var inputElem = document.getElementById('inputCollectionName');
 inputElem.addEventListener('keypress', function (e) {
@@ -41,7 +43,7 @@ function addCollection(){
     }
     //localStorage.removeItem('num');
     //localStorage.removeItem('addHTML');
-///*
+    
     //Initialize num in localStorage to 1
     console.log('num before =', localStorage.getItem('num'));
     if(localStorage.getItem('num')==null){
@@ -95,7 +97,6 @@ function addCollection(){
 
     console.log('num after =', localStorage.getItem('num'));
     document.getElementById('inputCollectionName').value = '';
-    //*/
 }
 
 function add(){
@@ -114,4 +115,4 @@ span.onclick = function(){
 //when user cancels
 cancel.onclick = function(){
     modal.style.display = "none";
-}
+}*/

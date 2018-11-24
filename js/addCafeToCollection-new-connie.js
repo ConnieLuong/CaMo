@@ -1,53 +1,131 @@
-var cafe_link_img_name_Data=[
+var cafe_card_Data=[
+    //Cafe 1  - The Bean Palace
     { 
         'cafe-link':'cafe_page=The-Bean-Palace',
         'cafe-img':'Cafe1.png',
-        'cafe-name':'The-Bean-Palace'
-    },{
+        'cafe-name':'The Bean Palace',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 2 - Lava Java
+    {
+        'cafe link':'cafe_page=Lava-Java',
         'cafe-img':'Cafe2.png',
-        'cafe-name':'Lava-Java'
-    },{
+        'cafe-name':'Lava Java',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 3 - The Grind
+    {
+        'cafe-link':'cafe_page=The-Grind',
         'cafe-img':'Cafe3.png',
-        'cafe-name':'The-Grind'
-    },{
+        'cafe-name':'The Grind',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 4 - No Social Life
+    {
+        'cafe-link':'cafe_page=No-Social-Life',
         'cafe-img':'Cafe4.png',
-        'cafe-name':'No-Social-Life'
-    },{
+        'cafe-name':'No Social Life',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 5 - No Doze Cafe
+    {
+        'cafe-link':'cafe_page=No-Doze-Cafe',
         'cafe-img':'Cafe5.png',
-        'cafe-name':'No-Doze-Cafe'
-    },{
+        'cafe-name':'No Doze Cafe',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 6 - Aroma Mocha
+    {
+        'cafe-link':'cafe_page=Aroma-Mocha',
         'cafe-img':'Cafe6.png',
-        'cafe-name':'Aroma-Mocha'
-    },{
+        'cafe-name':'Aroma Mocha',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 7 - The Split Bean
+    {
+        'cafe-link':'cafe_page=The-Split-Bean',
         'cafe-img':'Cafe7.png',
-        'cafe-name':'The-Split-Bean'
-    },{
+        'cafe-name':'The Split Bean',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 8 - Happy Orange
+    {
+        'cafe-link':'cafe_page=Happy-Orange',
         'cafe-img':'Cafe8.png',
-        'cafe-name':'Happy-Orange'
-    },{
+        'cafe-name':'Happy Orange',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 9 - Black Sugars
+    {
+        'cafe-link':'cafe_page=Black-Sugars',
         'cafe-img':'Cafe9.png',
-        'cafe-name':'Black-Sugars'
-    },{
+        'cafe-name':'Black Sugars',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 10 - Bees
+    {
+        'cafe-link':'cafe_page=Bees',
         'cafe-img':'Cafe10.png',
-        'cafe-name':'Bees'
-    },{
+        'cafe-name':'Bees',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 11 - QnA
+    {
+        'cafe-link':'cafe_page=QnA',
         'cafe-img':'Cafe11.png',
         'cafe-name':'QnA',
-    },{
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 12 - Cute Cups
+    {
+        'cafe-link':'cafe_page=Cute-Cupts',
         'cafe-img':'Cafe12.png',
-        'cafe-name':'Cute-Cups'
-    },{
+        'cafe-name':'Cute Cups',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 13 - Amooze
+    {
+        'cafe-link':'cafe_page=Amooze',
         'cafe-img':'Cafe13.png',
-        'cafe-name':'Amooze'
-    },{
+        'cafe-name':'Amooze',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 14 - CHao
+    {
+        'cafe-link':'cafe_page=CHao',
         'cafe-img':'Cafe14.png',
-        'cafe-name':'CHao'
-    },{
+        'cafe-name':'CHao',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 15 - Merp
+    {
+        'cafe-link':'cafe_page=Merp',
         'cafe-img':'Cafe15.png',
-        'cafe-name':'Merp'
-    },{   
+        'cafe-name':'Merp',
+        'cafe-rating':'',
+        'cafe-hashtags':''
+    },
+    //Cafe 16 - GRE
+    {   
+        'cafe-link':'cafe_page=GRE',
         'cafe-img':'Cafe16.png',
-        'cafe-name':'GRE'
+        'cafe-name':'GRE',
+        'cafe-rating':'',
+        'cafe-hashtags':''
     }
 ];
 
@@ -72,7 +150,7 @@ function addCafeToCollection(cafe, collection){
 
     //if not a collection, alert user
     if(!isCollection(collection)){
-
+        window.alert('Please select a collection.');
     }
 
     //attempt addCollectionToCafe(). if cafe already in collection, alert user
@@ -82,40 +160,20 @@ function addCafeToCollection(cafe, collection){
     }
     //else if temp==true, then update collection<number>HTML
     else{
+        //get the corresponding cafe information from cafe_card_Data
+        var curData = '';
         //compile cafeCard template
         var source = $('#cafeCard').html();
         var template = Handlebars.compile(source);
         var curHTML = template(curData);
 
         //initialize or update collection<number>HTML
+        if(localStorage.getItem(collection+'HTML')==null){
+            localStorage.setItem(collection+'HTML') = curHTML;
+        }else{
+            localStorage.setItem(collection+'HTML') = localStorage.getItem(collection+'HTML')+curHTML;
+        }
     }
-
-    var curData = {
-        'cafe_link':'',
-        'cafe_img':'',
-        'cafe_name':'',   
-    };
-    
-    //compile template cafeCard
-    
-    // Update addHTML in localStorage (initialize or append)
-    if(localStorage.getItem('addHTML') == null){
-        localStorage.setItem('addHTML', curHTML)
-    }else{
-        new_addHTML_inLS = localStorage.getItem('addHTML') + curHTML;
-        localStorage.setItem('addHTML', new_addHTML_inLS);
-    }
-
-
-    console.log('addHTML = ', localStorage.getItem('addHTML'));
-        
-
-    //update curr_num
-    curr_num++;
-    localStorage.setItem('num', curr_num);
-
-    console.log('num after =', localStorage.getItem('num'));
-    document.getElementById('inputCollectionName').value = '';
 
     //update button
     toggleSaveCafeButton(cafe);
