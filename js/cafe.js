@@ -1,11 +1,3 @@
-function add(){
-    modal.style.display = "block";
-    //when user clicks anywhere outside of the modal, also close it.
-    if(event.target == modal){
-        modal.style.display = "none";
-    }
-}
-
 var cafeData =[
     //cafe1 - The Bean Palace
     {
@@ -236,6 +228,7 @@ var cafeData =[
 //script to load correct cafes
 //query format : ./cafe.html?cafe_page=cafe_id
 $(document).ready(function(){
+
     //compile template
     var source = $('#cafe-template').html();
     var template = Handlebars.compile(source);
@@ -257,18 +250,18 @@ $(document).ready(function(){
     }
 })
 
-//opens the add to collection nav
-function openAddToCollectionNav(){
-    document.getElementById("addToCollectionNav").style.width = "100%";
-}
-//closes the add to collection nav
-function closeAddToCollectionNav(){
-    document.getElementById("addToCollectionNav").style.width = "0%";
-}
-/**
+/*
  * Saves the current cafe to addHTML#collection_name in localStorage
  * @param {*} collection 
- *
+ */
+/*
+function add(){
+    modal.style.display = "block";
+    //when user clicks anywhere outside of the modal, also close it.
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
 function addToCollection (collection){
     //selected_option is #collection_name
     var selected_option = '#'+$('.dropdown').val();

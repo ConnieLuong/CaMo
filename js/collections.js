@@ -261,7 +261,13 @@ $(document).ready(function(){
  * LocalStorage change:
  *      collection<number>name is updated to newName
  */
-function changeCollectionName(collection, newName){
-    localStorage.setItem(collection+'name',newName);
+function changeCollectionName(collection){
+    var newName = prompt("Please enter new collection name:", "Collection Name");
+    if (person == null || person == "") {
+        window.alert("Collection name was not changed.");
+    } else {
+        localStorage.setItem(collection+'name',newName);
+        window.alert("Successfully changed collection name to "+newName);
+    } 
 }
     

@@ -145,6 +145,30 @@ var cafe_card_Data=[
     }
 ];
 
+$(document).ready(function(){
+    //load collection names into dropdown
+    if(localStorage.getItem("collection1name")!=null){document.getElementById("collection1-option").innerHTML= localStorage.getItem("collection1name")};
+    if(localStorage.getItem("collection2name")!=null){document.getElementById("collection2-option").innerHTML= localStorage.getItem("collection2name")};
+    if(localStorage.getItem("collection3name")!=null){document.getElementById("collection3-option").innerHTML= localStorage.getItem("collection3name")};
+    if(localStorage.getItem("collection4name")!=null){document.getElementById("collection4-option").innerHTML= localStorage.getItem("collection4name")};
+
+    //check and update SaveButton
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe = queryParams.get('cafe_page');
+    updateSaveCafeButton(cafe);
+    console.log(cafe);
+})
+
+//opens the add to collection nav
+function openAddToCollectionNav(){
+    document.getElementById("addToCollectionNav").style.width = "100%";
+}
+//closes the add to collection nav
+function closeAddToCollectionNav(){
+    document.getElementById("addToCollectionNav").style.width = "0%";
+}
+
+
 /**
  * Description: Given a cafe and a collection, will add the given cafe as a bootstrap
  * card to the given collection
@@ -160,9 +184,17 @@ var cafe_card_Data=[
  * Interface change:
  *     The 'Save Cafe' button is changed to 'Unsave Cafe' and add new button 'Save to Another Collection'
  */
-function addCafeToCollection(cafe, collection){
-    var collection_name = (collection+"name").innerHTML;
-    var input_cafe_name = cafe.split('-').join(' ');
+function addCafeToCollection(){
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe_id = queryParams.get('cafe_page');
+    var input_cafe_name = cafe_id.split('-').join(' ');
+
+    var collection_id = $('.dropdown').val();
+    var collection = document.getElementById(collection_id+'-option').innerHTML;
+
+    console.log('cafe_id = ', cafe_id);
+    console.log('collection = ', collection);
+
 
     //if not a collection, alert user
     if( $('.dropdown').val()=='none' ){
@@ -170,9 +202,10 @@ function addCafeToCollection(cafe, collection){
     }
 
     //attempt addCollectionToCafe(). if cafe already in collection, alert user
-    var temp = addCollectionToCafe(cafe, collection);
+    var temp = addCollectionToCafe(cafe_id, collection_id);
     if(!temp){
-        window.alert(input_cafe_name + ' is already in ' + collection_name + '.');
+        window.alert(input_cafe_name + ' is already in ' + collection + '.');
+        return;
     }
     //else if temp==true, then update collection<number>HTML
     else{
@@ -181,8 +214,8 @@ function addCafeToCollection(cafe, collection){
         for(var i=0; i<cafe_card_Data.length; i++){
             if(input_cafe_name==cafe_card_Data[i]["cafe-name"]){
                 curData = cafe_card_Data[i];
-                //add collection after cafe-card-id to prevent confusion if same cafe added to multiple collections
-                curData["cafe-card-id"] = curData["cafe-card-id"]+collection;
+                //add collection_id after cafe-card-id to prevent confusion if same cafe added to multiple collections
+                curData["cafe-card-id"] = curData["cafe-card-id"]+collection_id;
             }
         }
 
@@ -192,18 +225,18 @@ function addCafeToCollection(cafe, collection){
         var curHTML = template(curData);
 
         //initialize or update collection<number>HTML
-        if(localStorage.getItem(collection+'HTML')==null){
-            localStorage.setItem(collection+'HTML') = curHTML;
+        if(localStorage.getItem(collection_id+'HTML')==null){
+            localStorage.setItem(collection_id+'HTML', curHTML);
         }else{
-            localStorage.setItem(collection+'HTML') = localStorage.getItem(collection+'HTML')+curHTML;
+            localStorage.setItem(collection_id+'HTML', localStorage.getItem(collection_id+'HTML')+curHTML);
         }
     }
 
     //update button
-    updateSaveCafeButton(cafe);
+    updateSaveCafeButton(cafe_id);
 
     //alert user
-    window.alert('Successfully added ' + input_cafe_name + ' to the collection ' + collection_name);
+    window.alert('Successfully added ' + input_cafe_name + ' to the collection ' + collection);
     closeAddToCollectionNav();
 }
 
@@ -261,7 +294,19 @@ function addCollectionToCafe(cafe,collection){
  *      or from 'Cafe Saved to a Collection' to 'Save Cafe'
  *      or no change
  */
-function updateSaveCafeButton(cafe){}
+function updateSaveCafeButton(cafe){
+    //check <cafe name>List to see if cafe is saved to a collection
+    if(localStorage.getItem(cafe+'List')!=null){
+        console.log('in updateSaveCafeButton first if statement');
+        for(var i=0; i<4; i++){
+            if(localStorage.getItem(cafe+'List')[i]==1){
+                console.log('in updateSaveCafeButton second if statement');
+                document.getElementById('SaveButton').innerHTML = 'Saved';
+                break;
+            }
+        }
+    }
+}
 
 /**
  * Description: Removes the given cafe from the given collection.
@@ -287,4 +332,9 @@ function removeCafeFromCollection(cafe, collection){
         }
     }
     $('#'+remove_id).remove();
+
+
+    //BIG PROBLEM TODO
+    //somehow need to convert string from collection<number>HTML to html and then remove from there
+    //then need to update <cafe name>List
 }
