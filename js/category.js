@@ -104,7 +104,7 @@ var categoryData =[
         'cafe8-name':'No Social Life',
         'cafe8-rating':'3/5',
         'cafe8-hashtags':'#quiet #brunch #pet-friendly #twentyfourh',
-        'cafe8-link':'cafe_page=Merp'
+        'cafe8-link':'cafe_page=No-Social-Life'
     },
     //category3 - group
     {

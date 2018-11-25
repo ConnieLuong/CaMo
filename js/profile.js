@@ -1,56 +1,25 @@
 
-var modal = document.getElementById("myModal");
+/*var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 var cancel = document.getElementById("cancel");
-/*
+
 $(document).ready(function() {
     //If addHTML not null, load current collections onto page
     if(localStorage.getItem('addHTML')!=null){
         $("#addedCollection").append(localStorage.getItem('addHTML'));
     }
-})*/
+})
 
 function logOut(){
     if(confirm("Are you sure you want to log out?")){
         window.location = "login.html";
         localStorage.removeItem('addHTML');
         localStorage.removeItem('num');
-
-        clearLocalStorage();   
     }
 }
 
-function clearLocalStorage(){
-    localStorage.removeItem('collection1name');
-    localStorage.removeItem('collection2name');
-    localStorage.removeItem('collection3name');
-    localStorage.removeItem('collection4name');
-
-    localStorage.removeItem('collection1HTML');
-    localStorage.removeItem('collection2HTML');
-    localStorage.removeItem('collection3HTML');
-    localStorage.removeItem('collection4HTML');
-    
-    localStorage.removeItem('The-Bean-PalaceList');
-    localStorage.removeItem('Lava-JavaList');
-    localStorage.removeItem('The-GrindList');
-    localStorage.removeItem('No-Social-LifeList');
-    localStorage.removeItem('No-Doze-CafeList');
-    localStorage.removeItem('Aroma-MochaList');
-    localStorage.removeItem('The-Split-BeanList');
-    localStorage.removeItem('Happy-OrangeList');
-    localStorage.removeItem('Black-SugarsList');
-    localStorage.removeItem('BeesList');
-    localStorage.removeItem('QnAList');
-    localStorage.removeItem('Cute-Cups-List');
-    localStorage.removeItem('AmoozeList');
-    localStorage.removeItem('CHaoList');
-    localStorage.removeItem('MerpList');
-    localStorage.removeItem('GREList');
-}
-
 //decide to remove user ability to create new collection - can only have 4 collection
-/*
+
 //if user presses return/enter, will immediately call addCollection method
 var inputElem = document.getElementById('inputCollectionName');
 inputElem.addEventListener('keypress', function (e) {

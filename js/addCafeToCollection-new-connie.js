@@ -305,6 +305,8 @@ function updateSaveCafeButton(cafe){
                 break;
             }
         }
+    }else{
+        document.getElementById('SaveButton').innerHTML = 'Save Cafe';
     }
 }
 

@@ -80,25 +80,25 @@
             
         </script>
 
-        <!-- Cafe Card Template -->
+        <!-- Cafe Card Template to add to collections -->
 		<script id="cafeCard" type="text/x-handlebars-template">
-			<div class="card">
-                <img class="card-img-top" src="../image/{{cafe-img}}">
-                <div class="card-body">
+            <div class="col-sm-3" style="padding:3% 0" id="{{cafe-card-id}}">
+                <div class="card">
                     <a href="../Cafe/cafe.html?{{cafe-link}}">
-                        <h5 class="card-title">{{cafe-name}}</h5>
-                        <img src='../image/star3.png' style="max-width: 150px; width:80%;">
-                        <div style="margin-top:1%">
-                            <img src="../image/tag-24hr.png" class="tag-24">
-                            <img src="../image/tag-quiet.png" class="tag-q">
-                            <img src="../image/tag-pet.png" class="tag-p">
+                        <img class="card-img-top" src="../image/{{cafe-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">{{cafe-name}}</h5>
+                            <div class='rating'>{{cafe-rating}}</div>
+                            <div class="hashtags" style="margin-top:1%">
+                                {{cafe-hashtags}}
+                            </div>
                         </div>
                     </a>
                 </div>
             </div>
         </script>
 
-		<script id="cafeCardNewRow" type="text/x-handlebars-template">
+		<!--<script id="cafeCardNewRow" type="text/x-handlebars-template">
 			</div>
 			<div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >
                 <div class="card">
@@ -115,7 +115,7 @@
                         </a>
                     </div>
                 </div>
-		</script>
+		</script>-->
 
         <div id="templatedCafes">
             <!--templated category content HTML will appear here-->
