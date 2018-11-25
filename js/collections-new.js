@@ -88,9 +88,9 @@ function removeCafeFromCollection(cafe){
         console.log('newList after = ', newList)
 
         //update collection<number>HTML in LocalStorage
-        localStorage.setItem(collection_id+'HTML', document.getElementById(collection_id+'content').innerHTML);
         if( (jQuery.trim(document.getElementById(collection_id+'content').innerHTML)).length == 0){
             document.getElementById(collection_id+'content').innerHTML = "Empty collection. Start saving cafes!";
         };
+        localStorage.setItem(collection_id+'HTML', document.getElementById(collection_id+'content').innerHTML);
     }
 }
