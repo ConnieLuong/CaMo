@@ -127,7 +127,7 @@ function clearLocalStorage(){
     localStorage.removeItem('Black-SugarsList');
     localStorage.removeItem('BeesList');
     localStorage.removeItem('QnAList');
-    localStorage.removeItem('Cute-Cups-List');
+    localStorage.removeItem('Cute-CupsList');
     localStorage.removeItem('AmoozeList');
     localStorage.removeItem('CHaoList');
     localStorage.removeItem('MerpList');

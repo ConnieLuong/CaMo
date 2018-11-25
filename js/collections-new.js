@@ -49,3 +49,48 @@ function changeCollectionName(collection){
         document.getElementById(collection+'name').innerHTML = newName;
     } 
 }
+
+/**
+ * Description: Removes the given cafe from the given collection. This will be clicked from cafe page.
+ * 
+ * Input:
+ *      cafe - id of the cafe card; will be in fomat <cafe id>-collection<number>
+ * Output:
+ *      * first checks if the users is sure about removing the selected cafe from the selected collection
+ *      * alerts the user that the cafe has now been removed from the selected collection
+ * LocalStorage change:
+ *      updates <cafe name>List to change the corresponding collection index value to 0
+ *      updates collection<number>HTML to remove the cafe.
+ * Interface change:
+ *      the removed cafe will no longer show up in under the collection is was removed from on the collection page
+ */
+function removeCafeFromCollection(cafe){
+    if(confirm("Are you sure you want to remove this cafe?")){
+        //get cafe id
+        var cafe_id = cafe.substring(0, cafe.length-12);
+        //get collection id
+        var collection_id = cafe.substring(cafe.length-11);
+        //get collection number
+        var collection_num = parseInt(collection_id[collection_id.length-1])-1;
+        
+        //remove cafe card from current html
+        $('#'+cafe).remove();
+
+        //update <cafe name>List in LocalStorage
+        console.log('cafe_id = ', cafe_id);
+        console.log('collection_id = ', collection_id);
+        console.log('collection_num = '+collection_num);
+
+        var newList = JSON.parse(localStorage.getItem(cafe_id+'List'));
+        console.log('newList before = ', newList);
+        newList[collection_num] = 0;
+        localStorage.setItem(cafe_id+'List', JSON.stringify(newList));
+        console.log('newList after = ', newList)
+
+        //update collection<number>HTML in LocalStorage
+        localStorage.setItem(collection_id+'HTML', document.getElementById(collection_id+'content').innerHTML);
+        if( (jQuery.trim(document.getElementById(collection_id+'content').innerHTML)).length == 0){
+            document.getElementById(collection_id+'content').innerHTML = "Empty collection. Start saving cafes!";
+        };
+    }
+}

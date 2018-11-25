@@ -15,7 +15,7 @@ var categoryData =[
         'cafe2-name':'No Social Life',
         'cafe2-rating':'3/5',
         'cafe2-hashtags':'#quiet #brunch #pet-friendly #twentyfourh',
-        'cafe2-link':'cafe_page=Lava-Java',
+        'cafe2-link':'cafe_page=No-Social-Life',
 
         'cafe3-img':'Cafe7.png',
         'cafe3-name':'The Split Bean',
@@ -45,7 +45,7 @@ var categoryData =[
         'cafe7-name':'Bees',
         'cafe7-rating':'3/5',
         'cafe7-hashtags':'#quiet #brunch #twentyfourh #themed',
-        'cafe7-link':'cafe_page=No-Doze-Cafe',
+        'cafe7-link':'cafe_page=Bees',
 
         'cafe8-img':'Cafe6.png',
         'cafe8-name':'Aroma Mocha',
@@ -115,7 +115,7 @@ var categoryData =[
         'cafe1-name':'Aroma Mocha',
         'cafe1-rating':'4.5/5',
         'cafe1-hashtags':'#quiet #aesthetic #vegan #group',
-        'cafe1-link':'cafe_page=The-Bean-Palace',
+        'cafe1-link':'cafe_page=Aroma-Mocha',
 
         'cafe2-img':'Cafe2.png',
         'cafe2-name':'Lava Java',
@@ -127,13 +127,13 @@ var categoryData =[
         'cafe3-name':'Happy Orange',
         'cafe3-rating':'3/5',
         'cafe3-hashtags':'#aesthetic #brunch #group #themed',
-        'cafe3-link':'cafe_page=The-Grind',
+        'cafe3-link':'cafe_page=Happy-Orange',
 
         'cafe4-img':'Cafe15.png',
         'cafe4-name':'Merp',
         'cafe4-rating':'3.5/5',
         'cafe4-hashtags':'#aesthetic #group #themed #vegan ',
-        'cafe4-link':'cafe_page=The-Split-Bean',
+        'cafe4-link':'cafe_page=Merp',
 
         'cafe5-img':'Cafe12.png',
         'cafe5-name':'Cute Cups',
@@ -145,7 +145,7 @@ var categoryData =[
         'cafe6-name':'GRE',
         'cafe6-rating':'4/5',
         'cafe6-hashtags':'#pet-friendly #vagan #group #aesthetic',
-        'cafe6-link':'cafe_page=No-Social-Life',
+        'cafe6-link':'cafe_page=GRE',
 
         'cafe7-img':'Cafe11.png',
         'cafe7-name':'QnA',
@@ -174,13 +174,13 @@ var categoryData =[
         'cafe2-name':'Bees',
         'cafe2-rating':'4.5/5',
         'cafe2-hashtags':'#aesthetic',
-        'cafe2-link':'cafe_page=Lava-Java',
+        'cafe2-link':'cafe_page=Bees',
 
         'cafe3-img':'Cafe8.png',
         'cafe3-name':'Happy Orange',
         'cafe3-rating':'3/5',
         'cafe3-hashtags':'#aesthetic #brunch #group #themed',
-        'cafe3-link':'cafe_page=No-Doze-Cafe',
+        'cafe3-link':'cafe_page=Happy-Orange',
 
         'cafe4-img':'Cafe15.png',
         'cafe4-name':'Merp',
@@ -192,7 +192,7 @@ var categoryData =[
         'cafe5-name':'Amooze',
         'cafe5-rating':'4/5',
         'cafe5-hashtags':'#aesthetic #pet-friendly #brunch #twentyfourh ',
-        'cafe5-link':'cafe_page=Cute-Cups',
+        'cafe5-link':'cafe_page=Amooze',
 
         'cafe6-img':'Cafe3.png',
         'cafe6-name':'The Grind',
@@ -210,7 +210,7 @@ var categoryData =[
         'cafe8-name':'QnA',
         'cafe8-rating':'2.5/5',
         'cafe8-hashtags':'#aesthetic #vegan #group #themed',
-        'cafe8-link':'cafe_page=Black-Sugars'  
+        'cafe8-link':'cafe_page=QnA'  
     },
     //category5 - brunch
     {
@@ -239,7 +239,7 @@ var categoryData =[
         'cafe4-name':'No Social Life',
         'cafe4-rating':'3/5',
         'cafe4-hashtags':'#quiet #brunch #pet-friendly #twentyfourh',
-        'cafe4-link':'cafe_page=The-Grind',
+        'cafe4-link':'cafe_page=No-Social-Life',
 
         'cafe5-img':'Cafe12.png',
         'cafe5-name':'Cute Cups',
@@ -298,7 +298,7 @@ var categoryData =[
         'cafe5-name':'Merp',
         'cafe5-rating':'3.5/5',
         'cafe5-hashtags':'#aesthetic #group #themed #vegan ',
-        'cafe5-link':'cafe_page=Cute-Cups',
+        'cafe5-link':'cafe_page=Merp',
 
         'cafe6-img':'Cafe11.png',
         'cafe6-name':'QnA',
@@ -316,7 +316,7 @@ var categoryData =[
         'cafe8-name':'Bees',
         'cafe8-rating':'4.5/5',
         'cafe8-hashtags':'#quiet #brunch #twentyfourh #themed',
-        'cafe8-link':'cafe_page=Black-Sugars' 
+        'cafe8-link':'cafe_page=Bees' 
     },
     //category 7 - pet-friendly
     {
@@ -333,7 +333,7 @@ var categoryData =[
         'cafe2-name':'The Split Bean',
         'cafe2-rating':'3.5/5',
         'cafe2-hashtags':'#quiet #pet-friendly #vegan #brunch',
-        'cafe2-link':'cafe_page=Lava-Java',
+        'cafe2-link':'cafe_page=The-Split-Bean',
 
         'cafe3-img':'Cafe4.png',
         'cafe3-name':'No Social Life',
@@ -363,7 +363,7 @@ var categoryData =[
         'cafe7-name':'Amooze',
         'cafe7-rating':'4/5',
         'cafe7-hashtags':'#aesthetic #pet-friendly #brunch #twentyfourh ',
-        'cafe7-link':'cafe_page=Cute-Cups',
+        'cafe7-link':'cafe_page=Amooze',
 
         'cafe8-img':'Cafe9.png',
         'cafe8-name':'Black Sugars',
@@ -380,13 +380,13 @@ var categoryData =[
         'cafe1-name':'Merp',
         'cafe1-rating':'3.5/5',
         'cafe1-hashtags':'#aesthetic #group #themed #vegan ',
-        'cafe1-link':'cafe_page=Cute-Cups',
+        'cafe1-link':'cafe_page=Merp',
 
         'cafe2-img':'Cafe14.png',
         'cafe2-name':'CHao',
         'cafe2-rating':'3/5',
         'cafe2-hashtags':'#themed #vagan #twentyfourh',
-        'cafe2-link':'cafe_page=Lava-Java',
+        'cafe2-link':'cafe_page=CHao',
 
         'cafe3-img':'Cafe1.png',
         'cafe3-name':'The Bean Palace',
@@ -410,7 +410,7 @@ var categoryData =[
         'cafe6-name':'The Split Bean',
         'cafe6-rating':'3.5/5',
         'cafe6-hashtags':'#quiet #pet-friendly #vegan #brunch',
-        'cafe6-link':'cafe_page=The-Grind',
+        'cafe6-link':'cafe_page=The-Split-Bean',
 
         'cafe7-img':'Cafe6.png',
         'cafe7-name':'Aroma Mocha',
@@ -422,7 +422,7 @@ var categoryData =[
         'cafe8-name':'QnA',
         'cafe8-rating':'2.5/5',
         'cafe8-hashtags':'#aesthetic #vegan #group #themed',
-        'cafe8-link':'cafe_page=Black-Sugars'  
+        'cafe8-link':'cafe_page=QnA'  
     }
 ];
 

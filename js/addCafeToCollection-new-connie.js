@@ -190,16 +190,21 @@ function addCafeToCollection(){
     var input_cafe_name = cafe_id.split('-').join(' ');
 
     var collection_id = $('.dropdown').val();
-    var collection = document.getElementById(collection_id+'-option').innerHTML;
-
-    console.log('cafe_id = ', cafe_id);
-    console.log('collection = ', collection);
-
-
     //if not a collection, alert user
     if( $('.dropdown').val()=='none' ){
         window.alert('Please select a collection.');
+        return;
     }
+
+    var collection = document.getElementById(collection_id+'-option').innerHTML;
+
+    console.log('cafe_id = ', cafe_id);
+    console.log('input_cafe_name = ', input_cafe_name);
+    console.log('collection_id = ', collection_id);
+    console.log('collection = ', collection);
+
+
+    
 
     //attempt addCollectionToCafe(). if cafe already in collection, alert user
     var temp = addCollectionToCafe(cafe_id, collection_id);
@@ -264,12 +269,12 @@ function addCollectionToCafe(cafe,collection){
     if(localStorage.getItem(cafe+'List') == null){
         var cafe_list = [0,0,0,0];
         cafe_list[collection_number-1] = 1;
-        localStorage.setItem(cafe+'List', cafe_list);
+        localStorage.setItem(cafe+'List', JSON.stringify(cafe_list));
         return true;
     }
     //else check the list to see if collection is already added
     else{
-        var cafe_list = localStorage.getItem(cafe+'List');
+        var cafe_list = JSON.parse(localStorage.getItem(cafe+'List'));
         if(cafe_list[collection_number-1]==1){
             return false;
         }else{
@@ -311,7 +316,7 @@ function updateSaveCafeButton(cafe){
 }
 
 /**
- * Description: Removes the given cafe from the given collection.
+ * Description: Removes the given cafe from the given collection. This will be clicked from cafe page.
  * 
  * Input:
  *      cafe - id of the cafe
@@ -324,7 +329,7 @@ function updateSaveCafeButton(cafe){
  * Interface change:
  *      the removed cafe will no longer show up in under the collection is was removed from on the collection page
  */
-function removeCafeFromCollection(cafe, collection){
+function removeCafeFromCollection(cafe){
     var input_cafe_name = cafe.split('-').join(' ');
     var remove_id;
 
