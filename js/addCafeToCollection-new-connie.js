@@ -168,6 +168,30 @@ function closeAddToCollectionNav(){
     document.getElementById("addToCollectionNav").style.width = "0%";
 }
 
+//opens the remove from collection nav
+function openRemoveFromCollectionNav(){
+    //get cafe id
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe_id = queryParams.get('cafe_page');
+
+    //load collections that cafe can be removed from
+    var curList = JSON.parse(localStorage.getItem(cafe_id+'List'));
+    for(var i=0; i<curList.length; i++){
+        var optionName = 'Collection '+(i+1);
+        if(localStorage.getItem('collection'+(i+1)+'name')!=null){
+            optionName = localStorage.getItem('collection'+(i+1)+'name');
+        }
+        if(curList[i]==1){
+            $('.dropdown.remove').append('<option id="collection'+(i+1)+'-option-remove" value="collection'+(i+1)+'">'+optionName+'</option>');
+        }
+    }
+    document.getElementById("removeFromCollectionNav").style.width = "100%";
+}
+//closes the remove from collection nav
+function closeRemoveFromCollectionNav(){
+    document.getElementById("removeFromCollectionNav").style.width = "0%";
+}
+
 
 /**
  * Description: Given a cafe and a collection, will add the given cafe as a bootstrap
@@ -219,8 +243,11 @@ function addCafeToCollection(){
         for(var i=0; i<cafe_card_Data.length; i++){
             if(input_cafe_name==cafe_card_Data[i]["cafe-name"]){
                 curData = cafe_card_Data[i];
+
+                console.log('curData = ', curData);
                 //add collection_id after cafe-card-id to prevent confusion if same cafe added to multiple collections
                 curData["cafe-card-id"] = curData["cafe-card-id"]+collection_id;
+                console.log('curData = ', curData);
             }
         }
 
@@ -231,6 +258,8 @@ function addCafeToCollection(){
 
         //initialize or update collection<number>HTML
         if(localStorage.getItem(collection_id+'HTML')==null){
+            localStorage.setItem(collection_id+'HTML', curHTML);
+        }else if(localStorage.getItem(collection_id+'HTML')=='Empty collection. Start saving cafes!'){
             localStorage.setItem(collection_id+'HTML', curHTML);
         }else{
             localStorage.setItem(collection_id+'HTML', localStorage.getItem(collection_id+'HTML')+curHTML);
@@ -243,6 +272,10 @@ function addCafeToCollection(){
     //alert user
     window.alert('Successfully added ' + input_cafe_name + ' to the collection ' + collection);
     closeAddToCollectionNav();
+
+
+    //solution for now (problem: for some reason adds collection repeatedly to certain cafe cards)
+    location.reload();
 }
 
 /**
@@ -265,20 +298,29 @@ function addCafeToCollection(){
 function addCollectionToCafe(cafe,collection){
     //get collection number (1,2,3,or 4)
     var collection_number = parseInt(collection[collection.length-1], 10);
+    console.log('collection_number = ', collection_number);
+    console.log('collection_number = ', collection_number-1);
+
     //if not <cafe name>List exists, initialize & add collection to cafe
     if(localStorage.getItem(cafe+'List') == null){
         var cafe_list = [0,0,0,0];
         cafe_list[collection_number-1] = 1;
+        console.log('(in if statement) cafe_list', cafe_list);
+
         localStorage.setItem(cafe+'List', JSON.stringify(cafe_list));
+        console.log('(in if statement) cafe_list', cafe_list);
+
         return true;
     }
     //else check the list to see if collection is already added
     else{
         var cafe_list = JSON.parse(localStorage.getItem(cafe+'List'));
+        console.log('(in else statement) cafe_list', cafe_list);
         if(cafe_list[collection_number-1]==1){
             return false;
         }else{
             cafe_list[collection_number-1]=1;
+            localStorage.setItem(cafe+'List', JSON.stringify(cafe_list));
             return true;
         }
     }
@@ -330,18 +372,59 @@ function updateSaveCafeButton(cafe){
  *      the removed cafe will no longer show up in under the collection is was removed from on the collection page
  */
 function removeCafeFromCollection(cafe){
-    var input_cafe_name = cafe.split('-').join(' ');
-    var remove_id;
+    //get cafe id
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe_id = queryParams.get('cafe_page');
+    var input_cafe_name = cafe_id.split('-').join(' ');
 
-    for(var i=0; i<cafe_card_Data.length; i++){
-        if(input_cafe_name==cafe_card_Data[i]["cafe-name"]){
-            remove_id = cafe_card_Data[i]["cafe-card-id"]+collection;
-        }
+    //get collection id
+    var collection_id = $('.dropdown.remove').val();
+    //if not a collection, alert user
+    if( collection_id=='none' ){
+        window.alert('Please select a collection.');
+        return;
     }
-    $('#'+remove_id).remove();
+    console.log('cafe_id', cafe_id);
+    console.log('collection_id', collection_id);
 
+    //get collection number
+    var collection_num = parseInt(collection_id[collection_id.length-1])-1;
 
-    //BIG PROBLEM TODO
-    //somehow need to convert string from collection<number>HTML to html and then remove from there
-    //then need to update <cafe name>List
+    console.log('collection_num', collection_num);
+
+    var collection_name = document.getElementById(collection_id+'-option-remove').innerHTML;
+
+    if(confirm("Are you sure you want to remove this cafe?")){
+        //get html for selected collection
+        var curHTML = localStorage.getItem(collection_id+'HTML');
+
+        //remove cafe card from current html
+        var jHtmlObject = jQuery(curHTML);
+        var editor = jQuery("<p>").append(jHtmlObject);
+        editor.find("#"+cafe_id+"-"+collection_id).remove();
+        var newHtml = editor.html();
+
+        //update <cafe name>List in LocalStorage
+        var newList = JSON.parse(localStorage.getItem(cafe_id+'List'));
+        console.log('newList before = ', newList);
+        newList[collection_num] = 0;
+        localStorage.setItem(cafe_id+'List', JSON.stringify(newList));
+        console.log('newList after = ', newList)
+
+        //update collection<number>HTML in LocalStorage
+        if( (jQuery.trim(newHtml)).length == 0){
+            newHtml = "Empty collection. Start saving cafes!";
+        }
+        localStorage.setItem(collection_id+'HTML', newHtml);
+        
+        //update button
+        updateSaveCafeButton(cafe_id);
+
+        //alert user
+        window.alert('Successfully removed ' + input_cafe_name + ' from the collection ' + collection_name);
+        closeRemoveFromCollectionNav();
+        //solution for now (problem: for some reason adds collection repeatedly to certain cafe cards)
+        location.reload();
+    }
+    
 }

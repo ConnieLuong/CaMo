@@ -27,7 +27,10 @@
                     <img class="header-img" src="{{header_img}}">
                     <div style="margin-top:1%">
                         <!--<button type="button" class="btn btn-outline-secondary">Feedback</button>-->
-                        <button id="SaveButton" type="button" class="btn btn-outline-secondary" onclick="openAddToCollectionNav()">Add to Collection</button>
+                        <button id="SaveButton" type="button" class="btn btn-outline-secondary" 
+                            onclick="openAddToCollectionNav()">Add to Collection</button>
+                        <button id="RemoveButton" type="button" class="btn btn-outline-danger" 
+                            onclick="openRemoveFromCollectionNav()">Remove from Collection</button>
                         <!--Add to collection overlay-->
                         <div id="addToCollectionNav" class="overlay">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeAddToCollectionNav()">&times;</a>
@@ -42,6 +45,18 @@
                                 </select>
                                 <br><br>
                                 <input type="submit" onclick="addCafeToCollection()">                
+                            </div>
+                        </div>
+                        <!--Remove from collection overlay-->
+                        <div id="removeFromCollectionNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeRemoveFromCollectionNav()">&times;</a>
+                            <div class="overlay-content">
+                                <h1>choose collection to remove cafe from:</h1>
+                                <select class="dropdown remove">
+                                    <option value="none">---</option>
+                                </select>
+                                <br><br>
+                                <input type="submit" onclick="removeCafeFromCollection()">                
                             </div>
                         </div>
                     </div>
@@ -94,7 +109,7 @@
                             </div>
                         </div>
                     </a>
-                    <button id="SaveButton" type="button" class="btn btn-outline-danger" 
+                    <button id="RemoveButton" type="button" class="btn btn-outline-danger" 
                             onclick="removeCafeFromCollection('{{cafe-card-id}}')">Remove from Collection</button>
                 </div>
             </div>
