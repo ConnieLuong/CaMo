@@ -157,6 +157,7 @@ $(document).ready(function(){
     var cafe = queryParams.get('cafe_page');
     updateSaveCafeButton(cafe);
     console.log(cafe);
+    
 })
 
 //opens the add to collection nav
@@ -354,6 +355,18 @@ function updateSaveCafeButton(cafe){
         }
     }else{
         document.getElementById('SaveButton').innerHTML = 'Save Cafe';
+    }
+
+    var queryParams = new URLSearchParams(window.location.search);
+    var cafe_id = queryParams.get('cafe_page');
+    var curList = JSON.parse(localStorage.getItem(cafe_id+'List'));
+    for(var i=0; i<curList.length; i++){
+        if(curList[i]==1){
+            //if there cafe is in a collection, change remove button display to inline;
+            console.log('in for loop that checks if should display remove button');
+            document.getElementById("RemoveButton").style.display = "inline";
+            break;
+        }
     }
 }
 
