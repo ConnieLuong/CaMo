@@ -204,7 +204,8 @@ form.searchbox input.text {
 	width:80%;
     padding:0 5px;
 	float: left;
-	margin-top: 5%;
+	margin-top: 7%;
+	margin-right: 3.99%;
 }
 
 form.searchbox input.submit {

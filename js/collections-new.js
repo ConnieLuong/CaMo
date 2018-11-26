@@ -94,3 +94,4 @@ function removeCafeFromCollection(cafe){
         localStorage.setItem(collection_id+'HTML', document.getElementById(collection_id+'content').innerHTML);
     }
 }
+

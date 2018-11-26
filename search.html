@@ -7,13 +7,11 @@
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/search.css">
-
         <script>
             function result(){
                 location.href = 'searchResultPage/searchResult.html';
             }
         </script>
-
     </head>
     <body>
             <!--Menu Bar-->
@@ -24,8 +22,8 @@
 
             <!-- Search Field-->
             <div class="searchField">
-                <input type="text" placeholder="No Social Life..">
-                <button onclick="result()">Search</button>
+                <input type="text" id = "myInput" placeholder="No Social Life.." />
+                <button id= "myBtn" onclick="result()">Search</button>
             </div>
 
             <!--Hashtags-->

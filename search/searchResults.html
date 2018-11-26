@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaMo - Search Results</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+</head>
+
+
+<body>
+    <!--nav bar-->
+    <nav id="menu"></nav>
+
+    <!--search bar-->
+    <div style="background-image: url(../image/pinkie.png); height: 165px; width: 100%; padding-top:3%;" >
+        <form action="javascript:linkToSearch();" class="searchbox" >
+        <input id="search-input" type="text" class="text" placeholder="Search for cafe">
+        <img src="../image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" onclick="linkToSearch()" />
+        </form>
+    </div>
+
+    <!--search results-->
+    <h1 style="background: #DFD1D1; padding:3rem ;font-family:'Open Sans'; margin: 0; text-transform: none;" >Search results for...   "<span id="keyword" style="font-family:'Caveat'; text-transform: none; font-weight: 300; font-size:60px"></span>"</h1>
+    <div class="row" id="search-results" style="margin-right: 10%; margin-left: 10%;  margin-top: 5%" >
+        
+    </div>
+
+    <!-- Cafe Card Template to add to collections -->
+    <script id="cafeCard" type="text/x-handlebars-template">
+        <div class="col-sm-3" style="padding:3% 0" id="{{cafe-card-id}}">
+            <div class="card">
+                <a href="../Cafe/cafe.html?{{cafe-link}}">
+                    <img class="card-img-top" src="../image/{{cafe-img}}">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">{{cafe-name}}</h5>
+                        <div class='rating'><img src="../image/star{{cafe-rating}}" style="max-width: 150px; width:80%;"></div>
+                        <div class="hashtags" style="margin-top:1%">
+                            {{{cafe-hashtags}}}
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </script>
+
+
+    <!-- Load JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script src="../js/search.js"></script> <!--search function + fake database-->
+    <script src="../js/searchResults.js"></script> <!--loads results using templates-->
+</body>
+</html>

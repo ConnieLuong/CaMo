@@ -183,6 +183,7 @@ function checkUnhover(element) {
     element.setAttribute('src', 'image/checkButton.png');
 }
 
+<<<<<<< HEAD
 
 /*  Nonbootstrap navbar
  '<ul class="menuopt">'+
@@ -192,4 +193,11 @@ function checkUnhover(element) {
         '<li><a href="search.html">Search</a></li>'+
         '<li><a href="index.html">Explore</a></li>'+
         '</ul>' */
+=======
+function linkToSearch(){
+    var keyword = document.getElementById('search-input').value;
+    var loc = "search/searchResults.html?keyword="+keyword;
+    window.location = (loc);
+}
+>>>>>>> aa0bfa0e49ba27eab74b1a1074d8c9df25ae5e03
 
