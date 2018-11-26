@@ -301,7 +301,7 @@ function hashtags_search(keyword){
  * @param {string} keyword 
  * 
  * Output:
- *      list - [2,{cafe info}]
+ *      list - [2,#]
  *      null if nothing found
  */
 function cafe_search(keyword){
