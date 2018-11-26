@@ -11,7 +11,8 @@ var categoryData =[
         'cafe1-hashtags':
             '<img src="../image/tag-quiet.png" class="tag-q">'+
             '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">',
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-themed.png" class="tag-t">',
         'cafe1-link':'cafe_page=The-Bean-Palace',
 
         'cafe2-img':'Cafe4.png',
@@ -444,7 +445,8 @@ var categoryData =[
         'cafe2-hashtags':
             '<img src="../image/tag-quiet.png" class="tag-q">'+
             '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">',
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-themed.png" class="tag-t">',
         'cafe2-link':'cafe_page=The-Bean-Palace',
 
         'cafe3-img':'Cafe5.png',
@@ -516,7 +518,8 @@ var categoryData =[
         'cafe1-hashtags':
             '<img src="../image/tag-quiet.png" class="tag-q">'+
             '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">',
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-themed.png" class="tag-t">',
         'cafe1-link':'cafe_page=The-Bean-Palace',
 
         'cafe2-img':'Cafe7.png',
@@ -619,7 +622,8 @@ var categoryData =[
         'cafe3-hashtags':
             '<img src="../image/tag-quiet.png" class="tag-q">'+
             '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">',
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-themed.png" class="tag-t">',
         'cafe3-link':'cafe_page=The-Bean-Palace',
 
         'cafe4-img':'Cafe5.png',

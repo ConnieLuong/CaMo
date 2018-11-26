@@ -9,7 +9,8 @@ var cafe_card_Data=[
         'cafe-hashtags':
             '<img src="../image/tag-quiet.png" class="tag-q">'+
             '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'
     },
     //Cafe 2 - Lava Java
     {
