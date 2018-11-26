@@ -25,9 +25,9 @@
         <nav id="menu"></nav>
 
         <div class="jumbotron jumbotron-fluid" align="center">
-            <form class="searchbox">
-                <input type="text" class="text" placeholder="Search for cafe"/>
-                <a href="searchResultPage/searchResult.html"><img src="image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" /></a>
+            <form action="javascript:linkToSearch();" class="searchbox">
+                <input id="search-input" type="text" class="text" placeholder="Search for cafe"/>
+                <img src="image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" onclick="linkToSearch()" />
             </form>
         </div>
 

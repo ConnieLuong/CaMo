@@ -29,7 +29,7 @@
 .tag-g{
     max-width: 78px;
 }
-
-a:hover{
+.card a:hover{
     text-decoration: none;
+    text-transform: uppercase;
 }
