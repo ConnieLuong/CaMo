@@ -213,6 +213,7 @@ form.searchbox input.submit {
     max-width: 74px;
 	width:100%;
 }
+
 .opac:hover
 {
     opacity: 0.5;

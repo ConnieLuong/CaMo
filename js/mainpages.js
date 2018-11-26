@@ -36,7 +36,7 @@ function loadNavBar(){
                 
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
-                    '<li><a class="nav-link" href="index.html">Explore</a></li>'+
+                    '<li><a class="nav-link" href="explore/explore.html">Explore</a></li>'+
                     '<li id="collections"></li>'+
                     '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
@@ -182,6 +182,7 @@ function checkHover(element) {
 function checkUnhover(element) {
     element.setAttribute('src', 'image/checkButton.png');
 }
+
 
 /*  Nonbootstrap navbar
  '<ul class="menuopt">'+
