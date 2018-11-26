@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CaMo - Search Results</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/category.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+
+</head>
+
+
+<body>
+    <!--nav bar-->
+    <nav id="menu"></nav>
+
+    <!--search bar-->
+    <div style="background-image: url(../image/pinkie.png); height: 165px; width: 100%; padding-top:3%;" >
+        <form class="searchbox" >
+        <input type="text" class="text" placeholder="Search for cafe"/>
+        <a href="../searchResultPage/searchResult.html"><img src="../image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" /></a>
+        </form>
+    </div>
+
+    <!--search results-->
+    <h1>Search Results for...<span id="keyword"></span></h1>
+    <div class="row" id="search-results">
+        
+    </div>
+
+    <!-- Cafe Card Template to add to collections -->
+    <script id="cafeCard" type="text/x-handlebars-template">
+        <div class="col-sm-3" style="padding:3% 0" id="{{cafe-card-id}}">
+            <div class="card w-25">
+                <a href="../Cafe/cafe.html?{{cafe-link}}">
+                    <img class="card-img-top" src="../image/{{cafe-img}}">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">{{cafe-name}}</h5>
+                        <div class='rating'><img src="../image/star{{cafe-rating}}" style="max-width: 150px; width:80%;"></div>
+                        <div class="hashtags" style="margin-top:1%">
+                            {{{cafe-hashtags}}}
+                        </div>
+                    </div>
+                </a>
+                <button id="RemoveButton" type="button" class="btn btn-outline-danger" 
+                        onclick="removeCafeFromCollection('{{cafe-card-id}}')">Remove from Collection</button>
+            </div>
+        </div>
+    </script>
+
+
+    <!-- Load JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/handlebars-v4.0.11.js"></script>
+    <script src="../js/addCafeToCollection.js"></script> <!--for cafe_card_Data-->
+    <script src='../js/category.js'></script><!--for categoryData-->
+    <script src="../js/search.js"></script> <!--search function + fake database-->
+    <script src="../js/searchResults.js"></script> <!--loads results using templates-->
+</body>
+</html>
