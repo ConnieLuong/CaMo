@@ -162,6 +162,11 @@ $(document).ready(function(){
 
 //opens the add to collection nav
 function openAddToCollectionNav(){
+    //first check if user is signed in
+    if(localStorage.getItem('loginLS')!='true'){
+        window.alert('Please sign in to save cafe to a collection.');
+        return;
+    }
     document.getElementById("addToCollectionNav").style.width = "100%";
 }
 //closes the add to collection nav

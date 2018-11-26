@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
     loadNavBar();
-    clickLogIn();
-    clickLogOut();
     showUsername();
 })
 /*
@@ -58,15 +56,44 @@ function loadNavBar(){
 }
 
 function clickLogIn(){
-    $('#login-button').click(function(){
-        var inputUsername = document.getElementById('username');
-        localStorage.setItem("usernameLS", inputUsername.value);
+    var inputUsername = document.getElementById('username');
+    if(inputUsername.value.length==0 && document.getElementById('password').value.length == 0){
+        window.alert('Please input username and password to log in.');
+        return;
+    }
+    //check if user input username
+    else if(inputUsername.value.length==0){
+        window.alert('Please input user name to log in.');
+        return;
+    }
+    //check if password is empty
+    else if(document.getElementById('password').value.length == 0){
+        window.alert('Please input password to log in.');
+        return;
+    }
+    localStorage.setItem("usernameLS", inputUsername.value);
 
-        alert('You are now logged in.');
-        localStorage.setItem('loginLS','true');
-        checkLogIn();
-    });
+    alert('You are now logged in.');
+    window.location = "index.html";
+    localStorage.setItem('loginLS','true');
+    checkLogIn();
+
 }
+//if user presses return/enter, will immediately call clickLogIn method
+var usernameElem = document.getElementById('username');
+usernameElem.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+        clickLogIn();
+    }  
+});
+var passwordElem = document.getElementById('password');
+passwordElem.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+        clickLogIn();
+    }  
+});
 
 function checkLogIn(){
     // If login == true, show profile
