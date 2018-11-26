@@ -14,7 +14,7 @@
 
     <h1>This is Help page</h1>
 
-    <!--Display category options-->
+    <!--Display category options--
     <div class="row" style="margin-left: 5%; margin-right: 5%; margin-top: 3%">
         <div class="col">
             <div class="card" style="width: 100%;">
@@ -150,6 +150,24 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>-->
+    
+    <!--cafe card template-->
+    <div class="row" style="margin-left: 5%; margin-right: 5%; margin-top: 3%">
+        <div class="col-sm-3" style="padding:3% 0" id="{{cafe-card-id}}">
+            <div class="card">
+                <a href="../Cafe/cafe.html?{{cafe-link}}"></a>
+                    <img class="card-img-top" src="../image/{{cafe-img}}">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">{{cafe-name}}</h5>
+                        <div class='rating'>{{cafe-rating}}</div>
+                        <div class="hashtags" style="margin-top:1%">
+                            {{cafe-hashtags}}
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

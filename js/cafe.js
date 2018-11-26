@@ -1,68 +1,7 @@
-function add(){
-    modal.style.display = "block";
-    //when user clicks anywhere outside of the modal, also close it.
-    if(event.target == modal){
-        modal.style.display = "none";
-    }
-}
-
-//fake database
-var cafe_img_Data=[
-    { 
-        'cafe-img':'Cafe1.png',
-        'cafe-name':'The Bean Palace'
-    },{
-        'cafe-img':'Cafe2.png',
-        'cafe-name':'Lava Java'
-    },{
-        'cafe-img':'Cafe3.png',
-        'cafe-name':'The Grind'
-    },{
-        'cafe-img':'Cafe4.png',
-        'cafe-name':'No Social Life'
-    },{
-        'cafe-img':'Cafe5.png',
-        'cafe-name':'No Doze Cafe'
-    },{
-        'cafe-img':'Cafe6.png',
-        'cafe-name':'Aroma Mocha'
-    },{
-        'cafe-img':'Cafe7.png',
-        'cafe-name':'The Split Bean'
-    },{
-        'cafe-img':'Cafe8.png',
-        'cafe-name':'Happy Orange'
-    },{
-        'cafe-img':'Cafe9.png',
-        'cafe-name':'Black Sugars'
-    },{
-        'cafe-img':'Cafe10.png',
-        'cafe-name':'Bees'
-    },{
-        'cafe-img':'Cafe11.png',
-        'cafe-name':'QnA',
-    },{
-        'cafe-img':'Cafe12.png',
-        'cafe-name':'Cute Cups'
-    },{
-        'cafe-img':'Cafe13.png',
-        'cafe-name':'Amooze'
-    },{
-        'cafe-img':'Cafe14.png',
-        'cafe-name':'CHao'
-    },{
-        'cafe-img':'Cafe15.png',
-        'cafe-name':'Merp'
-    },{   
-        'cafe-img':'Cafe16.png',
-        'cafe-name':'GRE'
-    }
-]
-
 var cafeData =[
-    //cafe1
+    //cafe1 - The Bean Palace
     {
-        'cafe_name':'The Bean Palace', 
+        'cafe_id':'The-Bean-Palace', 
         'header_img':'../image/cafe1header.png', 
         'food1-img':'food/food1.png',
         'food2-img':'food/food4.png',
@@ -74,9 +13,9 @@ var cafeData =[
         'food8-img':'food/food8.png'
 
     },
-    //cafe2
+    //cafe2 - Lava Java
     {
-        'cafe_name':'Lava Java', 
+        'cafe_id':'Lava-Java', 
         'header_img':'../image/cafe2header.png', 
         'food1-img':'food/food2.png',
         'food2-img':'drink/drink2.png',
@@ -88,9 +27,9 @@ var cafeData =[
         'food8-img':'drink/drink3.png'
 
     },
-    //cafe3
+    //cafe3 - The Grind
     {
-        'cafe_name':'The Grind', 
+        'cafe_id':'The-Grind', 
         'header_img':'../image/cafe3header.png', 
         'food1-img':'food/food4.png',
         'food2-img':'drink/drink10.png',
@@ -102,9 +41,9 @@ var cafeData =[
         'food8-img':'drink/drink2.png'
 
     }, 
-    //cafe4
+    //cafe4 - No Social Life
     {
-        'cafe_name':'No Social Life', 
+        'cafe_id':'No-Social-Life', 
         'header_img':'../image/cafe4header.png', 
         'food1-img':'food/food17.png',
         'food2-img':'drink/drink8.png',
@@ -116,9 +55,9 @@ var cafeData =[
         'food8-img':'drink/drink1.png'
 
     },
-    //cafe5
+    //cafe5 - No Doze Cafe
     {
-        'cafe_name':'No Doze Cafe', 
+        'cafe_id':'No-Doze-Cafe', 
         'header_img':'../image/cafe5header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'food/food7.png',
@@ -130,9 +69,9 @@ var cafeData =[
         'food8-img':'drink/drink1.png'
 
     },
-    //cafe6
+    //cafe6 - Aroma Mocha
     {
-        'cafe_name':'Aroma Mocha', 
+        'cafe_id':'Aroma-Mocha', 
         'header_img':'../image/cafe6header.png', 
         'food1-img':'food/food12.png',
         'food2-img':'drink/drink3.png',
@@ -144,9 +83,9 @@ var cafeData =[
         'food8-img':'drink/drink1.png'
 
     },
-    //cafe7
+    //cafe7 - The Split Bean
     {
-        'cafe_name':'The Split Bean', 
+        'cafe_id':'The-Split-Bean', 
         'header_img':'../image/cafe7header.png', 
         'food1-img':'food/food2.png',
         'food2-img':'drink/drink10.png',
@@ -158,9 +97,9 @@ var cafeData =[
         'food8-img':'food/food7.png'
 
     },
-    //cafe8
+    //cafe8 - Happy Orange
     {
-        'cafe_name':'Happy Orange', 
+        'cafe_id':'Happy-Orange', 
         'header_img':'../image/cafe8header.png', 
         'food1-img':'drink/drink2.png',
         'food2-img':'food/food8.png',
@@ -172,9 +111,9 @@ var cafeData =[
         'food8-img':'drink/drink5.png'
 
     },
-    //cafe9
+    //cafe9 - Black Sugars
     {
-        'cafe_name':'Black Sugars', 
+        'cafe_id':'Black-Sugars', 
         'header_img':'../image/cafe9header.png', 
         'food1-img':'drink/drink3.png',
         'food2-img':'food/food4.png',
@@ -186,9 +125,9 @@ var cafeData =[
         'food8-img':'drink/drink8.png'
 
     },
-    //cafe10
+    //cafe10 - Bees
     {
-        'cafe_name':'Bees', 
+        'cafe_id':'Bees', 
         'header_img':'../image/cafe10header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'drink/drink4.png',
@@ -200,9 +139,9 @@ var cafeData =[
         'food8-img':'food/food11.png'
 
     },
-    //cafe11
+    //cafe11 - QnA
     {
-        'cafe_name':'QnA', 
+        'cafe_id':'QnA', 
         'header_img':'../image/cafe11header.png', 
         'food1-img':'drink/drink7.png',
         'food2-img':'food/food1.png',
@@ -214,9 +153,9 @@ var cafeData =[
         'food8-img':'food/food11.png'
 
     },
-    //cafe12
+    //cafe12 - Cute Cups
     {
-        'cafe_name':'Cute Cups', 
+        'cafe_id':'Cute-Cups', 
         'header_img':'../image/cafe12header.png', 
         'food1-img':'drink/drink10.png',
         'food2-img':'drink/drink9.png',
@@ -228,9 +167,9 @@ var cafeData =[
         'food8-img':'food/food10.png'
 
     },
-    //cafe13
+    //cafe13 - Amooze
     {
-        'cafe_name':'Amooze', 
+        'cafe_id':'Amooze', 
         'header_img':'../image/cafe13header.png', 
         'food1-img':'drink/drink6.png',
         'food2-img':'food/food2.png',
@@ -242,9 +181,9 @@ var cafeData =[
         'food8-img':'drink/drink3.png'
 
     },
-    //cafe14
+    //cafe14 - CHao
     {
-        'cafe_name':'CHao', 
+        'cafe_id':'CHao', 
         'header_img':'../image/cafe14header.png', 
         'food1-img':'food/food16.png',
         'food2-img':'drink/drink2.png',
@@ -256,9 +195,9 @@ var cafeData =[
         'food8-img':'food/food3.png'
 
     },
-    //cafe15
+    //cafe15 - Merp
     {
-        'cafe_name':'Merp', 
+        'cafe_id':'Merp', 
         'header_img':'../image/cafe15header.png', 
         'food1-img':'drink/drink8.png',
         'food2-img':'food/food2.png',
@@ -270,9 +209,9 @@ var cafeData =[
         'food8-img':'drink/drink5.png'
 
     },
-    //cafe16
+    //cafe16 - GRE
     {
-        'cafe_name':'GRE', 
+        'cafe_id':'GRE', 
         'header_img':'../image/cafe16header.png', 
         'food1-img':'drink/drink4.png',
         'food2-img':'drink/drink3.png',
@@ -284,12 +223,12 @@ var cafeData =[
         'food8-img':'food/food5.png'
 
     }   
-]
+];
     
 //script to load correct cafes
-//query format : ./cafe.html?cafe_page=cafe_name
-//replace cafe_name with the corresponding name
+//query format : ./cafe.html?cafe_page=cafe_id
 $(document).ready(function(){
+
     //compile template
     var source = $('#cafe-template').html();
     var template = Handlebars.compile(source);
@@ -304,24 +243,25 @@ $(document).ready(function(){
     for(var i=0; i<cafeData.length; i++){
         console.log('in for loop');
         var curData = cafeData[i];
-        if(curData.cafe_name == cafe){
+        if(curData.cafe_id == cafe){
             var curHtml = template(curData);
             parentDiv.append(curHtml);
         }
     }
 })
 
-function openNav(){
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav(){
-    document.getElementById("myNav").style.width = "0%";
-}
-/**
+/*
  * Saves the current cafe to addHTML#collection_name in localStorage
  * @param {*} collection 
  */
+/*
+function add(){
+    modal.style.display = "block";
+    //when user clicks anywhere outside of the modal, also close it.
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+}
 function addToCollection (collection){
     //selected_option is #collection_name
     var selected_option = '#'+$('.dropdown').val();
@@ -408,6 +348,6 @@ function addToCollection (collection){
     localStorage.setItem('num'+selected_option, curr_num);
 
     console.log('num'+selected_option+' after =', localStorage.getItem('num'+selected_option)); 
- //*/   
-}
+ //   
+}*/
     

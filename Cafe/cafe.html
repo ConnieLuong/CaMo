@@ -21,27 +21,42 @@
 
         <!--Category Content-->
         <script id="cafe-template" type="text/x-handlebars-template">
-            <div class="cafe_page" id="{{cafe_name}}">
+            <div class="cafe_page" id="{{cafe_id}}">
                 <!--Header image-->
                 <div class="jumbotron header" style="margin:0; margin-top:3%; padding: 0; text-align:center">
                     <img class="header-img" src="{{header_img}}">
                     <div style="margin-top:1%">
                         <!--<button type="button" class="btn btn-outline-secondary">Feedback</button>-->
-                        <button type="button" class="btn btn-outline-secondary" onclick="openNav()">Add to Collection</button>
+                        <button id="SaveButton" type="button" class="btn btn-outline-secondary" 
+                            onclick="openAddToCollectionNav()">Save Cafe</button>
+                        <button id="RemoveButton" type="button" class="btn btn-outline-danger" 
+                            onclick="openRemoveFromCollectionNav()" style="display: none;">Remove from Collection</button>
                         <!--Add to collection overlay-->
-                        <div id="myNav" class="overlay">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div id="addToCollectionNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeAddToCollectionNav()">&times;</a>
                             <div class="overlay-content">
                                 <h1>choose collection to add cafe to:</h1>
                                 <select class="dropdown">
-                                    <option value="collection">Collection</option>
-                                    <option value="bomb">Bomb</option>
-                                    <option value="wishlist">Wish list</option>
-                                    <option value="coolaf">Cool AF</option>
-                                    <option value="momsfavs">Mom's Favs</option>
+                                    <option value="none">---</option>
+                                    <option id="collection1-option" value="collection1">Collection 1</option>
+                                    <option id="collection2-option" value="collection2">Collection 2</option>
+                                    <option id="collection3-option" value="collection3">Collection 3</option>
+                                    <option id="collection4-option" value="collection4">Collection 4</option>
                                 </select>
                                 <br><br>
-                                <input type="submit" onclick="addToCollection()">                
+                                <input type="submit" onclick="addCafeToCollection()">                
+                            </div>
+                        </div>
+                        <!--Remove from collection overlay-->
+                        <div id="removeFromCollectionNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeRemoveFromCollectionNav()">&times;</a>
+                            <div class="overlay-content">
+                                <h1>choose collection to remove cafe from:</h1>
+                                <select class="dropdown remove">
+                                    <option value="none">---</option>
+                                </select>
+                                <br><br>
+                                <input type="submit" onclick="removeCafeFromCollection()">                
                             </div>
                         </div>
                     </div>
@@ -80,25 +95,27 @@
             
         </script>
 
-        <!-- Cafe Card Template -->
+        <!-- Cafe Card Template to add to collections -->
 		<script id="cafeCard" type="text/x-handlebars-template">
-			<div class="card">
-                <img class="card-img-top" src="../image/{{cafe-img}}">
-                <div class="card-body">
+            <div class="col-sm-3" style="padding:3% 0" id="{{cafe-card-id}}">
+                <div class="card">
                     <a href="../Cafe/cafe.html?{{cafe-link}}">
-                        <h5 class="card-title">{{cafe-name}}</h5>
-                        <img src='../image/star3.png' style="max-width: 150px; width:80%;">
-                        <div style="margin-top:1%">
-                            <img src="../image/tag-24hr.png" class="tag-24">
-                            <img src="../image/tag-quiet.png" class="tag-q">
-                            <img src="../image/tag-pet.png" class="tag-p">
+                        <img class="card-img-top" src="../image/{{cafe-img}}">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">{{cafe-name}}</h5>
+                            <div class='rating'>{{cafe-rating}}</div>
+                            <div class="hashtags" style="margin-top:1%">
+                                {{cafe-hashtags}}
+                            </div>
                         </div>
                     </a>
+                    <button id="RemoveButton" type="button" class="btn btn-outline-danger" 
+                            onclick="removeCafeFromCollection('{{cafe-card-id}}')">Remove from Collection</button>
                 </div>
             </div>
         </script>
 
-		<script id="cafeCardNewRow" type="text/x-handlebars-template">
+		<!--<script id="cafeCardNewRow" type="text/x-handlebars-template">
 			</div>
 			<div class="card-group" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >
                 <div class="card">
@@ -115,7 +132,7 @@
                         </a>
                     </div>
                 </div>
-		</script>
+		</script>-->
 
         <div id="templatedCafes">
             <!--templated category content HTML will appear here-->
@@ -127,5 +144,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/handlebars-v4.0.11.js"></script>
-    <script src="../js/cafe.js"></script>
+    <script src="../js/cafe.js"></script> <!--Loads Cafe picture content-->
+    <script src="../js/addCafeToCollection-new-connie.js"></script> <!--Script for add to collection button-->
 </html>

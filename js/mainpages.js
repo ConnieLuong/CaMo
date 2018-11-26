@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
     loadNavBar();
-    clickLogIn();
-    clickLogOut();
     showUsername();
 })
 /*
@@ -26,7 +24,8 @@ function loadNavBar(){
         '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" '+
         'integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>'+
         '<!-- Fonts -->'+
-        '<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">'
+        '<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">'+
+        '<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">'
     );
     $("#menu").html(
         '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">'+
@@ -38,6 +37,7 @@ function loadNavBar(){
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
                     '<li><a class="nav-link" href="index.html">Explore</a></li>'+
+                    '<li id="collections"></li>'+
                     '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
@@ -56,28 +56,64 @@ function loadNavBar(){
 }
 
 function clickLogIn(){
-    $('#login-button').click(function(){
-        var inputUsername = document.getElementById('username');
-        localStorage.setItem("usernameLS", inputUsername.value);
+    var inputUsername = document.getElementById('username');
+    if(inputUsername.value.length==0 && document.getElementById('password').value.length == 0){
+        window.alert('Please input username and password to log in.');
+        return;
+    }
+    //check if user input username
+    else if(inputUsername.value.length==0){
+        window.alert('Please input user name to log in.');
+        return;
+    }
+    //check if password is empty
+    else if(document.getElementById('password').value.length == 0){
+        window.alert('Please input password to log in.');
+        return;
+    }
+    localStorage.setItem("usernameLS", inputUsername.value);
 
-        alert('You are now logged in.');
-        localStorage.setItem('loginLS','true');
-        checkLogIn();
-    });
+    alert('You are now logged in.');
+    window.location = "index.html";
+    localStorage.setItem('loginLS','true');
+    checkLogIn();
+
 }
+//if user presses return/enter, will immediately call clickLogIn method
+var usernameElem = document.getElementById('username');
+usernameElem.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+        clickLogIn();
+    }  
+});
+var passwordElem = document.getElementById('password');
+passwordElem.addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+        clickLogIn();
+    }  
+});
 
 function checkLogIn(){
     // If login == true, show profile
     if(localStorage.getItem('loginLS')=='true'){
+        $("#collections").html(
+            '<a class="nav-link" href="collections/collections-new.html">Collections</a></li>'
+        )
         $("#profile").html(
             '<a class="nav-link" href="profile.html">Profile</a>'
         );
     }
     // Else if login==false, show Log In
     else{
+        $("#collections").html(
+            ''
+        )
         $('#profile').html(
             '<a class="nav-link" href="login.html">Log In</a>'
         );
+
     }
 }
 
@@ -89,8 +125,40 @@ function clickLogOut(){
         localStorage.removeItem('num');
         localStorage.removeItem('addHTML');
         localStorage.setItem('loginLS','false');
+
+        console.log('clearing localStorage');
+        clearLocalStorage();
         checkLogIn();
     });
+}
+
+function clearLocalStorage(){
+    localStorage.removeItem('collection1name');
+    localStorage.removeItem('collection2name');
+    localStorage.removeItem('collection3name');
+    localStorage.removeItem('collection4name');
+
+    localStorage.removeItem('collection1HTML');
+    localStorage.removeItem('collection2HTML');
+    localStorage.removeItem('collection3HTML');
+    localStorage.removeItem('collection4HTML');
+    
+    localStorage.removeItem('The-Bean-PalaceList');
+    localStorage.removeItem('Lava-JavaList');
+    localStorage.removeItem('The-GrindList');
+    localStorage.removeItem('No-Social-LifeList');
+    localStorage.removeItem('No-Doze-CafeList');
+    localStorage.removeItem('Aroma-MochaList');
+    localStorage.removeItem('The-Split-BeanList');
+    localStorage.removeItem('Happy-OrangeList');
+    localStorage.removeItem('Black-SugarsList');
+    localStorage.removeItem('BeesList');
+    localStorage.removeItem('QnAList');
+    localStorage.removeItem('Cute-CupsList');
+    localStorage.removeItem('AmoozeList');
+    localStorage.removeItem('CHaoList');
+    localStorage.removeItem('MerpList');
+    localStorage.removeItem('GREList');
 }
 
 function showUsername(){
