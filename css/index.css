@@ -198,7 +198,7 @@ form.searchbox {
 }
 form.searchbox input.text {
     border:none;
-    max-height:36px;
+    max-height:45px;
     max-width: 382px;
 	width:80%;
     padding:0 5px;
