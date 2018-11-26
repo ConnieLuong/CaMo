@@ -195,6 +195,7 @@ form.searchbox {
     max-height: 89px;
     max-width: 477px;
 	width:100%;
+	margin:auto;
 }
 form.searchbox input.text {
     border:none;
