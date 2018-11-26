@@ -20,21 +20,21 @@
     <!--search bar-->
     <div style="background-image: url(../image/pinkie.png); height: 165px; width: 100%; padding-top:3%;" >
         <form class="searchbox" >
-        <input type="text" class="text" placeholder="Search for cafe"/>
-        <a href="../searchResultPage/searchResult.html"><img src="../image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" /></a>
+        <input id="search-input" type="text" class="text" placeholder="Search for cafe"/>
+        <img src="../image/searchIcon.png" onmouseover="searchHover(this);" onmouseout="searchUnhover(this);" onclick="linkToSearch()" />
         </form>
     </div>
 
     <!--search results-->
-    <h1>Search Results for...<span id="keyword"></span></h1>
-    <div class="row" id="search-results">
+    <h1 style="background: #DFD1D1; padding:3rem ;font-family:'Open Sans'; margin: 0; text-transform: none;" >Search results for...   "<span id="keyword" style="font-family:'Caveat'; text-transform: none; font-weight: 300; font-size:60px"></span>"</h1>
+    <div class="row" id="search-results" style="margin-right: 10%; margin-left: 10%;  margin-top: 5%" >
         
     </div>
 
     <!-- Cafe Card Template to add to collections -->
     <script id="cafeCard" type="text/x-handlebars-template">
         <div class="col-sm-3" style="padding:3% 0" id="{{cafe-card-id}}">
-            <div class="card w-25">
+            <div class="card">
                 <a href="../Cafe/cafe.html?{{cafe-link}}">
                     <img class="card-img-top" src="../image/{{cafe-img}}">
                     <div class="card-body">
@@ -45,8 +45,6 @@
                         </div>
                     </div>
                 </a>
-                <button id="RemoveButton" type="button" class="btn btn-outline-danger" 
-                        onclick="removeCafeFromCollection('{{cafe-card-id}}')">Remove from Collection</button>
             </div>
         </div>
     </script>
@@ -56,8 +54,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/handlebars-v4.0.11.js"></script>
-    <script src="../js/addCafeToCollection.js"></script> <!--for cafe_card_Data-->
-    <script src='../js/category.js'></script><!--for categoryData-->
     <script src="../js/search.js"></script> <!--search function + fake database-->
     <script src="../js/searchResults.js"></script> <!--loads results using templates-->
 </body>
