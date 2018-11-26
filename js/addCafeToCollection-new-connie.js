@@ -137,7 +137,7 @@ var cafe_card_Data=[
         'cafe-name':'QnA',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-aethetic.png" class="tag-a">'+
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
             '<img src="../image/tag-vegan.png" class="tag-v">'+
             '<img src="../image/tag-group.png" class="tag-g">'+
             '<img src="../image/tag-themed.png" class="tag-t">'
