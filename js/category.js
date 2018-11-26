@@ -386,8 +386,8 @@ var categoryData =[
 
         'cafe5-img':'Cafe12.png',
         'cafe5-name':'Cute Cups',
-        'cafe-rating':'3.png',
-        'cafe-hashtags':
+        'cafe5-rating':'3.png',
+        'cafe5-hashtags':
             '<img src="../image/tag-quiet.png" class="tag-q">'+
             '<img src="../image/tag-brunch.png" class="tag-b">'+
             '<img src="../image/tag-group.png" class="tag-g">'+

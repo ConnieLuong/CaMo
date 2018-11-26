@@ -67,7 +67,7 @@ function changeCollectionName(collection){
 function removeCafeFromCollection(cafe){
     if(confirm("Are you sure you want to remove this cafe?")){
         //get cafe id
-        var cafe_id = cafe.substring(0, cafe.length-11);
+        var cafe_id = cafe.substring(0, cafe.length-12);
         //get collection id
         var collection_id = cafe.substring(cafe.length-11);
         //get collection number

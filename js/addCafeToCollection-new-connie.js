@@ -66,7 +66,7 @@ var cafe_card_Data=[
     },
     //Cafe 6 - Aroma Mocha
     {
-        'cafe-card-id':'Aroma-Mocha',
+        'cafe-card-id':'Aroma-Mocha-',
         'cafe-link':'cafe_page=Aroma-Mocha',
         'cafe-img':'Cafe6.png',
         'cafe-name':'Aroma Mocha',
@@ -79,7 +79,7 @@ var cafe_card_Data=[
     },
     //Cafe 7 - The Split Bean
     {
-        'cafe-card-id':'The-Split-Bean',
+        'cafe-card-id':'The-Split-Bean-',
         'cafe-link':'cafe_page=The-Split-Bean',
         'cafe-img':'Cafe7.png',
         'cafe-name':'The Split Bean',
