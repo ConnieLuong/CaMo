@@ -260,7 +260,7 @@ var cafe_card_Data=[
  */
 function search(keyword){
     var list;
-    if(keyword.length==0){
+    if(keyword==null){
         list = random_cafe();
         return list;
     }
@@ -288,7 +288,7 @@ function search(keyword){
 function hashtags_search(keyword){
     var list = null;
     for(var i=0; i<hashtag_Data.length; i++){
-        if(keyword==hashtag_Data[i]["category_id"]){
+        if(keyword.trim().toLowerCase()==hashtag_Data[i]["category_id"].toLowerCase()){
             var arr = [1];
             list = arr.concat(hashtag_Data[i]['cafes']);
         }
@@ -307,7 +307,7 @@ function hashtags_search(keyword){
 function cafe_search(keyword){
     var list = null;
     for(var i=0; i<cafe_card_Data.length; i++){
-        if(keyword==cafe_card_Data[i]["cafe-name"]){
+        if(keyword.trim().toLowerCase()==cafe_card_Data[i]["cafe-name"].toLowerCase()){
             arr = [2];
             list = arr.concat([i]);
         }

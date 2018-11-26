@@ -89,14 +89,16 @@ function searchHover(element) {
 function searchUnhover(element) {
     element.setAttribute('src', '../image/searchIcon.png');
 }
-/*
+
 //keydown
 var searchElem = document.getElementById('search-input');
 searchElem.addEventListener('keypress', function (e) {
+    console.log('in keydown function');
     var key = e.which || e.keyCode;
     if (key === 13) {
         var keyword = document.getElementById('search-input').value;
         var loc = "searchResults.html?keyword="+keyword;
-        window.location = (loc);
+        console.log('loc',loc);
+        window.location = loc;
     }  
-});*/
+});
