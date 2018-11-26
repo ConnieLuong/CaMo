@@ -5,8 +5,11 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=The-Bean-Palace',
         'cafe-img':'Cafe1.png',
         'cafe-name':'The Bean Palace',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'3.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'
     },
     //Cafe 2 - Lava Java
     {
@@ -14,8 +17,12 @@ var cafe_card_Data=[
         'cafe link':'cafe_page=Lava-Java',
         'cafe-img':'Cafe2.png',
         'cafe-name':'Lava Java',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-24hr.png" class="tag-24">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-group.png" class="tag-g">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'
     },
     //Cafe 3 - The Grind
     {
@@ -23,8 +30,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=The-Grind',
         'cafe-img':'Cafe3.png',
         'cafe-name':'The Grind',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 4 - No Social Life
     {
@@ -32,8 +43,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=No-Social-Life',
         'cafe-img':'Cafe4.png',
         'cafe-name':'No Social Life',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'3.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 5 - No Doze Cafe
     {
@@ -41,8 +56,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=No-Doze-Cafe',
         'cafe-img':'Cafe5.png',
         'cafe-name':'No Doze Cafe',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'
     },
     //Cafe 6 - Aroma Mocha
     {
@@ -50,8 +69,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Aroma-Mocha',
         'cafe-img':'Cafe6.png',
         'cafe-name':'Aroma Mocha',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'5.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-group.png" class="tag-g">'
     },
     //Cafe 7 - The Split Bean
     {
@@ -59,8 +82,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=The-Split-Bean',
         'cafe-img':'Cafe7.png',
         'cafe-name':'The Split Bean',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'
     },
     //Cafe 8 - Happy Orange
     {
@@ -68,8 +95,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Happy-Orange',
         'cafe-img':'Cafe8.png',
         'cafe-name':'Happy Orange',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'3.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-group.png" class="tag-g">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'
     },
     //Cafe 9 - Black Sugars
     {
@@ -77,8 +108,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Black-Sugars',
         'cafe-img':'Cafe9.png',
         'cafe-name':'Black Sugars',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-group.png" class="tag-g">'
     },
     //Cafe 10 - Bees
     {
@@ -86,8 +121,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Bees',
         'cafe-img':'Cafe10.png',
         'cafe-name':'Bees',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'5.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'
     },
     //Cafe 11 - QnA
     {
@@ -95,8 +134,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=QnA',
         'cafe-img':'Cafe11.png',
         'cafe-name':'QnA',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'3.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-aethetic.png" class="tag-a">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-group.png" class="tag-g">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'
     },
     //Cafe 12 - Cute Cups
     {
@@ -104,8 +147,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Cute-Cupts',
         'cafe-img':'Cafe12.png',
         'cafe-name':'Cute Cups',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'3.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-quiet.png" class="tag-q">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-group.png" class="tag-g">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 13 - Amooze
     {
@@ -113,8 +160,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Amooze',
         'cafe-img':'Cafe13.png',
         'cafe-name':'Amooze',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-brunch.png" class="tag-b">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 14 - CHao
     {
@@ -122,8 +173,11 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=CHao',
         'cafe-img':'Cafe14.png',
         'cafe-name':'CHao',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'3.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-themed.png" class="tag-t">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 15 - Merp
     {
@@ -131,8 +185,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=Merp',
         'cafe-img':'Cafe15.png',
         'cafe-name':'Merp',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="../image/tag-group.png" class="tag-g">'+
+            '<img src="../image/tag-themed.png" class="tag-t">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'
     },
     //Cafe 16 - GRE
     {   
@@ -140,8 +198,12 @@ var cafe_card_Data=[
         'cafe-link':'cafe_page=GRE',
         'cafe-img':'Cafe16.png',
         'cafe-name':'GRE',
-        'cafe-rating':'',
-        'cafe-hashtags':''
+        'cafe-rating':'4.png',
+        'cafe-hashtags':
+            '<img src="../image/tag-pet.png" class="tag-p">'+
+            '<img src="../image/tag-vegan.png" class="tag-v">'+
+            '<img src="../image/tag-group.png" class="tag-g">'+
+            '<img src="../image/tag-aesthetic.png" class="tag-a">'
     }
 ];
 
@@ -197,7 +259,6 @@ function openRemoveFromCollectionNav(){
 function closeRemoveFromCollectionNav(){
     document.getElementById("removeFromCollectionNav").style.width = "0%";
 }
-
 
 /**
  * Description: Given a cafe and a collection, will add the given cafe as a bootstrap
