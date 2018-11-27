@@ -79,21 +79,6 @@ function clickLogIn(){
     checkLogIn();
 
 }
-//if user presses return/enter, will immediately call clickLogIn method
-var usernameElem = document.getElementById('username');
-usernameElem.addEventListener('keypress', function (e) {
-    var key = e.which || e.keyCode;
-    if (key === 13) {
-        clickLogIn();
-    }  
-});
-var passwordElem = document.getElementById('password');
-passwordElem.addEventListener('keypress', function (e) {
-    var key = e.which || e.keyCode;
-    if (key === 13) {
-        clickLogIn();
-    }  
-});
 
 function checkLogIn(){
     // If login == true, show profile
@@ -102,7 +87,7 @@ function checkLogIn(){
             '<a class="nav-link" href="collections/collections-new.html">Collections</a></li>'
         )
         $("#profile").html(
-            '<a class="nav-link" href="profile.html">Profile</a>'
+            '<a class="nav-link" id="logout" onclick="clickLogOut()">Logout</a>'
         );
     }
     // Else if login==false, show Log In
@@ -172,14 +157,6 @@ function searchUnhover(element) {
     element.setAttribute('src', 'image/searchIcon.png');
 }
 
-// hover effect for check icon
-function checkHover(element) {
-    element.setAttribute('src', 'image/checkHover.png');
-}
-
-function checkUnhover(element) {
-    element.setAttribute('src', 'image/checkButton.png');
-}
 
 
 function linkToSearch(){
