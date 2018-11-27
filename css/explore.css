@@ -6,3 +6,8 @@
 .jumbotron {
     background-image: url("../image/exploreHeader.png");
 }
+
+.card{
+    margin-left: 8%;
+    margin-right:8%;
+}

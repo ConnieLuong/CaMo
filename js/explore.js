@@ -201,18 +201,18 @@ $(document).ready(function() {
 function update(){
 
     $("#CafeCards").html(
-        '<div class="card-deck" style="margin-right: 10%; margin-left: 10%; margin-top: 3%" >'+
-            '<div class="col-sm-3" style="padding:3% 0">' +
+        '<div class="card-group" style="margin-right: 15%; margin-left: 15%;" >'+
+            '<div class="col-sm-3" style="padding:3% 0" >' +
                 '<div class="card">' +
                     '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[0]]["cafe-link"]+'">'+
                     '<img class="card-img-top" src="../image/'+cafeList[shuffleList[0]]["cafe-img"]+'">' +
-                    '<div class="card-body">' +
-                        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[0]]["cafe-name"]+'</h5>' +
-                        '<img src="../image/star'+cafeList[shuffleList[0]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-                        '<div style="margin-top:1%">' +
-                            cafeList[shuffleList[0]]["cafe-hashtags"] +
-                        '</div>' +
-                    '</div>' +
+                    // '<div class="card-body">' +
+                    //     '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[0]]["cafe-name"]+'</h5>' +
+                    //     '<img src="../image/star'+cafeList[shuffleList[0]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+                    //     '<div style="margin-top:1%">' +
+                    //         cafeList[shuffleList[0]]["cafe-hashtags"] +
+                    //     '</div>' +
+                    // '</div>' +
                     '</a>'+
                 '</div>' +
             '</div>'+
@@ -221,13 +221,13 @@ function update(){
             '<div class="card">' +
                 '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[1]]["cafe-link"]+'">'+
                 '<img class="card-img-top" src="../image/'+cafeList[shuffleList[1]]["cafe-img"]+'">' +
-                '<div class="card-body">' +
-                    '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[1]]["cafe-name"]+'</h5>' +
-                    '<img src="../image/star'+cafeList[shuffleList[1]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-                    '<div style="margin-top:1%">' +
-                        cafeList[shuffleList[1]]["cafe-hashtags"] +
-                    '</div>' +
-                '</div>' +
+                // '<div class="card-body">' +
+                //     '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[1]]["cafe-name"]+'</h5>' +
+                //     '<img src="../image/star'+cafeList[shuffleList[1]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+                //     '<div style="margin-top:1%">' +
+                //         cafeList[shuffleList[1]]["cafe-hashtags"] +
+                //     '</div>' +
+                // '</div>' +
                 '</a>'+
             '</div>' +
         '</div>'+
@@ -236,13 +236,13 @@ function update(){
         '<div class="card">' +
         '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[2]]["cafe-link"]+'">'+
         '<img class="card-img-top" src="../image/'+cafeList[shuffleList[2]]["cafe-img"]+'">' +
-        '<div class="card-body">' +
-        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[2]]["cafe-name"]+'</h5>' +
-        '<img src="../image/star'+cafeList[shuffleList[2]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-        '<div style="margin-top:1%">' +
-        cafeList[shuffleList[2]]["cafe-hashtags"] +
-        '</div>' +
-        '</div>' +
+        // '<div class="card-body">' +
+        // '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[2]]["cafe-name"]+'</h5>' +
+        // '<img src="../image/star'+cafeList[shuffleList[2]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+        // '<div style="margin-top:1%">' +
+        // cafeList[shuffleList[2]]["cafe-hashtags"] +
+        // '</div>' +
+        // '</div>' +
         '</a>'+
         '</div>' +
         '</div>'+
@@ -251,13 +251,13 @@ function update(){
         '<div class="card">' +
         '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[3]]["cafe-link"]+'">'+
         '<img class="card-img-top" src="../image/'+cafeList[shuffleList[3]]["cafe-img"]+'">' +
-        '<div class="card-body">' +
-        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[3]]["cafe-name"]+'</h5>' +
-        '<img src="../image/star'+cafeList[shuffleList[3]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-        '<div style="margin-top:1%">' +
-        cafeList[shuffleList[3]]["cafe-hashtags"] +
-        '</div>' +
-        '</div>' +
+        // '<div class="card-body">' +
+        // '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[3]]["cafe-name"]+'</h5>' +
+        // '<img src="../image/star'+cafeList[shuffleList[3]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+        // '<div style="margin-top:1%">' +
+        // cafeList[shuffleList[3]]["cafe-hashtags"] +
+        // '</div>' +
+        // '</div>' +
         '</a>'+
         '</div>' +
         '</div>'+
@@ -266,13 +266,13 @@ function update(){
         '<div class="card">' +
         '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[4]]["cafe-link"]+'">'+
         '<img class="card-img-top" src="../image/'+cafeList[shuffleList[4]]["cafe-img"]+'">' +
-        '<div class="card-body">' +
-        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[4]]["cafe-name"]+'</h5>' +
-        '<img src="../image/star'+cafeList[shuffleList[4]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-        '<div style="margin-top:1%">' +
-        cafeList[shuffleList[4]]["cafe-hashtags"] +
-        '</div>' +
-        '</div>' +
+        // '<div class="card-body">' +
+        // '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[4]]["cafe-name"]+'</h5>' +
+        // '<img src="../image/star'+cafeList[shuffleList[4]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+        // '<div style="margin-top:1%">' +
+        // cafeList[shuffleList[4]]["cafe-hashtags"] +
+        // '</div>' +
+        // '</div>' +
         '</a>'+
         '</div>' +
         '</div>'+
@@ -281,13 +281,13 @@ function update(){
         '<div class="card">' +
         '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[5]]["cafe-link"]+'">'+
         '<img class="card-img-top" src="../image/'+cafeList[shuffleList[5]]["cafe-img"]+'">' +
-        '<div class="card-body">' +
-        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[5]]["cafe-name"]+'</h5>' +
-        '<img src="../image/star'+cafeList[shuffleList[5]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-        '<div style="margin-top:1%">' +
-        cafeList[shuffleList[5]]["cafe-hashtags"] +
-        '</div>' +
-        '</div>' +
+        // '<div class="card-body">' +
+        // '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[5]]["cafe-name"]+'</h5>' +
+        // '<img src="../image/star'+cafeList[shuffleList[5]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+        // '<div style="margin-top:1%">' +
+        // cafeList[shuffleList[5]]["cafe-hashtags"] +
+        // '</div>' +
+        // '</div>' +
         '</a>'+
         '</div>' +
         '</div>'+
@@ -296,13 +296,13 @@ function update(){
         '<div class="card">' +
         '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[6]]["cafe-link"]+'">'+
         '<img class="card-img-top" src="../image/'+cafeList[shuffleList[6]]["cafe-img"]+'">' +
-        '<div class="card-body">' +
-        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[6]]["cafe-name"]+'</h5>' +
-        '<img src="../image/star'+cafeList[shuffleList[6]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-        '<div style="margin-top:1%">' +
-        cafeList[shuffleList[6]]["cafe-hashtags"] +
-        '</div>' +
-        '</div>' +
+        // '<div class="card-body">' +
+        // '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[6]]["cafe-name"]+'</h5>' +
+        // '<img src="../image/star'+cafeList[shuffleList[6]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+        // '<div style="margin-top:1%">' +
+        // cafeList[shuffleList[6]]["cafe-hashtags"] +
+        // '</div>' +
+        // '</div>' +
         '</a>'+
         '</div>' +
         '</div>'+
@@ -311,13 +311,13 @@ function update(){
         '<div class="card">' +
         '<a href="../Cafe/cafe.html?'+cafeList[shuffleList[7]]["cafe-link"]+'">'+
         '<img class="card-img-top" src="../image/'+cafeList[shuffleList[7]]["cafe-img"]+'">' +
-        '<div class="card-body">' +
-        '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[7]]["cafe-name"]+'</h5>' +
-        '<img src="../image/star'+cafeList[shuffleList[7]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
-        '<div style="margin-top:1%">' +
-        cafeList[shuffleList[7]]["cafe-hashtags"] +
-        '</div>' +
-        '</div>' +
+        // '<div class="card-body">' +
+        // '<h5 class="card-title" style="font-family: Caveat; font-size: 36px; color: #7E4F4F">'+cafeList[shuffleList[7]]["cafe-name"]+'</h5>' +
+        // '<img src="../image/star'+cafeList[shuffleList[7]]["cafe-rating"]+'" style="max-width: 150px; width:80%;">' +
+        // '<div style="margin-top:1%">' +
+        // cafeList[shuffleList[7]]["cafe-hashtags"] +
+        // '</div>' +
+        // '</div>' +
         '</a>'+
         '</div>' +
         '</div>'+
