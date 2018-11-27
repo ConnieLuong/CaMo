@@ -215,7 +215,7 @@ form.searchbox input.submit {
 	width:100%;
 }
 
-.opac:hover
+.col-md-3:hover
 {
     opacity: 0.5;
     filter: alpha(opacity=50);
