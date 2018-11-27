@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b3959b2-f4be-4ac7-8c59-21687f2a3e4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/categories/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/categories/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/category.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/category.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/searchResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/search/searchResults.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchResultPage/searchResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchResultPage/searchResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/veganHeader.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/veganHeader.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -81,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
@@ -102,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="414" column="49" lean-forward="true" selection-start-line="414" selection-start-column="49" selection-end-line="414" selection-end-column="49" />
+            <state relative-caret-position="159">
+              <caret line="407" column="27" selection-start-line="407" selection-start-column="22" selection-end-line="407" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -133,7 +129,7 @@
         <entry file="file://$PROJECT_DIR$/categories/category.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1063">
-              <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+              <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -225,7 +221,7 @@
         <entry file="file://$PROJECT_DIR$/css/cafe.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -256,6 +252,7 @@
       <find>cafe14.p</find>
       <find>cafe15.p</find>
       <find>cafe16.p</find>
+      <find>HAPPY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -451,12 +448,12 @@
       <workItem from="1541724847156" duration="8961000" />
       <workItem from="1542144430273" duration="1146000" />
       <workItem from="1542328498820" duration="15088000" />
-      <workItem from="1543264259984" duration="11862000" />
+      <workItem from="1543264259984" duration="12539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85240000" />
+    <option name="totallyTimeSpent" value="85917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="23" width="1195" height="691" extended-state="0" />
@@ -703,7 +700,7 @@
     <entry file="file://$PROJECT_DIR$/css/cafe.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -786,7 +783,7 @@
     <entry file="file://$PROJECT_DIR$/categories/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1063">
-          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -832,6 +829,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="407" column="27" selection-start-line="407" selection-start-column="22" selection-end-line="407" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -848,13 +852,6 @@
             <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/category.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="414" column="49" lean-forward="true" selection-start-line="414" selection-start-column="49" selection-end-line="414" selection-end-column="49" />
         </state>
       </provider>
     </entry>
