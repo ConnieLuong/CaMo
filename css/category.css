@@ -29,7 +29,9 @@
 .tag-g{
     max-width: 78px;
 }
-.card a:hover{
-    text-decoration: none;
-    text-transform: uppercase;
+.card:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+    transform: scale(1.1);
+    z-index: 9999;
 }

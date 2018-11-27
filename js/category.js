@@ -412,7 +412,7 @@ var categoryData =[
             '<img src="../image/tag-brunch.png" class="tag-b">'+
             '<img src="../image/tag-group.png" class="tag-g">'+
             '<img src="../image/tag-themed.png" class="tag-t">',
-        'cafe7-link':'cafe_page=No-Happye-Orange',
+        'cafe7-link':'cafe_page=Happy-Orange',
 
         'cafe8-img':'Cafe13.png',
         'cafe8-name':'Amooze',
