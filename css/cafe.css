@@ -3,6 +3,12 @@ h1{
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 2rem;
 }
+
+.card-group img:hover {
+    transform: scale(1.2);
+    z-index: 9999;
+}
+
 .overlay {
     height: 100%;
     width: 0;
