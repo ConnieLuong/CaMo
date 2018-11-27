@@ -95,3 +95,7 @@ function removeCafeFromCollection(cafe){
     }
 }
 
+function showUsername(){
+    $("#user").html(localStorage.getItem("usernameLS"))
+}
+
