@@ -2,3 +2,12 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+h1{
+    font-family: 'Open Sans', sans-serif;
+    margin: 3% 5%;
+    padding: 15px;
+}
+
+#user{
+    font-weight:300;
+}

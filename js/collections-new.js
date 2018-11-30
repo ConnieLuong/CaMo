@@ -26,6 +26,8 @@ $(document).ready(function(){
     if(localStorage.getItem('collection4HTML')!=null){
     document.getElementById("collection4content").innerHTML = localStorage.getItem('collection4HTML');
     }
+
+    showUsername();
     
 });
 
