@@ -1,8 +1,7 @@
-
 $(document).ready(function() {
     loadNavBar();
-    showUsername();
 })
+
 /*
  * Function that is called when the document is ready.
  * Loads navbar into the 4 main pages:
@@ -79,6 +78,7 @@ function clickLogIn(){
     checkLogIn();
 
 }
+
 //if user presses return/enter, will immediately call clickLogIn method
 var usernameElem = document.getElementById('username');
 usernameElem.addEventListener('keypress', function (e) {
@@ -102,7 +102,7 @@ function checkLogIn(){
             '<a class="nav-link" href="collections/collections-new.html">Collections</a></li>'
         )
         $("#profile").html(
-            '<a class="nav-link" href="profile.html">Profile</a>'
+            '<a class="nav-link" id="logout" onclick="clickLogOut()">Logout</a>'
         );
     }
     // Else if login==false, show Log In
@@ -172,14 +172,6 @@ function searchUnhover(element) {
     element.setAttribute('src', 'image/searchIcon.png');
 }
 
-// hover effect for check icon
-function checkHover(element) {
-    element.setAttribute('src', 'image/checkHover.png');
-}
-
-function checkUnhover(element) {
-    element.setAttribute('src', 'image/checkButton.png');
-}
 
 
 function linkToSearch(){
