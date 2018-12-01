@@ -7,10 +7,10 @@ var cafe_card_Data=[
         'cafe-name':'The Bean Palace',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-themed.png" class="tag-t">'
     },
     //Cafe 2 - Lava Java
     {
@@ -20,10 +20,10 @@ var cafe_card_Data=[
         'cafe-name':'Lava Java',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-24hr.png" class="tag-24">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-group.png" class="tag-g">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'
+            '<img src="image/tag-24hr.png" class="tag-24">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-group.png" class="tag-g">'+
+            '<img src="image/tag-themed.png" class="tag-t">'
     },
     //Cafe 3 - The Grind
     {
@@ -33,10 +33,10 @@ var cafe_card_Data=[
         'cafe-name':'The Grind',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 4 - No Social Life
     {
@@ -46,10 +46,10 @@ var cafe_card_Data=[
         'cafe-name':'No Social Life',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 5 - No Doze Cafe
     {
@@ -59,10 +59,10 @@ var cafe_card_Data=[
         'cafe-name':'No Doze Cafe',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-themed.png" class="tag-t">'
     },
     //Cafe 6 - Aroma Mocha
     {
@@ -72,10 +72,10 @@ var cafe_card_Data=[
         'cafe-name':'Aroma Mocha',
         'cafe-rating':'5.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-group.png" class="tag-g">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-group.png" class="tag-g">'
     },
     //Cafe 7 - The Split Bean
     {
@@ -85,10 +85,10 @@ var cafe_card_Data=[
         'cafe-name':'The Split Bean',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'
     },
     //Cafe 8 - Happy Orange
     {
@@ -98,10 +98,10 @@ var cafe_card_Data=[
         'cafe-name':'Happy Orange',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-group.png" class="tag-g">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'
+            '<img src="image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-group.png" class="tag-g">'+
+            '<img src="image/tag-themed.png" class="tag-t">'
     },
     //Cafe 9 - Black Sugars
     {
@@ -111,10 +111,10 @@ var cafe_card_Data=[
         'cafe-name':'Black Sugars',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-group.png" class="tag-g">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-group.png" class="tag-g">'
     },
     //Cafe 10 - Bees
     {
@@ -124,10 +124,10 @@ var cafe_card_Data=[
         'cafe-name':'Bees',
         'cafe-rating':'5.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'+
+            '<img src="image/tag-themed.png" class="tag-t">'
     },
     //Cafe 11 - QnA
     {
@@ -137,10 +137,10 @@ var cafe_card_Data=[
         'cafe-name':'QnA',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-group.png" class="tag-g">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'
+            '<img src="image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-group.png" class="tag-g">'+
+            '<img src="image/tag-themed.png" class="tag-t">'
     },
     //Cafe 12 - Cute Cups
     {
@@ -150,10 +150,10 @@ var cafe_card_Data=[
         'cafe-name':'Cute Cups',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-quiet.png" class="tag-q">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-group.png" class="tag-g">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'
+            '<img src="image/tag-quiet.png" class="tag-q">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-group.png" class="tag-g">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 13 - Amooze
     {
@@ -163,10 +163,10 @@ var cafe_card_Data=[
         'cafe-name':'Amooze',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-brunch.png" class="tag-b">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'
+            '<img src="image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-brunch.png" class="tag-b">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 14 - CHao
     {
@@ -176,9 +176,9 @@ var cafe_card_Data=[
         'cafe-name':'CHao',
         'cafe-rating':'3.png',
         'cafe-hashtags':
-            '<img src="../image/tag-themed.png" class="tag-t">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-24hr.png" class="tag-24">'
+            '<img src="image/tag-themed.png" class="tag-t">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-24hr.png" class="tag-24">'
     },
     //Cafe 15 - Merp
     {
@@ -188,10 +188,10 @@ var cafe_card_Data=[
         'cafe-name':'Merp',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'+
-            '<img src="../image/tag-group.png" class="tag-g">'+
-            '<img src="../image/tag-themed.png" class="tag-t">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'
+            '<img src="image/tag-aesthetic.png" class="tag-a">'+
+            '<img src="image/tag-group.png" class="tag-g">'+
+            '<img src="image/tag-themed.png" class="tag-t">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'
     },
     //Cafe 16 - GRE
     {   
@@ -201,10 +201,10 @@ var cafe_card_Data=[
         'cafe-name':'GRE',
         'cafe-rating':'4.png',
         'cafe-hashtags':
-            '<img src="../image/tag-pet.png" class="tag-p">'+
-            '<img src="../image/tag-vegan.png" class="tag-v">'+
-            '<img src="../image/tag-group.png" class="tag-g">'+
-            '<img src="../image/tag-aesthetic.png" class="tag-a">'
+            '<img src="image/tag-pet.png" class="tag-p">'+
+            '<img src="image/tag-vegan.png" class="tag-v">'+
+            '<img src="image/tag-group.png" class="tag-g">'+
+            '<img src="image/tag-aesthetic.png" class="tag-a">'
     }
 ];
 

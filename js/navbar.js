@@ -53,25 +53,19 @@ function loadNavBar(){
     }
     checkLogIn();
 }
-
 function checkLogIn(){
     // If login == true, show profile
     if(localStorage.getItem('loginLS')=='true'){
-        $("#collections").html(
-            '<a class="nav-link" href="../collections/collections-new.html">Collections</a></li>'
-        )
         $("#profile").html(
-            '<a class="nav-link" id="logout" onclick="clickLogOut()">Logout</a>'
+            '<a class="nav-link" href="../profile.html">Profile</a>'
         );
     }
     // Else if login==false, show Log In
     else{
-        $("#collections").html(
-            ''
-        )
         $('#profile').html(
             '<a class="nav-link" href="../login.html">Log In</a>'
         );
+
     }
 }
 

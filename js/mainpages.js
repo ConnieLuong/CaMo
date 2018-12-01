@@ -36,7 +36,7 @@ function loadNavBar(){
             '<div class="collapse navbar-collapse" id="pages">'+
                 '<ul class="navbar-nav ml-auto mt-2 mt-lg-0">'+
                     '<li><a class="nav-link" href="explore/explore.html">Explore</a></li>'+
-                    '<li id="collections"></li>'+
+                    //'<li id="collections"></li>'+
                     '<li id="profile"><a class="nav-link" href="login.html">Log In</a></li>'+
                 '</ul>'+
             '</div>'+
@@ -98,18 +98,12 @@ passwordElem.addEventListener('keypress', function (e) {
 function checkLogIn(){
     // If login == true, show profile
     if(localStorage.getItem('loginLS')=='true'){
-        $("#collections").html(
-            '<a class="nav-link" href="collections/collections-new.html">Collections</a></li>'
-        )
         $("#profile").html(
-            '<a class="nav-link" id="logout" onclick="clickLogOut()">Logout</a>'
+            '<a class="nav-link" href="profile.html">Profile</a>'
         );
     }
     // Else if login==false, show Log In
     else{
-        $("#collections").html(
-            ''
-        )
         $('#profile').html(
             '<a class="nav-link" href="login.html">Log In</a>'
         );
