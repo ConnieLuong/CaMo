@@ -13,14 +13,14 @@
             var btnText = document.getElementById("myBtn");
             if(document.getElementById('collection1content').style.display === 'none'){
                 document.getElementById('collection1content').style.display = 'contents';
-                btnText.innerHTML= "See Less";
-                /*document.getElementById('collection1content-more').style.display = 'contents';
+                btnText.innerHTML= "Hide";
+                /*document.getElementById('collection1contentAll').style.display = 'contents';
                 document.getElementById('collection1content').style.display = 'none';
                 */
             }else{
                 document.getElementById('collection1content').style.display= 'none';
-                btnText.innerHTML= "See More";
-                /*document.getElementById('collection1content-more').style.display = 'none';
+                btnText.innerHTML= "Expand";
+                /*document.getElementById('collection1contentAll').style.display = 'none';
                 document.getElementById('collection1content').style.display = 'contents';
                 */            }
         }
@@ -28,11 +28,11 @@
             var btnText = document.getElementById("myBtn2");
             if(document.getElementById('collection2content').style.display === 'none'){
                 document.getElementById('collection2content').style.display = 'contents';
-                btnText.innerHTML= "See Less";
+                btnText.innerHTML= "Hide";
                 /*document.getElementById('collection1content-more').style.display = 'none';*/
             }else{
                 document.getElementById('collection2content').style.display= 'none';
-                btnText.innerHTML= "See More";
+                btnText.innerHTML= "Expand";
                 /*document.getElementById('collection1content-more').style.display = 'content';*/
             }
         }
@@ -40,11 +40,11 @@
             var btnText = document.getElementById("myBtn3");
             if(document.getElementById('collection3content').style.display === 'none'){
                 document.getElementById('collection3content').style.display = 'contents';
-                btnText.innerHTML= "See Less";
+                btnText.innerHTML= "Hide";
                 /*document.getElementById('collection1content-more').style.display = 'none';*/
             }else{
                 document.getElementById('collection3content').style.display= 'none';
-                btnText.innerHTML= "See More";
+                btnText.innerHTML= "Expand";
                 /*document.getElementById('collection1content-more').style.display = 'content';*/
             }
         }
@@ -52,11 +52,11 @@
             var btnText = document.getElementById("myBtn4");
             if(document.getElementById('collection4content').style.display === 'none'){
                 document.getElementById('collection4content').style.display = 'contents';
-                btnText.innerHTML= "See Less";
+                btnText.innerHTML= "Hide";
                 /*document.getElementById('collection1content-more').style.display = 'none';*/
             }else{
                 document.getElementById('collection4content').style.display= 'none';
-                btnText.innerHTML= "See More";
+                btnText.innerHTML= "Expand";
                 /*document.getElementById('collection1content-more').style.display = 'content';*/
             }
         }
@@ -77,7 +77,7 @@
             </div>  
             <div class='row' id="collection1content" style="margin-left: 5%; margin-right: 5%; margin-top: 3%">Empty collection. Start saving cafes!</div>
             <div class="col-sm-12" >
-                <button style="float:right;" class="collapsible" id="myBtn" onclick="expand()">See Less</button>
+                <button style="float:right;" class="collapsible" id="myBtn" onclick="expand()">Hide</button>
             </div>
         </div>
 
@@ -88,7 +88,7 @@
             </div>
             <div class="row" id="collection2content" style="margin-left: 5%; margin-right: 5%; margin-top: 3%">Empty collection. Start saving cafes!</div>
             <div class="col-sm-12" >
-                    <button style="float:right;" class="collapsible" id="myBtn2" onclick="expand2()">See Less</button>
+                    <button style="float:right;" class="collapsible" id="myBtn2" onclick="expand2()">Hide</button>
             </div>
         </div>
 
@@ -99,7 +99,7 @@
             </div>
             <div class="row" id="collection3content" style="margin-left: 5%; margin-right: 5%; margin-top: 3%">Empty collection. Start saving cafes!</div>
             <div class="col-sm-12" >
-                    <button style="float:right;" class="collapsible" id="myBtn3" onclick="expand3()">See Less</button>
+                    <button style="float:right;" class="collapsible" id="myBtn3" onclick="expand3()">Hide</button>
                 </div>
         </div>
 
@@ -110,7 +110,7 @@
             </div>
             <div class="row" id="collection4content" style="margin-left: 5%; margin-right: 5%; margin-top: 3%">Empty collection. Start saving cafes!</div>
             <div class="col-sm-12" >
-                    <button style="float:right;" class="collapsible" id="myBtn4" onclick="expand4()">See Less</button>
+                    <button style="float:right;" class="collapsible" id="myBtn4" onclick="expand4()">Hide</button>
                 </div>
         </div>
     </body>
