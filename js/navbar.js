@@ -61,7 +61,7 @@ function checkLogIn(){
             '<a class="nav-link" href="../collections/collections-new.html">Collections</a></li>'
         )
         $("#profile").html(
-            '<a class="nav-link" href="../profile.html">Profile</a>'
+            '<a class="nav-link" id="logout" onclick="clickLogOut()">Logout</a>'
         );
     }
     // Else if login==false, show Log In
@@ -73,6 +73,48 @@ function checkLogIn(){
             '<a class="nav-link" href="../login.html">Log In</a>'
         );
     }
+}
+
+function clickLogOut(){
+    if(confirm("Are you sure you want to log out?")){
+        window.location = "../login.html"
+    }
+    localStorage.removeItem('num');
+    localStorage.removeItem('addHTML');
+    localStorage.setItem('loginLS','false');
+
+    console.log('clearing localStorage');
+    clearLocalStorage();
+    checkLogIn();
+}
+
+function clearLocalStorage(){
+    localStorage.removeItem('collection1name');
+    localStorage.removeItem('collection2name');
+    localStorage.removeItem('collection3name');
+    localStorage.removeItem('collection4name');
+
+    localStorage.removeItem('collection1HTML');
+    localStorage.removeItem('collection2HTML');
+    localStorage.removeItem('collection3HTML');
+    localStorage.removeItem('collection4HTML');
+    
+    localStorage.removeItem('The-Bean-PalaceList');
+    localStorage.removeItem('Lava-JavaList');
+    localStorage.removeItem('The-GrindList');
+    localStorage.removeItem('No-Social-LifeList');
+    localStorage.removeItem('No-Doze-CafeList');
+    localStorage.removeItem('Aroma-MochaList');
+    localStorage.removeItem('The-Split-BeanList');
+    localStorage.removeItem('Happy-OrangeList');
+    localStorage.removeItem('Black-SugarsList');
+    localStorage.removeItem('BeesList');
+    localStorage.removeItem('QnAList');
+    localStorage.removeItem('Cute-CupsList');
+    localStorage.removeItem('AmoozeList');
+    localStorage.removeItem('CHaoList');
+    localStorage.removeItem('MerpList');
+    localStorage.removeItem('GREList');
 }
 
 function goBack(){
