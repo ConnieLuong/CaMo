@@ -7,7 +7,21 @@ h1{
     margin: 3% 5%;
     padding: 15px;
 }
+.collapsible{
+    color: #6c757d;
+    background-color: transparent;
+    background-image: none;
+    border-color: #6c757d;
+    border-radius: 10%;
 
+}
+.collapsible:hover{
+    color: #6c757d;
+    background-color: lightgray;
+    background-image: none;
+    border-color: #6c757d;
+    border-radius: 10%;
+}
 #user{
     font-weight:300;
 }
