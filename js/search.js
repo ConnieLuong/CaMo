@@ -8,6 +8,18 @@ var hashtag_Data = [
         'cafes': [13,2,14,12,5,3,10,4]
     },
     {
+        'category_id':'24-hr',
+        'cafes': [13,2,14,12,5,3,10,4]
+    },
+    {
+        'category_id':'24 hr',
+        'cafes': [13,2,14,12,5,3,10,4]
+    },
+    {
+        'category_id':'24 hour',
+        'cafes': [13,2,14,12,5,3,10,4]
+    },
+    {
         'category_id':'group',
         'cafes': [6,2,8,15,12,16,11,9]
     },
@@ -25,6 +37,10 @@ var hashtag_Data = [
     },
     {
         'category_id':'pet-friendly',
+        'cafes': [1,7,4,3,5,16,13,9]
+    },
+    {
+        'category_id':'pet friendly',
         'cafes': [1,7,4,3,5,16,13,9]
     },
     {
