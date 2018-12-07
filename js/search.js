@@ -288,7 +288,10 @@ function search(keyword){
 function hashtags_search(keyword){
     var list = null;
     for(var i=0; i<hashtag_Data.length; i++){
-        if(keyword.trim().toLowerCase()==hashtag_Data[i]["category_id"].toLowerCase()){
+        //if(keyword.trim().toLowerCase()==hashtag_Data[i]["category_id"].toLowerCase()){
+        var category_name = hashtag_Data[i]["category_id"].toLowerCase();
+        var keyword_name = keyword.trim().toLowerCase();
+        if(category_name.includes(keyword_name)){
             var arr = [1];
             list = arr.concat(hashtag_Data[i]['cafes']);
         }
@@ -307,7 +310,9 @@ function hashtags_search(keyword){
 function cafe_search(keyword){
     var list = null;
     for(var i=0; i<cafe_card_Data.length; i++){
-        if(keyword.trim().toLowerCase()==cafe_card_Data[i]["cafe-name"].toLowerCase()){
+        var cafe_name = cafe_card_Data[i]["cafe-name"].toLowerCase();
+        var keyword_name = keyword.trim().toLowerCase();
+        if(cafe_name.includes(keyword_name)){
             arr = [2];
             list = arr.concat([i]);
         }
